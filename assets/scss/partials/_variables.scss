@@ -1,0 +1,41 @@
+// fonts
+@font-face{
+    font-family: 'plfb';
+    src: url('../fonts/playfairdisplay-bold-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/playfairdisplay-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/playfairdisplay-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/playfairdisplay-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/playfairdisplay-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face{
+    font-family: 'noto-b';
+    //src: url('../fonts/lora-bold-webfont.eot'); /* IE9 Compat Modes */
+    src: //url('../fonts/lora-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       //url('../fonts/lora-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       //url('../fonts/lora-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/lora-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       //url('../fonts/lora-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+//$font-1: 'noto-r', serif;
+//$font-2: 'noto-b', serif;
+
+$font-1: sans-serif;
+$font-2: sans-serif;
+$regular: 400;
+$bold:700;
+
+// colors
+$color-1: #333333;
+$color-2: #c72c7e;
+$color-3: #529197;
+$color-4: #b92b27;
+$color-5: #c6beb0;
+$white: white;
+
+// z-index
+$zindex-1: 1;
+$zindex-2: 2;
+$zindex-3: 3;
+$zindex-4: 4;
+$zindex-5: 5;

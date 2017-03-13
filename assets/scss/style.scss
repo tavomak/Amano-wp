@@ -1,0 +1,7 @@
+@import 'bourbon'; // http://bourbon.io/
+@import 'partials/_media'; // Media Queries MQ(s,m,l,xl)
+@import 'partials/_mixins'; // centrado vertical/horizontal y fallback fuentes
+@import 'partials/_variables'; // colores, tipos de letra y personalizados
+@import 'modules/loader';
+@import 'layouts/global';
+//@import 'layouts/nav';
