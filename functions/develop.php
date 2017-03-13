@@ -30,7 +30,7 @@ echo '
 <style type="text/css">
 #wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon:before {
 background-image: url(' . get_bloginfo('stylesheet_directory') . '/assets/img/favicon.png) !important;
-//background-position: 0 0;
+background-size: cover;
 color:rgba(0, 0, 0, 0);
 }
 #wpadminbar #wp-admin-bar-wp-logo.hover > .ab-item .ab-icon {

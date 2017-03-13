@@ -35,6 +35,13 @@
         </div>
     </div>
 
+    <div id="logo-principal" class="text-center">
+       <h1 class="text-center">
+           <a href="<?php echo home_url('/'); ?>">
+               <img src="<?php bloginfo('template_directory'); ?>/assets/img/CAMLogo.png" alt="Fundación Telema">
+           </a>
+       </h1>
+   </div>
 
     <nav class="navbar navbar-default">
         <div class="container-fluid">
