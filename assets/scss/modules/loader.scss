@@ -13,18 +13,18 @@
 }
 
 .sk-cube-grid {
-    width: 80px;
-    height: 80px;
+    width: 180px;
+    height: 180px;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.sk-cube-grid .sk-cube {
+.sk-cube {
     width: 33%;
     height: 33%;
-    background-color: $color-2;
+    background: #fff url(../img/footwear.svg) no-repeat center center;
     float: left;
     -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
     animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;

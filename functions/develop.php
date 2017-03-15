@@ -68,12 +68,6 @@ function edit_admin_menus() {
 }
 add_action( 'admin_menu', 'edit_admin_menus' );
 
-//contacto modal
-function add_last_nav_item($items) {
-  return $items .= '<li><a type="button" data-toggle="modal" data-target="#say-hellow">Contacto</a></li>';
-}
-add_filter('wp_nav_menu_items','add_last_nav_item');
-
 /*//Gets post cat slug and looks for single-[cat slug].php and applies it
 add_filter('single_template', 'check_for_category_single_template');
 function check_for_category_single_template( $t )
