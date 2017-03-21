@@ -9,9 +9,9 @@
 			</div><!-- /#content -->
 		</div>
 
-		<div class="col-xs-6 col-sm-4" id="sidebar" role="navigation">
-			<?php get_template_part('includes/sidebar'); ?>
-		</div>
+		<!--<div class="col-xs-6 col-sm-4" id="sidebar" role="navigation">
+			<?php //get_template_part('includes/sidebar'); ?>
+		</div>-->
 
 	</div><!-- /.row -->
 </div><!-- /.container -->

@@ -174,11 +174,9 @@ function add_last_nav_item($items) {
 add_filter('wp_nav_menu_items','add_last_nav_item');*/
 
 // navbar (principal)
-register_nav_menus( array('primary' => __( 'Primary Menu', 'THEMENAME' ),) );
-// Upper navbar (above site title)
-register_nav_menu('navbar-upper-left', __('Upper navbar (left)', 'cam-wp'));
-register_nav_menu('navbar-upper-right', __('Upper navbar (right)', 'cam-wp'));
-
-// Lower navbar (below site title)
-register_nav_menu('navbar-lower-left', __('Lower navbar (left)', 'cam-wp'));
-register_nav_menu('navbar-lower-right', __('Lower navbar (right)', 'cam-wp'));
+register_nav_menus( array('primary' => __( 'Menú principal', 'THEMENAME' ),) );
+// Footer navbar (above site title)
+register_nav_menu('a-mano-navbar', __('Footer navbar (Amano)', 'THEMENAME'));
+register_nav_menu('subeibaja-navbar', __('Footer navbar (Subibaja)', 'THEMENAME'));
+register_nav_menu('otros-navbar', __('Footer navbar (Otros)', 'THEMENAME'));
+//register_nav_menu('navbar-upper-right', __('Upper navbar (right)', 'cam-wp'));

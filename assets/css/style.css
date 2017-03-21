@@ -1,24 +1,58 @@
 @font-face {
-  font-family: 'plfb';
-  src: url("../fonts/playfairdisplay-bold-webfont.eot");
+  font-family: 'Oswald-regular';
+  src: url("../fonts/oswald-regular-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/playfairdisplay-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/playfairdisplay-bold-webfont.woff2") format("woff2"), url("../fonts/playfairdisplay-bold-webfont.woff") format("woff"), url("../fonts/playfairdisplay-bold-webfont.ttf") format("truetype"), url("../fonts/playfairdisplay-bold-webfont.svg#svgFontName") format("svg");
+  src: url("../fonts/oswald-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald-regular-webfont.woff2") format("woff2"), url("../fonts/oswald-regular-webfont.woff") format("woff"), url("../fonts/oswald-regular-webfont.ttf") format("truetype"), url("../fonts/oswald-regular-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 
 @font-face {
-  font-family: 'noto-b';
-  src: url("../fonts/lora-bold-webfont.ttf") format("truetype"); }
-
-@font-face {
-  font-family: 'plfb';
-  src: url("../fonts/playfairdisplay-bold-webfont.eot");
+  font-family: 'Oswald-light';
+  src: url("../fonts/oswald-light-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/playfairdisplay-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/playfairdisplay-bold-webfont.woff2") format("woff2"), url("../fonts/playfairdisplay-bold-webfont.woff") format("woff"), url("../fonts/playfairdisplay-bold-webfont.ttf") format("truetype"), url("../fonts/playfairdisplay-bold-webfont.svg#svgFontName") format("svg");
+  src: url("../fonts/oswald-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald-light-webfont.woff2") format("woff2"), url("../fonts/oswald-light-webfont.woff") format("woff"), url("../fonts/oswald-light-webfont.ttf") format("truetype"), url("../fonts/oswald-light-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 
 @font-face {
-  font-family: 'noto-b';
-  src: url("../fonts/lora-bold-webfont.ttf") format("truetype"); }
+  font-family: 'Oswald-heavy';
+  src: url("../fonts/oswald-heavy-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/oswald-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald-heavy-webfont.woff2") format("woff2"), url("../fonts/oswald-heavy-webfont.woff") format("woff"), url("../fonts/oswald-heavy-webfont.ttf") format("truetype"), url("../fonts/oswald-heavy-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'Open-sans-regular';
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'Oswald-regular';
+  src: url("../fonts/oswald-regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/oswald-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald-regular-webfont.woff2") format("woff2"), url("../fonts/oswald-regular-webfont.woff") format("woff"), url("../fonts/oswald-regular-webfont.ttf") format("truetype"), url("../fonts/oswald-regular-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'Oswald-light';
+  src: url("../fonts/oswald-light-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/oswald-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald-light-webfont.woff2") format("woff2"), url("../fonts/oswald-light-webfont.woff") format("woff"), url("../fonts/oswald-light-webfont.ttf") format("truetype"), url("../fonts/oswald-light-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'Oswald-heavy';
+  src: url("../fonts/oswald-heavy-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/oswald-heavy-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/oswald-heavy-webfont.woff2") format("woff2"), url("../fonts/oswald-heavy-webfont.woff") format("woff"), url("../fonts/oswald-heavy-webfont.ttf") format("truetype"), url("../fonts/oswald-heavy-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
+
+@font-face {
+  font-family: 'Open-sans-regular';
+  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#svgFontName") format("svg");
+  /* Legacy iOS */ }
 
 .wrapper-loader {
   position: fixed;
@@ -29,7 +63,7 @@
   height: 100%;
   overflow: visible;
   background: #fff;
-  color: #529197; }
+  color: #2f3238; }
 
 .sk-cube-grid {
   width: 180px;
@@ -132,11 +166,11 @@ html, body {
   margin: 0; }
 
 body {
-  font-family: sans-serif;
-  color: #333333; }
+  font-family: "Open-sans-regular", sans-serif;
+  color: #2f3238; }
 
 h1, h2 {
-  font-family: sans-serif; }
+  font-family: "Oswald-regular", sans-serif; }
 
 blockquote, q {
   quotes: none; }
@@ -172,4 +206,132 @@ a, a:hover {
   clear: both; }
 
 a {
-  color: #529197; }
+  color: #008d94; }
+
+.navbar {
+  font-family: "Oswald-regular", sans-serif;
+  border: 0;
+  margin: 0; }
+  .navbar .navbar-header .navbar-toggle {
+    width: 100%;
+    margin: 0 auto; }
+    .navbar .navbar-header .navbar-toggle .icon-bar {
+      margin: 0 auto;
+      max-height: 4px;
+      margin-bottom: 4px; }
+  .navbar .nav-menu-primary-container {
+    display: table;
+    margin: 0 auto; }
+    .navbar .nav-menu-primary-container .navbar-nav {
+      text-align: center; }
+      .navbar .nav-menu-primary-container .navbar-nav li {
+        cursor: pointer; }
+      .navbar .nav-menu-primary-container .navbar-nav a {
+        font-size: 18px; }
+        .navbar .nav-menu-primary-container .navbar-nav a:hover {
+          color: #e22980; }
+
+/*
+HOVERNAV
+========
+A simple addition to the dropdown menu (Bootstrap itself is unchanged). Navbar dropdowns appear on hover.
+This works only for screen sizes larger than phones.
+
+If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/bst-plus.js
+*/
+@media (min-width: 768px) {
+  .navbar-nav .open ul {
+    display: none; }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background: none; }
+  .navbar-inverse .navbar-nav > .open > a,
+  .navbar-inverse .navbar-nav > .open > a:hover,
+  .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #969696;
+    background: none; }
+  .navbar-nav .hovernav:hover > .dropdown-menu {
+    display: block; } }
+
+/*
+MEGANAV
+=======
+A simple addition to the dropdown menu (Bootstrap itself is unchanged). When you add GRAND-CHILD links in the navbar: on screens larger than phones, Meganav will transform the dropdown into a mega-menu, with child-links displayed as menu-column heads (in bold).
+
+If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/bst-plus.js
+*/
+.mega-menu ul a {
+  color: #666; }
+
+.mega-menu > ul > li > a {
+  font-weight: bold !important; }
+
+@media (max-width: 767px) {
+  .has-children ul {
+    display: block !important;
+    margin-left: 15px; } }
+
+@media (min-width: 768px) {
+  .dropdown.mega-menu {
+    position: static; }
+  .mega-menu > .dropdown-menu {
+    left: 0;
+    right: 0;
+    overflow-x: auto; }
+  .mega-menu > ul > li {
+    display: table-cell; }
+  .mega-menu > ul ul {
+    position: relative;
+    display: block !important;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0; }
+  .dropdown-menu li {
+    border-right: 1px solid #e7e7e7; }
+  .dropdown-menu li li,
+  .dropdown-menu li:last-of-type {
+    border-right: 0; } }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: none;
+  box-shadow: none; }
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  background: none; }
+
+.navbar-default .navbar-nav > .active > a {
+  color: none; }
+
+.navbar-default {
+  background: none; }
+
+.site-footer {
+  background: #2f3238; }
+  .site-footer ul {
+    list-style-type: none;
+    padding: 0; }
+  .site-footer .footer-cam {
+    color: white;
+    padding: 20px 0 20px 0; }
+    .site-footer .footer-cam .footer-nav h5 {
+      text-transform: uppercase;
+      padding-bottom: 10px; }
+    .site-footer .footer-cam .footer-nav ul li {
+      margin: 10px 0 0 0; }
+      .site-footer .footer-cam .footer-nav ul li a {
+        font-family: "Oswald-regular", sans-serif;
+        font-size: 18px; }
+        .site-footer .footer-cam .footer-nav ul li a:hover {
+          color: #e22980; }
+  .site-footer .footer-estela {
+    background: white;
+    padding: 20px 0 0 0; }

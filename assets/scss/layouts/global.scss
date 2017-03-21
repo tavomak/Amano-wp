@@ -28,11 +28,11 @@ html, body{
     margin: 0;
 }
 body{
-    font-family: $font-2;
-    color: $color-1;
+    font-family: $font-regular;
+    color: $gris-oscuro;
 }
 h1,h2{
-    font-family: $font-1;
+    font-family: $title-regular;
 }
 ul {
 }
@@ -79,5 +79,5 @@ hr{
 
 }
 a{
-    color:$color-3;
+    color:$azul-cam;
 }

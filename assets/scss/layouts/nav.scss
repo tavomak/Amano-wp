@@ -1,3 +1,115 @@
+.navbar{
+    font-family: $title-regular;
+    border: 0;
+    margin: 0;
+    .navbar-header{
+        .navbar-toggle{
+            width: 100%;
+            margin: 0 auto;
+            .icon-bar{
+                margin: 0 auto;
+                max-height: 4px;
+                margin-bottom: 4px;
+            }
+        }
+    }
+    .nav-menu-primary-container{
+        display: table;
+        margin: 0 auto;
+        .navbar-nav{
+            @include MQ(MXL){
+            }
+            text-align: center;
+            li{
+                cursor: pointer;
+                }
+                a{
+                    font-size: 18px;
+                    &:hover{
+                        color: $rosa-cam;
+                    }
+                }
+            }
+    }
+}
+
+/*
+HOVERNAV
+========
+A simple addition to the dropdown menu (Bootstrap itself is unchanged). Navbar dropdowns appear on hover.
+This works only for screen sizes larger than phones.
+
+If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/bst-plus.js
+*/
+@media (min-width: 768px) {
+  .navbar-nav .open ul {
+    display: none
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background: none
+  }
+  .navbar-inverse .navbar-nav > .open > a,
+  .navbar-inverse .navbar-nav > .open > a:hover,
+  .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #969696;
+    background: none
+  }
+  .navbar-nav .hovernav:hover > .dropdown-menu {
+    display: block
+  }
+}
+
+/*
+MEGANAV
+=======
+A simple addition to the dropdown menu (Bootstrap itself is unchanged). When you add GRAND-CHILD links in the navbar: on screens larger than phones, Meganav will transform the dropdown into a mega-menu, with child-links displayed as menu-column heads (in bold).
+
+If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/bst-plus.js
+*/
+.mega-menu ul a {
+	color: #666;
+}
+.mega-menu > ul > li > a {
+	font-weight: bold !important
+}
+@media (max-width: 767px) {
+	.has-children ul {
+		display: block !important;
+		margin-left: 15px
+	}
+}
+@media (min-width: 768px) {
+	.dropdown.mega-menu {
+		position: static;
+	}
+	.mega-menu > .dropdown-menu {
+		left: 0;
+		right: 0;
+		overflow-x: auto
+	}
+	.mega-menu > ul > li {
+	  display:table-cell;
+	}
+	.mega-menu > ul ul {
+		position: relative;
+		display: block !important;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		padding: 0
+	}
+	.dropdown-menu li {
+		border-right: 1px solid #e7e7e7
+	}
+    .dropdown-menu li li,
+    .dropdown-menu li:last-of-type {
+        border-right: 0
+    }
+}
+
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:focus,
 .navbar-default .navbar-nav>.active>a:hover {
@@ -18,321 +130,3 @@
 .navbar-default{
     background: none;
 }
-
-.navbar{
-    font-family: $font-2;
-    border: 0;
-    margin: 0;
-        .navbar-header{
-            .navbar-toggle{
-                width: 100%;
-                margin: 0 auto;
-                /*&:after{
-                    content: 'Menu';
-                }*/
-                .icon-bar{
-                    margin: 0 auto;
-                    max-height: 4px;
-                    margin-bottom: 4px;
-                }
-            }
-        }
-        .navbar-nav{
-            @include MQ(MXL){
-                width: 100%;
-            }
-            text-align: center;
-            li{
-                cursor: pointer;
-                @include MQ(LXL){
-                    width: 20%;
-                    position: relative;
-                    top: 40px;
-                    &:nth-child(3){top: 0;}
-                }
-                a{
-                    font-size: 18px;
-                }
-            }
-            .dropdown-menu{
-                //li{width: 100%;}
-            }
-        }
-}
-.menu-item-has-children{
-    .dropdown-menu{
-        width: 100%;
-        li{
-            width: 100%;
-            top: 0;
-        }
-    }
-}
-.titulo, .areas{
-    h2{
-        margin-bottom: -20px;
-    }
-}
-h3{
-    font-family: $font-2;
-    color: $color-2;
-}
-.telema{
-    margin: 40px 0 0 0;
-    .container{
-        .row{
-            margin: 20px 0 0 0;
-        }
-        .fundacion-txt{
-            p{
-            }
-            padding: 25px;
-        }
-        .fundacion-img{
-            padding: 0 25px 25px 0;
-        }
-    }
-    .shadow{
-        box-shadow: 0 0 40px $color-5;
-    }
-}
-
-.areas{
-    margin: 50px 0 50px 0;
-    background: $color-4;
-    padding: 40px;
-}
-
-
-.shadows{
-    box-shadow: 0 0 30px $color-5;
-    background: #fff;
-    padding: 15px;
-}
-.contenedor-programas{
-    list-style-type: none;
-    @include MQ(SM){
-        padding: 0;
-    }
-    .programa{
-        margin-bottom: 40px;
-        @include MQ(SM){
-            margin-bottom: 20px;
-        }
-        @include MQ(L){
-            margin-bottom: 20px;
-        }
-        .tarjeta-programa{
-            min-height: 420px;
-            @include MQ(SM){
-                min-height: auto;
-            }
-        }
-    }
-}
-.archivos{
-    padding-top: 25px;
-}
-.aliados{
-    @include MQ(MXL){
-        margin: 50px 0 50px 0;
-        background: $color-4;
-        padding: 40px;
-    }
-}
-.aliados-txt{
-    @include MQ(SM){
-        margin-bottom: 25px;
-    }@include MQ(MXL){
-        padding: 0 35px 0 0;
-    }
-}
-.aliados-img{
-    padding: 0 0 10px 0;
-    li{
-        padding: 15px;
-    }
-}
-.text-justify{padding-right: 15px;}
-.areas-lista{
-    list-style-type:circle;
-}
-.articulo{
-    margin-bottom: 100px;
-    .titulo{
-        margin-bottom: 40px;
-    }
-}
-    .identidad{
-        margin: -100px 0 30px 0;
-        width: 210px;
-        height: auto;
-    }
-.datos{
-    p{
-        font-weight: $bold;
-    }
-    h3{
-        margin: 20px 0 20px 0;
-        font-weight: $bold;
-    }
-    list-style-type: none;
-    background-color: $color-4;
-    @include MQ(LXL){
-        max-height: 300px;
-    }
-    .participantes{
-        padding: 0;
-        h3{
-            @include MQ(LXL){
-            position: relative;
-            left: -30px;
-            }
-        }
-    }
-    .beneficiarios{
-        text-align: center;
-        background: $color-2;
-        color: $white;
-        height: 350px;
-        padding: 15px;
-        @include MQ(LXL){
-            margin: -20px 0 0 0;
-        }
-        h3{
-            font-family: $font-1;
-            color: $white;
-            font-size: 32px;
-        }
-        h2{
-            position: relative;
-            top: 70px;
-            font-size: 5.5em;
-            &:after{
-                content: "";
-                display: block;
-                border-radius: 50%;
-                border: 2px solid $white;
-                width: 160px;
-                height: 160px;
-                margin: 0 auto;
-                position: relative;
-                top: -120px;
-            }
-        }
-    }
-    .patrocinantes{
-        h3{
-
-        }
-    }
-}
-.donation-box{
-    margin: 80px 0 80px 0;
-    position: relative;
-    z-index: $zindex-5;
-}
-#bg-video-tlm{
-    height: 600px;
-}
-.page-about{
-    h2{
-        @include MQ(SM){
-            font-size: 28px;
-        }
-        font-size: 4em;
-        color: $color-2;
-    }
-    .about-img{
-        padding: 0;
-        margin: 0;
-        img{
-            @include MQ(MXL){
-                //margin: -50px 0 0 0;
-            }
-            width: 100%;
-            height: auto;
-        }
-        .page-about-txt{
-                z-index: $zindex-5;
-            @include MQ(MXL){
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                padding: 45px 0 0 0;
-                color: $white;
-            }
-        }
-    }
-    .credo{
-        z-index: $zindex-5;
-        position: relative;
-        @include MQ(L){
-            margin: -100px 0 0 0;
-        }@include MQ(XL){
-            margin: -150px 0 0 0;
-        }
-        .credo-txt{
-            padding: 50px;
-        }
-    }
-    .art-conection{
-        small{color: #a4a7a7}
-        .art-conection-txt{
-            height: 366px;
-            display: table;
-            p{
-                vertical-align: middle;
-                display: table-cell;
-            }
-        }
-    }
-}
-.page-noticias{
-    margin: 25px 0 0 0;
-    ul{
-        list-style-type: none;
-    }
-}
-.flex-video {
-  position: relative;
-  padding-top: 25px;
-  padding-bottom: 67.5%;
-  height: 0;
-  margin-bottom: 16px;
-  overflow: hidden;
-}
-
-.flex-video.widescreen { padding-bottom: 57.25%; }
-.flex-video.vimeo { padding-top: 0; }
-
-.flex-video iframe,
-.flex-video object,
-.flex-video embed {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-@media only screen and (max-device-width: 800px), only screen and (device-width: 1024px) and (device-height: 600px), only screen and (width: 1280px) and (orientation: landscape), only screen and (device-width: 800px), only screen and (max-width: 767px) {
-  .flex-video { padding-top: 0; }
-}
-.overlay {
-        width:100%;
-        height:100%;
-        position:absolute;
-        overflow:hidden;
-        top:0;
-        left:0;
-        background-color:rgba(132, 110, 33, 0.3);
-    }
-.overlay-text {
-        width:100%;
-        height:100%;
-        position:absolute;
-        overflow:hidden;
-        top:0;
-        left:0;
-        background-color:rgba(70, 58, 19, 0.58);
-    }

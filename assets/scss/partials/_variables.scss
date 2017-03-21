@@ -1,36 +1,51 @@
 // fonts
 @font-face{
-    font-family: 'plfb';
-    src: url('../fonts/playfairdisplay-bold-webfont.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/playfairdisplay-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/playfairdisplay-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/playfairdisplay-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/playfairdisplay-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/playfairdisplay-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'Oswald-regular';
+    src: url('../fonts/oswald-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/oswald-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/oswald-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/oswald-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/oswald-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 @font-face{
-    font-family: 'noto-b';
-    //src: url('../fonts/lora-bold-webfont.eot'); /* IE9 Compat Modes */
-    src: //url('../fonts/lora-bold-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       //url('../fonts/lora-bold-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       //url('../fonts/lora-bold-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/lora-bold-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       //url('../fonts/lora-bold-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'Oswald-light';
+    src: url('../fonts/oswald-light-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/oswald-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/oswald-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/oswald-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/oswald-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/oswald-light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-//$font-1: 'noto-r', serif;
-//$font-2: 'noto-b', serif;
-
-$font-1: sans-serif;
-$font-2: sans-serif;
+@font-face{
+    font-family: 'Oswald-heavy';
+    src: url('../fonts/oswald-heavy-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/oswald-heavy-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/oswald-heavy-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/oswald-heavy-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/oswald-heavy-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/oswald-heavy-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+@font-face{
+    font-family: 'Open-sans-regular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/OpenSans-Regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/OpenSans-Regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+$title-regular: 'Oswald-regular', sans-serif;
+$title-light: 'Oswald-light', sans-serif;
+$title-bold: 'Oswald-heavy', sans-serif;
+$font-regular: 'Open-sans-regular', sans-serif;
 $regular: 400;
 $bold:700;
 
-// colors
-$color-1: #333333;
-$color-2: #c72c7e;
-$color-3: #529197;
-$color-4: #b92b27;
-$color-5: #c6beb0;
+// Colores
+$gris-oscuro: #2f3238;
+$gris-claro: #666666;
+$rosa-cam: #e22980;
+$azul-cam: #008d94;
 $white: white;
 
 // z-index

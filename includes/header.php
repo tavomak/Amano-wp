@@ -44,29 +44,30 @@
        </h1>
    </div>
 
-    <nav class="navbar navbar-default">
-        <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-static-top navbar-upper">
+        <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-upper">
-                    <span class="sr-only">menú</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-            </div>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-upper"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+                <?php /* <a class="navbar-brand" href="<?php echo home_url('/'); ?>">
+                    <?php bloginfo('name'); ?>
+                        </a> */ ?> </div>
             <div class="collapse navbar-collapse" id="navbar-upper">
-                <ul class="list-inline">
-                    <?php
-                        wp_nav_menu( array(
-                            'menu'              => 'primary',
-                            'theme_location'    => 'primary',
-                            'depth'             => 3,
-                            'menu_class'        => 'nav navbar-nav',
-                            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                            'walker'            => new wp_bootstrap_navwalker())
-                        );
-                    ?>
-                </ul>
+                <?php
+                            wp_nav_menu( array(
+                                'menu'              => 'primary',
+                                'theme_location'    => 'primary',
+                                'depth'             => 3,
+                                'container_class' => 'nav-menu-primary-container',
+                                'menu_class'        => 'nav navbar-nav text-center',
+                                'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                                'walker'            => new wp_bootstrap_navwalker())
+                            );
+                        ?>
+                    <?php //get_template_part('includes/navbar-search'); ?>
             </div>
+            <!-- /.navbar-collapse -->
         </div>
+        <!-- /.container -->
     </nav>
+    <?php tha_header_before(); ?>
+        <!--<div class="wrapper">-->
