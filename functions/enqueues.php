@@ -53,7 +53,7 @@ Un-comment the next two lines of code if you want to use WordPress's onboard jQu
     if ( class_exists( 'WooCommerce' ) ) {
     // Si woocommerce exsiste cargar estilos
         if (is_woocommerce()) {
-            wp_register_style('woomm', get_template_directory_uri() . '/css/woocommerce-dist.css', false, null);
+            wp_register_style('woomm', get_template_directory_uri() . '/assets/css/woocommerce-dist.css', false, null);
             wp_enqueue_style('woomm');
         }
 }

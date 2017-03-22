@@ -47,6 +47,7 @@
     ul{
         li{
             a{
+                transition: .3s ease-in-out all;
                 font-family: $title-regular;
                 color: $gris-claro;
                 padding: 0 12px 0 40px;
@@ -70,6 +71,7 @@
                 width: 32px;
                 height: 32px;
                 padding: 2px;
+                transition: .3s ease-in-out all;
             }
 
         }
@@ -85,6 +87,12 @@
                 border: 1px solid $gris-oscuro;
                 border-radius: 50%;
                 text-align: center;
+                transition: .3s ease-in-out all;
+            }
+            &:hover .numero-cuenta{
+                background: $azul-cam;
+                color: $white;
+                border: 1px solid $white;
             }
         }
         .icon-session{

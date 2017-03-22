@@ -239,6 +239,7 @@ a {
   padding: 10px 0 0 0;
   display: block; }
   .barra-iconos-top ul li a {
+    transition: .3s ease-in-out all;
     font-family: "Oswald-regular", sans-serif;
     color: #666666;
     padding: 0 12px 0 40px;
@@ -257,7 +258,8 @@ a {
     top: 0;
     width: 32px;
     height: 32px;
-    padding: 2px; }
+    padding: 2px;
+    transition: .3s ease-in-out all; }
   .barra-iconos-top ul .cart-cuenta {
     padding: 0; }
     .barra-iconos-top ul .cart-cuenta .woocommerce-Price-currencySymbol {
@@ -268,7 +270,12 @@ a {
       height: 30px;
       border: 1px solid #2f3238;
       border-radius: 50%;
-      text-align: center; }
+      text-align: center;
+      transition: .3s ease-in-out all; }
+    .barra-iconos-top ul .cart-cuenta:hover .numero-cuenta {
+      background: #008d94;
+      color: white;
+      border: 1px solid white; }
   .barra-iconos-top ul .icon-session a:before {
     background: url("../img/usuario-icono.png") center no-repeat;
     background-size: contain; }
@@ -386,3 +393,8 @@ If you don't want this, delete this segment of the CSS and delete the correspond
   .site-footer .footer-estela {
     background: white;
     padding: 20px 0 0 0; }
+
+/*.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
+margin: 0 2.8% 2.992em 0;
+width: 17.55%;
+}*/

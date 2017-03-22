@@ -51,10 +51,29 @@ function reinnervate_wrapper_start() {
 function cam_wp_wrapper_end() {
   echo '</main>';
 }
+// Productos por fila
+function loop_columns() {
+return 5; // 5 products per row
+}
+add_filter('loop_shop_columns', 'loop_columns', 999);
+// productis por pagina
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 15;' ), 20 );
+/*
+Remover tablas
+*/
+add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
+
+function woo_remove_product_tabs( $tabs ) {
+
+    unset( $tabs['description'] );      	// Remove the description tab
+    unset( $tabs['reviews'] ); 			// Remove the reviews tab
+    unset( $tabs['additional_information'] );  	// Remove the additional information tab
+
+    return $tabs;
+}
 
 /*
 //Coloca el icono del carrito con la cantidad de productos al final del menu de navegacion
-
 function cam_wp_woomenucart($menu, $args) {
 	// Check if WooCommerce is active and add a new item to a menu assigned to "Navbar Upper Right" (Primary Navigation Menu) location
 	if ( !in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) || 'navbar-upper-right' !== $args->theme_location )
