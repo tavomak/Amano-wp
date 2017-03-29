@@ -51,13 +51,15 @@ function reinnervate_wrapper_start() {
 function cam_wp_wrapper_end() {
   echo '</main>';
 }
+
+
 // Productos por fila
 function loop_columns() {
-return 5; // 5 products per row
+return 6;
 }
 add_filter('loop_shop_columns', 'loop_columns', 999);
 // productis por pagina
-add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 15;' ), 20 );
+add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 24;' ), 20 );
 /*
 Remover tablas
 */
@@ -71,33 +73,47 @@ function woo_remove_product_tabs( $tabs ) {
 
     return $tabs;
 }
+//Ajaxfi cart
+add_filter('add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment');
 
-/*
-//Coloca el icono del carrito con la cantidad de productos al final del menu de navegacion
-function cam_wp_woomenucart($menu, $args) {
-	// Check if WooCommerce is active and add a new item to a menu assigned to "Navbar Upper Right" (Primary Navigation Menu) location
-	if ( !in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) || 'navbar-upper-right' !== $args->theme_location )
-		return $menu;
+function woocommerce_header_add_to_cart_fragment( $fragments ) {
+	global $woocommerce;
+
 	ob_start();
-		global $woocommerce;
-		$viewing_cart = __('View your shopping cart', 'cam-wp');
-		$start_shopping = __('Start shopping', 'cam-wp');
-		$cart_url = $woocommerce->cart->get_cart_url();
-		$shop_page_url = get_permalink( woocommerce_get_page_id( 'shop' ) );
-		$cart_contents_count = $woocommerce->cart->cart_contents_count;
-		$cart_contents = sprintf(_n('%d item', '%d items', $cart_contents_count, 'cam-wp'), $cart_contents_count);
-		$cart_total = $woocommerce->cart->get_cart_total();
-    if ($cart_contents_count == 0) {
-      $menu_item = '<li class="pull-right"><a class="woo-menu-cart" href="'. $shop_page_url .'" title="'. $start_shopping .'">';
-    } else {
-      $menu_item = '<li class="pull-right"><a class="woo-menu-cart" href="'. $cart_url .'" title="'. $viewing_cart .'">';
-    }
-    $menu_item .= '<i class="fa fa-shopping-cart"></i> ';
-    $menu_item .= $cart_contents.' - '. $cart_total;
-    $menu_item .= '</a></li>';
-		echo $menu_item;
-	$social = ob_get_clean();
-	return $menu . $social;
+
+    $cartUrl = wc_get_cart_url();
+    $cart_contents_count = WC()->cart->get_cart_contents_count();
+
+	?>
+	<?php
+    echo '<a class="cart-cuenta" href="'.$cartUrl.'">';
+    echo '<span class="numero-cuenta">'.sprintf ( _n( '%d', '%d', $cart_contents_count ), $cart_contents_count ).'</span>';
+    echo ' ';
+    echo WC()->cart->get_cart_total();
+    echo '</a>';
+    ?>
+	<?php
+
+	$fragments['a.cart-cuenta'] = ob_get_clean();
+
+	return $fragments;
+
 }
-add_filter('wp_nav_menu_items','cam_wp_woomenucart', 10, 2);
-*/
+
+// Numero de productos relacionados
+add_filter( 'woocommerce_output_related_products_args', 'themename_related_products_count' );
+
+function themename_related_products_count( $args ) {
+     $args['posts_per_page'] = 6;
+     $args['columns'] = 6;
+
+     return $args;
+}
+
+//insertar widget horizontal
+function prefix_add_my_widget() {
+ echo '<div id="my-sidebar" class="">';
+ dynamic_sidebar( 'woo-horizontal-widget-area' );
+ echo '</div>';
+}
+add_action( 'woocommerce_before_shop_loop', 'prefix_add_my_widget'  );

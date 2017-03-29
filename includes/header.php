@@ -52,7 +52,7 @@
                             }
                             ?>
                         </li>
-                        <li class="icon-cart" role="presentation">
+                        <li class="icon-cart hidden-xs" role="presentation">
                             <a href="<?php global $woocommerce;
                                    $cart_url = $woocommerce->cart->get_cart_url();
                                    echo $cart_url; ?>">
@@ -81,6 +81,7 @@
                 </div>
             </div>
         </div>
+        <hr class="hr-entre-nav">
 
         <div id="logo-principal" class="text-center">
            <h1 class="text-center">
@@ -117,3 +118,4 @@
         </nav>
         <?php tha_header_before(); ?>
             <!--<div class="wrapper">-->
+<hr class="hidden-xs">

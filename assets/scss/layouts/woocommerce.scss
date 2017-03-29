@@ -1,1 +1,123 @@
 @import 'bourbon';
+@import '../partials/_media'; // Media Queries MQ(s,m,l,xl)
+@import '../partials/_mixins'; // centrado vertical/horizontal y fallback fuentes
+@import '../partials/_variables'; // colores, tipos de letra y personalizados
+
+.pp_pic_holder.pp_woocommerce {
+    overflow-x: visible;
+}
+
+div.pp_woocommerce a.pp_expand {
+    left: .5em !important;
+}
+
+div.pp_woocommerce .pp_close {
+    right: .5em !important;
+}
+.pp_gallery {
+    margin-top: -20px;
+    ul{
+        height: 100%;
+        a{
+            height: 100%;
+        }
+    }
+}
+
+.related.products {
+    clear: both;
+    text-align: center;
+}
+
+.woocommerce-content-cam{//contenedor de woocommerce
+    @include MQ(SM){
+        padding:0 10px 0 10px;
+    }
+    padding-top:40px;
+    .page-title{}//Titulo de la pagina, categoria de woo h1
+    .woocommerce-result-count{}//mostrando X de X resultados p
+    .woocommerce-ordering{}//orden de los productos form
+    ul.products{ //contenedor de productos pagina de archivo
+        li.product{//Producto especifico
+            margin-bottom: 20px;
+            width: 13%;
+            display: inline-block;
+            vertical-align: top;
+            *display: inline;
+            *zoom: 1;
+            @include MQ(SM){
+                width: 45%;
+            }
+            a.button{// ajax boton anadir al carrito
+                display: none;
+            }
+            a.woocommerce-LoopProduct-link{
+                span.onsale{//Span aviso de oferta
+                }
+                span.price{//Span de precios
+                    text-align: center;
+                    del{//Precio de descuento
+                    }
+                    ins{//Precio a pagar
+                    }
+                    //Estos span estan dentro de las etiquetas del e ins anteriores
+                    span.woocommerce-Price-amount{
+                        span.woocommerce-Price-currencySymbol{
+                            margin-right: 8px;
+                        }
+                    }
+                }
+                img.attachment-shop_catalog{//imagen del producto
+                    padding: 20px;
+                }
+                h3{
+                    text-align: center;
+                }
+            }
+        }
+    }
+    nav.woocommerce-pagination{
+        margin: 20px 0 30px 0;
+        ul.page-numbers{}
+    }
+    //Page single
+    div.images{
+        a.woocommerce-main-image {
+            display: block;
+            width: 60%;
+            margin: 0 auto;
+            @include MQ(S){
+                width: 80%;
+            }
+        }
+        div.thumbnails{
+            width: 60%;
+            margin: 0 auto;
+            @include MQ(S){
+                width: 80%;
+            }
+        }
+    }
+}
+.woocommerce #content div.product div.thumbnails a,
+.woocommerce div.product div.thumbnails a,
+.woocommerce-page #content div.product div.thumbnails a,
+.woocommerce-page div.product div.thumbnails a{
+    //margin: 0;
+    //float: none;
+}
+.woocommerce-page div.product div.summary{
+    margin: 50px 0 0 0;
+    //text-align: center;
+    form{
+        width: 200px;
+        //margin: 0 auto;
+        .button{
+                background: $azul-cam;
+                transition: ease-in-out 0.3s all;
+            &:hover{
+                background: $rosa-cam;
+            }
+        }
+    }
+}
