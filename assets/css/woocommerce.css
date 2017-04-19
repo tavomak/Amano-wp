@@ -48,6 +48,8 @@ div.pp_woocommerce .pp_close {
 
 .woocommerce-content-cam {
   padding-top: 40px; }
+  .woocommerce-content-cam label {
+    color: #2f3238; }
   @media handheld, only screen and (max-width: 768px) {
     .woocommerce-content-cam {
       padding: 0 10px 0 10px; } }
@@ -96,3 +98,7 @@ div.pp_woocommerce .pp_close {
       transition: ease-in-out 0.3s all; }
       .woocommerce-page div.product div.summary form .button:hover {
         background: #e22980; }
+
+.woocommerce-product-gallery__image {
+  max-width: 250px;
+  margin: 0 auto; }

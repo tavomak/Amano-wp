@@ -117,3 +117,8 @@ function prefix_add_my_widget() {
  echo '</div>';
 }
 add_action( 'woocommerce_before_shop_loop', 'prefix_add_my_widget'  );
+//Ocultar editor de texto de wordpress
+function remove_product_editor() {
+  remove_post_type_support( 'product', 'editor' );
+}
+add_action( 'init', 'remove_product_editor' );

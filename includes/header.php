@@ -52,14 +52,11 @@
                             }
                             ?>
                         </li>
-                        <li class="icon-cart hidden-xs" role="presentation">
-                            <a href="<?php global $woocommerce;
-                                   $cart_url = $woocommerce->cart->get_cart_url();
-                                   echo $cart_url; ?>">
-                            carrito</a>
-                        </li>
+
                         <li>
                            <?php
+                            global $woocommerce;
+                            $cart_url = $woocommerce->cart->get_cart_url();
                             if ( class_exists( 'WooCommerce' ) ) {
                                 // Si woocommerce exsiste
                                 $cartUrl = wc_get_cart_url();
@@ -72,6 +69,8 @@
                                     echo ' ';
                                     echo WC()->cart->get_cart_total();
                                     echo '</a>';
+                                }else{
+                                    echo '<div class="icon-cart hidden-xs" role="presentation"><a href="'.$cart_url.'">carrito</a><div>';
                                 }
                             }
                             ?>

@@ -30,6 +30,9 @@ div.pp_woocommerce .pp_close {
 }
 
 .woocommerce-content-cam{//contenedor de woocommerce
+    label{
+        color: $gris-oscuro;
+    }
     @include MQ(SM){
         padding:0 10px 0 10px;
     }
@@ -120,4 +123,8 @@ div.pp_woocommerce .pp_close {
             }
         }
     }
+}
+.woocommerce-product-gallery__image {
+    max-width: 250px;
+    margin: 0 auto;
 }

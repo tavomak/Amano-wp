@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     //Función que remueve el precargador una vez cargados todos los elementos de la pagina
-    $(window).load(function(){
+    $(window).on('load', function() {
         $('.wrapper-loader').fadeOut('slow',function(){$(this).remove();});
     });
 
