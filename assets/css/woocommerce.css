@@ -96,7 +96,7 @@ div.pp_woocommerce .pp_close {
           margin-bottom: 0; } }
       .woocommerce-content-cam ul.products li.product a.button {
         display: none; }
-      .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link:hover h3 {
+      .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link:hover h3, .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link:hover h2 {
         opacity: 1;
         color: #008d94; }
       .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link span.price {
@@ -104,7 +104,7 @@ div.pp_woocommerce .pp_close {
         text-align: center; }
         .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
           margin-right: 8px; }
-      .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3 {
+      .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3, .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2 {
         position: relative;
         top: -15px;
         text-align: center;
@@ -115,16 +115,16 @@ div.pp_woocommerce .pp_close {
         opacity: 0;
         font-size: 1.06em; }
         @media handheld {
-          .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3 {
+          .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3, .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2 {
             opacity: 1; } }
-        .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3 .touch {
+        .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3 .touch, .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2 .touch {
           opacity: 1; }
         @media handheld, only screen and (max-width: 768px) {
-          .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3 {
+          .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3, .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2 {
             font-size: 1.2em;
             opacity: 1; } }
         @media only screen and (min-width: 1281px) {
-          .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3 {
+          .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3, .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2 {
             font-size: 1.4em;
             top: -25px; } }
       .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
