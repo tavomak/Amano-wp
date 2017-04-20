@@ -1,27 +1,31 @@
 .site-footer{
-    background: $gris-oscuro;
+    background: $gris-superclaro;
     ul{
         list-style-type: none;
         padding: 0;
-        li{
-
-        }
+        li{}
     }
     .footer-cam{
-        color:$white;
+        hr{
+            border-color: $gris-claro;
+        }
+        color:$gris-oscuro;
         padding: 20px 0 20px 0;
         .footer-nav{
             h5{
                 text-transform: uppercase;
                 padding-bottom: 10px;
+                font-size: 16px;
             }
             ul{
                 li{
                     margin: 10px 0 0 0;
                     a{
                         font-family: $title-regular;
-                        font-size: 18px;
-                        &:hover{color: $rosa-cam;}
+                        font-size: 16px;
+                        &:hover{
+                            color: $rosa-cam;
+                        }
                     }
                 }
             }

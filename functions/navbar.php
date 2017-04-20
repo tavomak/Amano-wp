@@ -167,11 +167,11 @@ class wp_bootstrap_navwalker extends Walker_Nav_Menu {
 	}
 }
 
-/*//contacto modal agrega un item de menu al final de la navegacion bootstrap
+//contacto modal agrega un item de menu al final de la navegacion bootstrap
 function add_last_nav_item($items) {
   return $items .= '<li><a type="button" data-toggle="modal" data-target="#say-hellow">Contacto</a></li>';
 }
-add_filter('wp_nav_menu_items','add_last_nav_item');*/
+add_filter('wp_nav_menu_items','add_last_nav_item');
 
 // navbar (principal)
 register_nav_menus( array('primary' => __( 'Menú principal', 'THEMENAME' ),) );

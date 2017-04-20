@@ -104,7 +104,7 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 add_filter( 'woocommerce_output_related_products_args', 'themename_related_products_count' );
 
 function themename_related_products_count( $args ) {
-     $args['posts_per_page'] = 6;
+     $args['posts_per_page'] = 12;
      $args['columns'] = 6;
 
      return $args;

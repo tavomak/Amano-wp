@@ -1,49 +1,50 @@
 // fonts
 @font-face{
-    font-family: 'Oswald-regular';
-    src: url('../fonts/oswald-regular-webfont.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/oswald-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/oswald-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/oswald-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/oswald-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/oswald-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'montserrat-regular';
+    src: url('../fonts/montserrat-regular-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/montserrat-regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 @font-face{
-    font-family: 'Oswald-light';
-    src: url('../fonts/oswald-light-webfont.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/oswald-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/oswald-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/oswald-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/oswald-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/oswald-light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'montserrat-light';
+    src: url('../fonts/montserrat-light-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/montserrat-light-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-light-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 @font-face{
-    font-family: 'Oswald-heavy';
-    src: url('../fonts/oswald-heavy-webfont.eot'); /* IE9 Compat Modes */
-    src: url('../fonts/oswald-heavy-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('../fonts/oswald-heavy-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/oswald-heavy-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../fonts/oswald-heavy-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../fonts/oswald-heavy-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+    font-family: 'montserrat-ultralight';
+    src: url('../fonts/montserrat-ultralight-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/montserrat-ultralight-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-ultralight-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-ultralight-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../fonts/montserrat-ultralight-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-ultralight-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
 @font-face{
-    font-family: 'Open-sans-regular';
+    font-family: 'fira-regular';
     src: url('../fonts/OpenSans-Regular-webfont.eot'); /* IE9 Compat Modes */
     src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
        url('../fonts/OpenSans-Regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
        url('../fonts/OpenSans-Regular-webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
        url('../fonts/OpenSans-Regular-webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
 }
-$title-regular: 'Oswald-regular', sans-serif;
-$title-light: 'Oswald-light', sans-serif;
-$title-bold: 'Oswald-heavy', sans-serif;
-$font-regular: 'Open-sans-regular', sans-serif;
+$title-bold: 'montserrat-regular', sans-serif;
+$title-regular: 'montserrat-light', sans-serif;
+$title-light: 'montserrat-ultralightlight', sans-serif;
+$font-regular: 'fira-regular', sans-serif;
 $regular: 400;
 $bold:700;
 
 // Colores
 $gris-oscuro: #2f3238;
 $gris-claro: #666666;
+$gris-superclaro: #e3e3e3;
 $rosa-cam: #e22980;
 $azul-cam: #008d94;
 $white: white;

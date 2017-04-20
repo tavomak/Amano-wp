@@ -1,0 +1,64 @@
+.contacto #modalbox {
+  border-radius: 0;
+  opacity: 0.96; }
+
+.contacto #social-media ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: block; }
+  .contacto #social-media ul li {
+    display: inline-block;
+    margin-right: 10px; }
+    .contacto #social-media ul li a:hover {
+      text-decoration: none; }
+    .contacto #social-media ul li span {
+      font-size: 25px; }
+
+.contacto .btn-contacto {
+  width: 100%;
+  margin: 25px 0;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: bold; }
+
+.contacto h3 {
+  letter-spacing: 5px;
+  font-weight: bold; }
+
+.wpcf7 {
+  text-align: center;
+  margin: 0 auto; }
+
+.wpcf7 textarea,
+.wpcf7 input {
+  width: 80%;
+  margin: 0 auto; }
+
+.wpcf7 {
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 0 25px 0; }
+  .wpcf7 input[type=submit] {
+    margin: 10px;
+    width: 200px;
+    border: none;
+    height: 60px; }
+    .wpcf7 input[type=submit]:hover {
+      color: white; }
+  .wpcf7 textarea,
+  .wpcf7 input {
+    max-width: 500px; }
+
+#recaptcha {
+  width: 304px;
+  margin: 0 auto; }
+
+#recaptcha_area, #recaptcha_table {
+  margin: 0 auto !important; }
+
+.icon-facebook,
+.icon-twitter,
+.icon-instagram {
+  margin: 0 10px 0 0;
+  zoom: 1.3; }

@@ -1,5 +1,22 @@
 <?php tha_footer_before(); ?>
 
+    <div class="contacto">
+        <div id="say-hellow" tabindex="-1" role="dialog" class="modal fade">
+            <div role="document" class="modal-dialog modal-lg">
+                <div id="modalbox" class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" data-dismiss="modal" aria-label="Cerrar" class="close"><span aria-hidden="true">&times;</span></button>
+                        <h3 class="modal-tittle text-center">Contacto</h3> </div>
+                    <div class="modal-body">
+                        <div>
+                            <?php echo do_shortcode( '[contact-form-7 id="52" title="Formulario de contacto 1"]' ); ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div class="container">
         <div class="row">
             <?php dynamic_sidebar('footer-widget-area'); ?>

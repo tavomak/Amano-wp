@@ -19,9 +19,9 @@
                 }
                 span {
                     font-size: 25px;
-                    color: $color-3;
+                    //color: $color-3;
                     &:hover {
-                        color: $color-1
+                       // color: $color-1
                     }
                 }
             }
@@ -52,7 +52,7 @@
 }
 
 .wpcf7 input[type=submit] {
-    background: $color-3;
+    //background: $color-3;
 }
 
 .wpcf7 {
@@ -62,11 +62,11 @@
     input[type=submit] {
         margin: 10px;
         width: 200px;
-        background: $color-3;
+        //background: $color-3;
         border: none;
         height: 60px;
         &:hover {
-            background: $color-1;
+            //background: $color-1;
             color: white;
         }
     }
