@@ -122,3 +122,6 @@ function remove_product_editor() {
   remove_post_type_support( 'product', 'editor' );
 }
 add_action( 'init', 'remove_product_editor' );
+
+// Remove WooCommerce Updater
+remove_action('admin_notices', 'woothemes_updater_notice');

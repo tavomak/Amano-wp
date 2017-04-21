@@ -1,0 +1,157 @@
+//Productos relacionados y recomendados
+.upsells.products{clear: both;}
+.related.products {
+    clear: both;
+    text-align: center;
+}
+//Estilos Generales paginas de Archivo
+//contenedor de woocommerce
+.woocommerce-content-cam{
+    padding:0 80px 0 80px;
+    @include MQ(SM){
+        padding:0 10px 0 10px;
+    }
+    @include MQ(L){
+        padding:0 20px 0 20px;
+    }
+    label{
+        color: $gris-oscuro;
+    }
+    .woocommerce-breadcrumb{
+        margin: 0;
+        font-size: 1.1em;
+        a{
+            &:hover{
+                color:$rosa-cam;
+            }
+        }
+        @include MQ(SM){
+            text-align: center;
+        }
+    }
+    //conteo de productos, mostrando X de X resultados x
+    .woocommerce-result-count{
+        color: #a7a7a7;
+        font-size:0.92em;
+    }
+    //Etiqueta de descuento
+    .wapl-flash {
+        top:-35px;
+        @include MQ(XL){
+            top:-15px;
+        }
+        .woocommerce-advanced-product-label.product-label{
+            border-color: $gris-superclaro;
+            width: 55px;
+            height: 55px;
+        }
+    }
+    //Titulo de la pagina, categoria de woo h1
+    .page-title,
+    //orden de los productos form
+    .woocommerce-ordering{
+        display: none;
+    }
+    //contenedor de productos pagina de archivo
+    ul.products{
+        padding: 40px 0 0 0;
+        //Producto especifico
+        li.product{
+            margin-bottom: 20px;
+            width: 13%;
+            display: inline-block;
+            vertical-align: top;
+            *display: inline;
+            *zoom: 1;
+            @include MQ(SM){
+                width: 45%;
+            }
+            @include MQ(L){
+                margin-bottom: 5px;
+            }
+            @include MQ(XL){
+                margin-bottom: 0;
+            }
+            a.button{// ajax boton anadir al carrito
+                display: none;
+            }
+            a.woocommerce-LoopProduct-link{
+                &:hover {
+                    h3,h2{
+                        opacity: 1;
+                        color: $gris-claro;
+                        }
+                    }
+                //Span aviso de oferta
+                span.onsale{
+                }
+                //Span de precios
+                span.price{
+                    display: none;
+                    text-align: center;
+                    //Precio de descuento
+                    del{
+                    }
+                    //Precio a pagar
+                    ins{
+                    }
+                    //Estos span estan dentro de las etiquetas del e ins anteriores
+                    span.woocommerce-Price-amount{
+                        span.woocommerce-Price-currencySymbol{
+                            margin-right: 8px;
+                        }
+                    }
+                }
+                //Nombre del producto
+                h3,h2{
+                    position: relative;
+                    top: -15px;
+                    text-align: center;
+                    width: 100%;
+                    transition: .3s ease-in-out all;
+                    padding: 0;
+                    margin: 0;
+                    opacity: 0;
+                    @media handheld{ opacity: 1;}
+                    .touch{ opacity: 1;}
+                    @include MQ(SM){
+                        font-size: 1.2em;
+                        opacity: 1;
+                    }
+                    @include MQ(XL){
+                        font-size: 1.4em;
+                        top: -25px;
+                    }
+                    font-size: 1.06em;
+                }
+                //imagen del producto
+                img.attachment-shop_catalog{
+                    padding: 20px;
+                    @include MQ(L){
+                        padding: 10px;
+                    }
+                    @include MQ(XL){
+                        padding: 30px;
+                    }
+                }
+            }
+        }
+    }
+    //Paginacion
+    nav.woocommerce-pagination{
+        margin: 40px 0 30px 0;
+        ul.page-numbers{
+            li{
+                span,a{
+                    @include MQ(SM){
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+//Todos los botones de woo
+.woocommerce button.button{
+    font-weight: 400;
+}

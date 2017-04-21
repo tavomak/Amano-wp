@@ -1,0 +1,37 @@
+        //Pagina single de productos
+.single.single-product {
+    //Conetenedor de woocommerce
+    .woocommerce-content-cam {
+        //SKU
+        .product_meta {
+            display: none;
+        }
+        //Datos del producto
+        div.product div.summary {
+            margin: 50px 0 0 0;
+            @include MQ(SM) {
+                text-align: center;
+            }
+            form {
+                width: 200px;
+                @include MQ(SM) {
+                    //text-align: center;
+                    margin: 0 auto;
+                }
+                .quantity {
+                    .qty {
+                        height: 30px;
+                    }
+                }
+                .button {
+                    background: $azul-cam;
+                    transition: ease-in-out 0.3s all;
+                    border-radius: 0;
+                    &:hover {
+                        background: $rosa-cam;
+                    }
+                }
+            }
+        }
+    }
+}

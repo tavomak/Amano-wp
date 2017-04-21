@@ -21,9 +21,9 @@
 
 @font-face {
   font-family: 'fira-regular';
-  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/firasans-regular-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#svgFontName") format("svg");
+  src: url("../fonts/firasans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/firasans-regular-webfont.woff2") format("woff2"), url("../fonts/firasans-regular-webfont.woff") format("woff"), url("../fonts/firasans-regular-webfont.ttf") format("truetype"), url("../fonts/firasans-regular-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 
 @font-face {
@@ -49,9 +49,9 @@
 
 @font-face {
   font-family: 'fira-regular';
-  src: url("../fonts/OpenSans-Regular-webfont.eot");
+  src: url("../fonts/firasans-regular-webfont.eot");
   /* IE9 Compat Modes */
-  src: url("../fonts/OpenSans-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-webfont.woff") format("woff"), url("../fonts/OpenSans-Regular-webfont.ttf") format("truetype"), url("../fonts/OpenSans-Regular-webfont.svg#svgFontName") format("svg");
+  src: url("../fonts/firasans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/firasans-regular-webfont.woff2") format("woff2"), url("../fonts/firasans-regular-webfont.woff") format("woff"), url("../fonts/firasans-regular-webfont.ttf") format("truetype"), url("../fonts/firasans-regular-webfont.svg#svgFontName") format("svg");
   /* Legacy iOS */ }
 
 .wrapper-loader {

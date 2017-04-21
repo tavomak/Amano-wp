@@ -1,0 +1,15 @@
+.pp_pic_holder.pp_woocommerce {
+  overflow-x: visible; }
+
+div.pp_woocommerce a.pp_expand {
+  left: .5em !important; }
+
+div.pp_woocommerce .pp_close {
+  right: .5em !important; }
+
+.pp_gallery {
+  margin-top: -20px; }
+  .pp_gallery ul {
+    height: 100%; }
+    .pp_gallery ul a {
+      height: 100%; }
