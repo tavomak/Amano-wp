@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <?php tha_html_before(); ?>
 <html class="no-js">
     <head>
@@ -19,6 +19,7 @@
         You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
     </div>
     <![endif]-->
+
         <div class="wrapper-loader">
     <!--       <div class="preloader sk-cube"></div>-->
             <div class="sk-cube-grid">
@@ -28,52 +29,6 @@
             </div>
         </div>
 
-        <div class="barra-iconos-top">
-            <div class="container">
-                <div class="col-sm-6 col-sm-offset-6">
-                    <ul class="nav nav-pills pull-right">
-                        <li class="icon-session" role="presentation">
-                           <?php
-                            global $current_user;
-                            get_currentuserinfo();
-                            if (is_user_logged_in()){
-                                //echo get_avatar( $current_user->ID, 64 );
-                                 echo '<a href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'"> hola ' . $current_user->user_login . '</a>';
-                            }else{
-                                echo'<a href="'.get_permalink( get_option('woocommerce_myaccount_page_id') ).'">inicio de sesión</a>';
-                            }
-                            ?>
-                        </li>
-
-                        <li>
-                           <?php
-                            global $woocommerce;
-                            $cart_url = $woocommerce->cart->get_cart_url();
-                            if ( class_exists( 'WooCommerce' ) ) {
-                                // Si woocommerce exsiste
-                                $cartUrl = wc_get_cart_url();
-                                $cart_contents_count = WC()->cart->get_cart_contents_count();
-
-                                if ($cart_contents_count !== 0) {
-                                    // Si articulos en el carrito muestra el numero y el monto
-                                    echo '<a class="cart-cuenta" href="'.$cartUrl.'">';
-                                    echo '<span class="numero-cuenta">'.sprintf ( _n( '%d', '%d', $cart_contents_count ), $cart_contents_count ).'</span>';
-                                    echo ' ';
-                                    echo WC()->cart->get_cart_total();
-                                    echo '</a>';
-                                }else{
-                                    echo '<div class="icon-cart hidden-xs" role="presentation"><a href="'.$cart_url.'">carrito</a><div>';
-                                }
-                            }
-                            ?>
-
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <hr class="hr-entre-nav">
-
         <div id="logo-principal" class="text-center">
            <h1 class="text-center">
                <a href="<?php echo home_url('/'); ?>">
@@ -82,7 +37,7 @@
            </h1>
        </div>
 
-        <nav class="navbar navbar-default navbar-static-top navbar-upper">
+        <nav class="navbar navbar-default navbar-static-top navbar-upper nav-principal-cam">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-upper"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>

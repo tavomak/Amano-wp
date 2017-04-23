@@ -81,3 +81,12 @@ hr{
 a{
     color:$azul-cam;
 }
+
+.contacto-visible{
+    display: none;
+}
+.nav-principal-cam{
+    .contacto-visible{
+        display: block;
+    }
+}

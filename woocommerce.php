@@ -8,7 +8,7 @@ Plantilla base donde se carga woocommerce.
 
 <div class="container-fluid">
     <div class="woocommerce-content-cam">
-        <?php woocommerce_breadcrumb(); ?>
+        <?php get_template_part('includes/breadcrumb'); ?>
         <?php woocommerce_content(); ?>
     </div>
 </div>
