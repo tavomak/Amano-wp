@@ -72,7 +72,7 @@ function woo_remove_product_tabs( $tabs ) {
     unset( $tabs['additional_information'] );  	// Remove the additional information tab
 
     return $tabs;
-}
+}/*
 //Ajaxfi cart
 add_filter('add_to_cart_fragments', 'woocommerce_header_add_to_cart_fragment');
 
@@ -98,7 +98,7 @@ function woocommerce_header_add_to_cart_fragment( $fragments ) {
 
 	return $fragments;
 
-}
+}*/
 
 // Numero de productos relacionados
 add_filter( 'woocommerce_output_related_products_args', 'themename_related_products_count' );

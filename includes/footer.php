@@ -9,7 +9,7 @@
                         <h3 class="modal-tittle text-center">Contacto</h3> </div>
                     <div class="modal-body">
                         <div>
-                            <?php echo do_shortcode( '[contact-form-7 id="52" title="Formulario de contacto 1"]' ); ?>
+                            <?php echo do_shortcode( '[contact-form-7 id="11" title="Formulario de contacto 1"]' ); ?>
                         </div>
                     </div>
                 </div>

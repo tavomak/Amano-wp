@@ -194,7 +194,7 @@ a {
       .navbar .nav-menu-primary-container .navbar-nav li {
         cursor: pointer; }
       .navbar .nav-menu-primary-container .navbar-nav a {
-        font-size: 18px; }
+        font-size: 16px; }
         .navbar .nav-menu-primary-container .navbar-nav a:hover {
           color: #e22980; }
 
@@ -217,7 +217,8 @@ a {
     .barra-iconos-top ul li a:hover {
       color: #e22980;
       background: transparent; }
-  .barra-iconos-top ul .icon-session a:before, .barra-iconos-top ul .icon-cart a:before {
+  .barra-iconos-top ul .icon-session a:before,
+  .barra-iconos-top ul .icon-cart a:before {
     content: "";
     display: block;
     position: absolute;
@@ -432,6 +433,37 @@ hr {
   .site-footer .footer-estela {
     background: white;
     padding: 20px 0 0 0; }
+
+.woocommerce button.button,
+a.button {
+  font-weight: 400 !important; }
+
+.woocommerce input.button.alt,
+a.checkout-button.button.alt.wc-forward {
+  background: #008d94;
+  transition: ease-in-out 0.3s all;
+  border-radius: 0;
+  color: white;
+  font-weight: 400; }
+  .woocommerce input.button.alt:hover,
+  a.checkout-button.button.alt.wc-forward:hover {
+    background: #e22980;
+    color: white; }
+
+.woocommerce-checkout #payment div.payment_box {
+  background: none; }
+
+div.instacontainer {
+  text-transform: capitalize; }
+  div.instacontainer div {
+    padding: 4px 0 0 0; }
+  div.instacontainer .copy {
+    margin: 24px 0 10px 0; }
+
+.woocommerce-checkout #payment ul.payment_methods li img {
+  position: inherit;
+  margin: 0 auto;
+  padding: 0; }
 
 /*.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
 margin: 0 2.8% 2.992em 0;

@@ -10,34 +10,38 @@ div.pp_woocommerce a.pp_expand {
 div.pp_woocommerce .pp_close {
     right: .5em !important;
 }
+
 .pp_gallery {
     margin-top: -20px;
-    ul{
+    ul {
         height: 100%;
-        a{
+        a {
             height: 100%;
         }
     }
 }
+
 //Pagina single de productos
 .single.single-product {
     //Conetenedor de woocommerce
     .woocommerce-content-cam {
         //Page single - Div de imagenes de producto
-        div.images {
+        div.imagenes {
             a.woocommerce-main-image {
-                display: block;
-                width: 60%;
                 margin: 0 auto;
-                @include MQ(S) {
-                    width: 80%;
-                }
+                max-width: 460px;
+                @include MQ(S) {}
             }
-            div.thumbnails {
-                width: 60%;
-                margin: 0 auto;
-                @include MQ(S) {
-                    width: 80%;
+            div.thumb {
+                padding: 0;
+                a {
+                    width: 100%;
+                    margin: 0;
+                    float: none;
+                    @include MQ(SM) {
+                        width: 33%;
+                        float: left;
+                    }
                 }
             }
         }

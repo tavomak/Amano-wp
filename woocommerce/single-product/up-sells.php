@@ -43,9 +43,9 @@ $woocommerce_loop['columns'] = apply_filters( 'woocommerce_up_sells_columns', $c
 
 if ( $products->have_posts() ) : ?>
 
-	<div class="up-sells upsells products">
+	<div class="up-sells upsells products col-sm-8 col-md-6 col-lg-6">
 
-		<b><?php _e( 'Textura', 'woocommerce' ) ?></b>
+		<small><?php _e( 'También disponible en:', 'woocommerce' ) ?></small>
 
 		<?php woocommerce_product_loop_start(); ?>
 

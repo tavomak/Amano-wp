@@ -1,41 +1,40 @@
-.navbar{
+.navbar {
     font-family: $title-regular;
     border: 0;
     margin: 0;
-    .navbar-header{
-        .navbar-toggle{
+    .navbar-header {
+        .navbar-toggle {
             width: 100%;
             margin: 0 auto;
-            .icon-bar{
+            .icon-bar {
                 margin: 0 auto;
                 max-height: 4px;
                 margin-bottom: 4px;
             }
         }
     }
-    .nav-menu-primary-container{
+    .nav-menu-primary-container {
         display: table;
         margin: 0 auto;
-        .navbar-nav{
-            @include MQ(MXL){
-            }
+        .navbar-nav {
+            @include MQ(MXL) {}
             text-align: center;
-            li{
+            li {
                 cursor: pointer;
-                }
-                a{
-                    font-size: 18px;
-                    &:hover{
-                        color: $rosa-cam;
-                    }
+            }
+            a {
+                font-size: 16px;
+                &:hover {
+                    color: $rosa-cam;
                 }
             }
+        }
     }
 }
 
 #logo-principal {
-    h1{
-        @include MQ(MXL){
+    h1 {
+        @include MQ(MXL) {
             margin-top: 0;
         }
     }
@@ -44,25 +43,26 @@
 .barra-iconos-top {
     padding: 10px 0 0 0;
     display: block;
-    ul{
-        li{
-            a{
+    ul {
+        li {
+            a {
                 transition: .3s ease-in-out all;
                 font-family: $title-regular;
                 color: $gris-claro;
                 padding: 0 12px 0 40px;
                 line-height: 32px;
-                background: transparent ;
+                background: transparent;
                 font-size: 14px;
                 text-transform: capitalize;
-                &:hover{
+                &:hover {
                     color: $rosa-cam;
                     background: transparent;
                 }
             }
         }
-        .icon-session a, .icon-cart a{
-            &:before{
+        .icon-session a,
+        .icon-cart a {
+            &:before {
                 content: "";
                 display: block;
                 position: absolute;
@@ -73,14 +73,13 @@
                 padding: 2px;
                 transition: .3s ease-in-out all;
             }
-
         }
-        .cart-cuenta{
+        .cart-cuenta {
             padding: 0;
-            .woocommerce-Price-currencySymbol{
+            .woocommerce-Price-currencySymbol {
                 margin: 0 5px 0 0;
             }
-            .numero-cuenta{
+            .numero-cuenta {
                 display: inline-block;
                 width: 30px;
                 height: 30px;
@@ -89,31 +88,31 @@
                 text-align: center;
                 transition: .3s ease-in-out all;
             }
-            &:hover .numero-cuenta{
+            &:hover .numero-cuenta {
                 background: $azul-cam;
                 color: $white;
                 border: 1px solid $white;
             }
         }
-        .icon-session{
-            a{
-                &:before{
+        .icon-session {
+            a {
+                &:before {
                     background: url('../img/usuario-icono.png') center no-repeat;
                     background-size: contain;
                 }
-                &:hover:before{
+                &:hover:before {
                     background: url('../img/usuario-icono-hover.png') center no-repeat;
                     background-size: contain;
                 }
             }
         }
-        .icon-cart{
-            a{
-                &:before{
+        .icon-cart {
+            a {
+                &:before {
                     background: url('../img/carrito-icono.png') center no-repeat;
                     background-size: contain;
                 }
-                &:hover:before{
+                &:hover:before {
                     background: url('../img/carrito-icono-hover.png') center no-repeat;
                     background-size: contain;
                 }
@@ -121,6 +120,8 @@
         }
     }
 }
+
+
 /*
 HOVERNAV
 ========
@@ -129,26 +130,28 @@ This works only for screen sizes larger than phones.
 
 If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/bst-plus.js
 */
+
 @media (min-width: 768px) {
-  .navbar-nav .open ul {
-    display: none
-  }
-  .navbar-default .navbar-nav > .open > a,
-  .navbar-default .navbar-nav > .open > a:hover,
-  .navbar-default .navbar-nav > .open > a:focus {
-    color: #555;
-    background: none
-  }
-  .navbar-inverse .navbar-nav > .open > a,
-  .navbar-inverse .navbar-nav > .open > a:hover,
-  .navbar-inverse .navbar-nav > .open > a:focus {
-    color: #969696;
-    background: none
-  }
-  .navbar-nav .hovernav:hover > .dropdown-menu {
-    display: block
-  }
+    .navbar-nav .open ul {
+        display: none
+    }
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        color: #555;
+        background: none
+    }
+    .navbar-inverse .navbar-nav > .open > a,
+    .navbar-inverse .navbar-nav > .open > a:hover,
+    .navbar-inverse .navbar-nav > .open > a:focus {
+        color: #969696;
+        background: none
+    }
+    .navbar-nav .hovernav:hover > .dropdown-menu {
+        display: block
+    }
 }
+
 
 /*
 MEGANAV
@@ -157,41 +160,45 @@ A simple addition to the dropdown menu (Bootstrap itself is unchanged). When you
 
 If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/bst-plus.js
 */
+
 .mega-menu ul a {
-	color: #666;
+    color: #666;
 }
+
 .mega-menu > ul > li > a {
-	font-weight: bold !important
+    font-weight: bold !important
 }
+
 @media (max-width: 767px) {
-	.has-children ul {
-		display: block !important;
-		margin-left: 15px
-	}
+    .has-children ul {
+        display: block !important;
+        margin-left: 15px
+    }
 }
+
 @media (min-width: 768px) {
-	.dropdown.mega-menu {
-		position: static;
-	}
-	.mega-menu > .dropdown-menu {
-		left: 0;
-		right: 0;
-		overflow-x: auto
-	}
-	.mega-menu > ul > li {
-	  display:table-cell;
-	}
-	.mega-menu > ul ul {
-		position: relative;
-		display: block !important;
-		border: 0;
-		border-radius: 0;
-		box-shadow: none;
-		padding: 0
-	}
-	.dropdown-menu li {
-		border-right: 1px solid #e7e7e7
-	}
+    .dropdown.mega-menu {
+        position: static;
+    }
+    .mega-menu > .dropdown-menu {
+        left: 0;
+        right: 0;
+        overflow-x: auto
+    }
+    .mega-menu > ul > li {
+        display: table-cell;
+    }
+    .mega-menu > ul ul {
+        position: relative;
+        display: block !important;
+        border: 0;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0
+    }
+    .dropdown-menu li {
+        border-right: 1px solid #e7e7e7
+    }
     .dropdown-menu li li,
     .dropdown-menu li:last-of-type {
         border-right: 0
@@ -212,13 +219,16 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 .navbar-default .navbar-nav>.active>a:hover {
     background: none;
 }
-.navbar-default .navbar-nav>.active>a{
-    color:none;
+
+.navbar-default .navbar-nav>.active>a {
+    color: none;
 }
-.navbar-default{
+
+.navbar-default {
     background: none;
 }
-hr{
+
+hr {
     margin: 10px 0 10px 0;
     padding: 0;
 }
