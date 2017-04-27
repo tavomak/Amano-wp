@@ -70,6 +70,8 @@ $(document).ready(function() {
     $('.woocommerce-content-cam div.imagenes div.thumbnails').removeClass('thumbnails columns-3').addClass('col-sm-2 col-sm-offset-1 thumb');
     //Agregar wrap a sumario
     $('.woocommerce-content-cam div.sumario').wrapInner('<div class="wrap-sumario"></div>');
+    //ocultar envio gratuito
+    //$('.woocommerce ul#shipping_method li:first-child').addClass('envio-gratuito dn');
 
     /*
 	// Delete this segment if you don't want it, and delete the corresponding CSS in bst.css

@@ -125,3 +125,72 @@ add_action( 'init', 'remove_product_editor' );
 
 // Remove WooCommerce Updater
 remove_action('admin_notices', 'woothemes_updater_notice');
+
+/**
+ * Code goes in functions.php or a custom plugin. Replace XX with the country code your changing.
+ */
+add_filter( 'woocommerce_states', 'custom_woocommerce_states' );
+
+function custom_woocommerce_states( $states ) {
+
+  $states['VE'] = array(
+    'AM' => 'Amazonas',
+    'AN' => 'Anzoátegui',
+    'AP' => 'Apure',
+    'AR' => 'Aragua',
+    'BA' => 'Barinas',
+    'CA' => 'Carabobo',
+    'CO' => 'Cojedes',
+    'DA' => 'Delta Amacuro',
+    'DC' => 'Distrito Capital',
+    'FA' => 'Falcón',
+    'GU' => 'Guárico',
+    'LA' => 'Lara',
+    'ME' => 'Mérida',
+    'MI' => 'Miranda',
+    'MO' => 'Monagas',
+    'NE' => 'Nueva Esparta',
+    'PO' => 'Portuguesa',
+    'SU' => 'Sucre',
+    'TA' => 'Táchira',
+    'TR' => 'Trujillo',
+    'VA' => 'Vargas',
+    'YA' => 'Yaracuy',
+    'ZU' => 'Zulia'
+  );
+
+  return $states;
+}
+/*add_filter( 'wc_city_select_cities', 'my_cities' );
+function my_cities( $cities ) {
+    $cities['AM'] = array(
+        'AM' => array(
+            'Barquisimeto',
+            'Cabudare'
+        ),
+        'AN' => array(
+            'City' ,
+            'City'
+        )
+);
+return $cities;
+}*/
+add_filter( 'woocommerce_default_address_fields' , 'custom_override_default_postcode_field' );
+function custom_override_default_postcode_field( $address_fields ) {
+    // Your postcodes array
+    $postcode_array = array(
+        'opt1' => "001122",
+        'opt2' => "112200",
+        'opt3' => "334400"
+    );
+    $address_fields['postcode']['type'] = 'select';
+    $address_fields['postcode']['options'] = $postcode_array;
+
+    return $address_fields;
+}
+add_filter( 'woocommerce_checkout_fields' , 'bbloomer_remove_billing_postcode_checkout' );
+
+function bbloomer_remove_billing_postcode_checkout( $fields ) {
+  unset($fields['billing']['billing_postcode']);
+  return $fields;
+}
