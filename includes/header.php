@@ -32,7 +32,7 @@
         <div id="logo-principal" class="text-center">
            <h1 class="text-center">
                <a href="<?php echo home_url('/'); ?>">
-                   <img src="<?php bloginfo('template_directory'); ?>/assets/img/CAMLogo.png" alt="Fundación Telema">
+                   <img src="<?php bloginfo('template_directory'); ?>/assets/img/CAMLogo.png" alt="Calzados a mano">
                </a>
            </h1>
        </div>
