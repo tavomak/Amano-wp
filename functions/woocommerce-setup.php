@@ -194,3 +194,51 @@ function bbloomer_remove_billing_postcode_checkout( $fields ) {
   unset($fields['billing']['billing_postcode']);
   return $fields;
 }
+/**
+ * Add store location select dropdown in checkout page
+ **/
+add_filter( 'woocommerce_checkout_fields' , 'custom_store_pickup_field');
+
+function custom_store_pickup_field( $fields ) {
+      $fields['shipping']['store_pickup'] = array(
+
+          'type'     => 'select',
+          'options'  => array(
+              'option_1' => 'Option 1 text',
+              'option_2' => 'Option 2 text',
+              'option_3' => 'Option 2 text'
+          ),
+          'label'     => __('Store Pick Up Location', 'woocommerce'),
+          'required'  => false,
+          'class'     => array('store-pickup form-row-wide'),
+          'clear'     => true
+      );
+
+     return $fields;
+}
+/**
+ * Update the order meta with store location pickup value
+ **/
+add_action( 'woocommerce_checkout_update_order_meta', 'store_pickup_field_update_order_meta' );
+function store_pickup_field_update_order_meta( $order_id ) {
+    if ( $_POST[ 'store_pickup' ] )
+        update_post_meta( $order_id, 'pickUpLocation', esc_attr( $_POST[ 'store_pickup' ] ) );
+}
+/**
+ * Add the field to order emails
+ **/
+add_filter('woocommerce_email_order_meta_keys', 'my_woocommerce_email_order_meta_keys');
+
+function my_woocommerce_email_order_meta_keys( $keys ) {
+    $keys['envio a'] = 'pickUpLocation';
+    return $keys;
+}
+
+// removes (free) from free shipping methods
+
+add_filter( 'woocommerce_cart_shipping_method_full_label', 'remove_free_label', 10, 2 );
+
+function remove_free_label($full_label, $method) {
+$full_label = str_replace("(Free)","",$full_label);
+return $full_label;
+}

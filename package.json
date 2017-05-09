@@ -1,0 +1,16 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Theme calzados a mano wordpress",
+  "main": "n",
+  "scripts": {
+    "test": "n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "\u0016https://github.com/tavomak/Amano-wp"
+  },
+  "author": "Gustavo Rivero",
+  "license": "ISC",
+  "keywords": []
+}
