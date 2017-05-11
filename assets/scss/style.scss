@@ -1,4 +1,4 @@
-@import 'bourbon'; // http://bourbon.io/
+@import "node_modules/bourbon/app/assets/stylesheets/bourbon";//bourbon
 @import 'partials/_media'; // Media Queries MQ(s,m,l,xl)
 @import 'partials/_mixins'; // centrado vertical/horizontal y fallback fuentes
 @import 'partials/_variables'; // colores, tipos de letra y personalizados
@@ -8,7 +8,3 @@
 @import 'layouts/contacto';
 @import 'layouts/footer';
 @import 'layouts//woocommerce/carrito';
-/*.woocommerce ul.products li.product, .woocommerce-page ul.products li.product {
-margin: 0 2.8% 2.992em 0;
-width: 17.55%;
-}*/

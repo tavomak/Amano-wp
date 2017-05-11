@@ -1,16 +1,26 @@
 {
-  "name": "y",
+  "name": "Calzados A mano",
   "version": "1.0.0",
   "description": "Theme calzados a mano wordpress",
-  "main": "n",
+  "main": "",
   "scripts": {
-    "test": "n"
+    "test": ""
   },
   "repository": {
     "type": "git",
-    "url": "\u0016https://github.com/tavomak/Amano-wp"
+    "url": "https://github.com/tavomak/Amano-wp"
   },
-  "author": "Gustavo Rivero",
-  "license": "ISC",
-  "keywords": []
+  "author": "Gustavo Rivero / Lorena Marquéz",
+  "license": "GNU",
+  "keywords": [],
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.1.2",
+    "node-bourbon": "^4.2.8"
+  }
 }
