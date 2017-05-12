@@ -1,65 +1,73 @@
-$(document).ready(function() {
+$(document).ready(function () {
 
     //Función que remueve el precargador una vez cargados todos los elementos de la pagina
-    $(window).on('load', function() {
-        $('.wrapper-loader').fadeOut('slow',function(){$(this).remove();});
+    $(window).on('load', function () {
+        $('.wrapper-loader').fadeOut('slow', function () {
+            $(this).remove();
+        });
     });
 
     // Adding Bootstrap classes to the Comments stuff
-	$(".commentlist li").addClass("panel panel-default");
-	$(".comment-reply-link").addClass("btn btn-default");
+    $(".commentlist li").addClass("panel panel-default");
+    $(".comment-reply-link").addClass("btn btn-default");
 
-  	// HOVERNAV - navbar dropdown on hover.
-	// Uses jQuery Media Query - see http://www.sitepoint.com/javascript-media-queries/
-	var mq = window.matchMedia('(min-width: 768px)');
-	if (mq.matches) {
-		$('ul.navbar-nav > li').addClass('hovernav');
-	} else {
-		$('ul.navbar-nav > li').removeClass('hovernav');
-	};
-  	// The addClass/removeClass also needs to be triggered on page resize <=> 768px
-	function WidthChange(mq) {
-		if (mq.matches) {
-			$('ul.navbar-nav > li').addClass('hovernav');
-		} else {
-			$('ul.navbar-nav > li').removeClass('hovernav');
-		}
-	};
-	if (matchMedia) {
-		var mq = window.matchMedia('(min-width: 768px)');
-		mq.addListener(WidthChange);
-		WidthChange(mq);
-	}
-	// Remove dropdowns "data-toggle" for screens >= 768, and restore for small screens after resize.
-	// (Delete this if you don't need it. It is only here because some people find that if they have
-	// a highly complicated mega-menu, their grand-child links disappear if they click the parent link.)
-	if ($(window).width() >= 768) {
-		$('.hovernav .dropdown-toggle').removeAttr('data-toggle');
-	}
-	$(window).resize(function () {
-	if ($(window).width() < 768 ) {
-		if (!$('.hovernav .dropdown-toggle').attr('data-toggle')) {
-			$('.hovernav .dropdown-toggle').attr('data-toggle', 'dropdown');
-		}
-	} else {
-		$('.hovernav .dropdown-toggle').removeAttr('data-toggle');
-	}
-	});
 
-	// Restore "clickable parent links" in navbar
-	//$('.hovernav a').click(function () {
-	//	window.location = this.href;
-	//});
+    // HOVERNAV - navbar dropdown on hover.
+    // Uses jQuery Media Query - see http://www.sitepoint.com/javascript-media-queries/
+    var mq = window.matchMedia('(min-width: 768px)');
+    if (mq.matches) {
+        $('ul.navbar-nav > li').addClass('hovernav');
+    }
+    else {
+        $('ul.navbar-nav > li').removeClass('hovernav');
+    };
 
-	/*//MEGANAV - allows GRAND-CHILD links to be displayed in a mega-menu on screens larger than phones.
-	$('.navbar').addClass('meganav');
-	$('.meganav .dropdown-menu .dropdown-menu').parent().addClass('has-children').parents('li').addClass('dropdown mega-menu');
+    // The addClass/removeClass also needs to be triggered on page resize <=> 768px
+    function WidthChange(mq) {
+        if (mq.matches) {
+            $('ul.navbar-nav > li').addClass('hovernav');
+        }
+        else {
+            $('ul.navbar-nav > li').removeClass('hovernav');
+        }
+    };
 
-	// Forms
-	$('select, input[type=text], input[type=email], input[type=password], textarea').addClass('form-control');
-	$('input[type=submit]').addClass('btn btn-primary');*/
+    if (matchMedia) {
+        var mq = window.matchMedia('(min-width: 768px)');
+        mq.addListener(WidthChange);
+        WidthChange(mq);
+    }
 
-  	// WOOCOMMERCE restyling
+    // Remove dropdowns "data-toggle" for screens >= 768, and restore for small screens after resize.
+    // (Delete this if you don't need it. It is only here because some people find that if they have
+    // a highly complicated mega-menu, their grand-child links disappear if they click the parent link.)
+    if ($(window).width() >= 768) {
+        $('.hovernav .dropdown-toggle').removeAttr('data-toggle');
+    }
+    $(window).resize(function () {
+        if ($(window).width() < 768) {
+            if (!$('.hovernav .dropdown-toggle').attr('data-toggle')) {
+                $('.hovernav .dropdown-toggle').attr('data-toggle', 'dropdown');
+            }
+        }
+        else {
+            $('.hovernav .dropdown-toggle').removeAttr('data-toggle');
+        }
+    });
+
+
+    // Restore "clickable parent links" in navbar
+    //$('.hovernav a').click(function () {
+    //	window.location = this.href;
+    //});
+    /*//MEGANAV - allows GRAND-CHILD links to be displayed in a mega-menu on screens larger than phones.
+    $('.navbar').addClass('meganav');
+    $('.meganav .dropdown-menu .dropdown-menu').parent().addClass('has-children').parents('li').addClass('dropdown mega-menu');
+
+    // Forms
+    $('select, input[type=text], input[type=email], input[type=password], textarea').addClass('form-control');
+    $('input[type=submit]').addClass('btn btn-primary');*/
+    // WOOCOMMERCE restyling
     //AGREGAR CONTENEDORES BOOTSTRAP A LAYOUT DE WOO
     $('.woocommerce div.product').addClass('container-fluid').wrapInner('<article class="row"></article>');
     //Agregar columnas a secciones
@@ -72,7 +80,6 @@ $(document).ready(function() {
     $('.woocommerce-content-cam div.sumario').wrapInner('<div class="wrap-sumario"></div>');
     //ocultar envio gratuito
     //$('.woocommerce ul#shipping_method li:first-child').addClass('envio-gratuito dn');
-
     /*
 	// Delete this segment if you don't want it, and delete the corresponding CSS in bst.css
 	$('div.woocommerce').wrapInner('<article></article>');
@@ -91,5 +98,4 @@ $(document).ready(function() {
 	$('.woocommerce input[type=submit]').removeClass().addClass('btn btn-primary').css({height: 34});
 	$('.woocommerce input[name=proceed]').removeClass().addClass('btn btn-success');
     */
-
 });
