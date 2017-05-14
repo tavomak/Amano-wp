@@ -256,6 +256,7 @@ function add_after_summary($parent_cat_ID) {
         $cats_array[] = $term->term_id;
         $args = array(
             'post_type' => 'product',
+            'category' => $term->name,
             'posts_per_page' => 20,
             'no_found_rows' => 1,
             'post_status' => 'publish',
@@ -263,11 +264,11 @@ function add_after_summary($parent_cat_ID) {
                 array(
                     'taxonomy' => 'product_cat',
                     'field' => 'id',
-                    'terms' => $cats_array
+                    'terms' => $cats_array,
+                    'include_children' => false
                 )
             ),
-            'post__not_in' => array( $postid ),
-            'exclude' => $postid
+            'post__not_in' => array( $postid )// Evita que el producto actual aparezca en los resultados
         );
 
         $products= new WP_Query( $args );
@@ -278,14 +279,20 @@ function add_after_summary($parent_cat_ID) {
 
                      while ( $products->have_posts() ) : $products->the_post();
 
-                        echo the_category();
+
                         $image = get_field('textura');
 
                         if( !empty($image) ):
 
-                            //foreach ( $terms as $term )'.$term->name.'
-
                             echo '<a href="'.get_the_permalink().'"><img src="'. $image['url'].'" alt="'.$image['alt'].'"/></a>';
+                            /*echo '<p>'.$term->term_id.'</p>';
+                            echo '<p>'.$term->name.'</p>';
+                            echo '<p>'.$term->slug.'</p>';
+                            echo '<p>'.$term->trem_group.'</p>';
+                            echo '<p>'.$term->term_taxonomy_id.'</p>';
+                            echo '<p>'.$term->taxonomy.'</p>';
+                            echo '<p>'.$term->parent.'</p>';
+                            echo '<p>'.$term->count.'</p>';*/
 
                         endif;
 
