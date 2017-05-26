@@ -19,7 +19,7 @@ function cam_wp_widgets_init() {
         'name' => __( 'Woo-h-widget', 'cam-wp' ),
         'id' => 'woo-horizontal-widget-area',
         'description' => __( 'The woocommerce widget area', 'cam-wp' ),
-        'before_widget' => '<section class="%1$s %2$s">',
+        'before_widget' => '<section class="%1$s %2$s col-sm-4">',
         'after_widget' => '</section>',
         'before_title' => '<h4>',
         'after_title' => '</h4>',

@@ -44,11 +44,16 @@ Un-comment the next two lines of code if you want to use WordPress's onboard jQu
 
   	wp_register_script('modernizr', get_template_directory_uri() . '/assets/js/modernizr-2.8.3.min.js', false, null, false);
   	wp_register_script('bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.min.js', false, null, true);
-	wp_register_script('cam-wp-js', get_template_directory_uri() . '/assets/js/main-dist.js', false, null, true);
 
 	wp_enqueue_script('bootstrap-js');
 	wp_enqueue_script('modernizr');
-	wp_enqueue_script('cam-wp-js');
+
+	wp_register_script('cam-wp-js', get_template_directory_uri() . '/assets/js/main-dist.js', false, null, true);
+	$script_data = array(
+        'template_directory_uri' => get_template_directory_uri()
+    );
+    wp_localize_script('tlm-est-js', 'my_data', $script_data );
+    wp_enqueue_script('cam-wp-js');
 
     if ( class_exists( 'WooCommerce' ) ) {
     // Si woocommerce exsiste cargar estilos

@@ -11,6 +11,17 @@ $(document).ready(function () {
     $(".commentlist li").addClass("panel panel-default");
     $(".comment-reply-link").addClass("btn btn-default");
 
+    /*$('#shipping_state').change(function() {
+        location.reload();
+    });*/
+    /*$(function() {
+
+        $("#shipping_state").on("change", function(e) {
+           e.stopPropagation();
+           location.reload();
+        });
+
+    });*/
 
     // HOVERNAV - navbar dropdown on hover.
     // Uses jQuery Media Query - see http://www.sitepoint.com/javascript-media-queries/
