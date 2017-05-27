@@ -1,0 +1,61 @@
+.woocommerce-content-cam {
+  .term-description {
+    color: #a7a7a7;
+    font-size: 0.92em;
+    display: none;
+  }
+}
+
+.woo_user_nav{
+  &__ul{
+    list-style-type: none;
+  }
+  &__li{
+    width: 49%;
+    display: inline-block;
+  }
+}
+.cart_count{
+  .woocommerce-Price-currencySymbol {
+    color: rebeccapurple;
+    font-size: 0.92em;
+    margin: 0 5px 0 5px;
+  }
+}
+
+.current_user__link,
+.cart_count__link{
+  &::before {
+    content: "";
+    display: block;
+    float: 'left';
+    left: 0;
+    top: 0;
+    width: 22px;
+    height: 22px;
+    padding: 4px;
+    transition: .3s ease-in-out all;
+  }
+}
+
+.current_user__link{
+  &:before {
+    background: url('../img/usuario-icono.png') center no-repeat;
+    background-size: contain;
+  }
+  &:hover:before {
+    background: url('../img/usuario-icono-hover.png') center no-repeat;
+    background-size: contain;
+  }
+}
+
+.cart_count__link {
+  &:before {
+    background: url('../img/carrito-icono.png') center no-repeat;
+    background-size: contain;
+  }
+  &:hover:before {
+    background: url('../img/carrito-icono-hover.png') center no-repeat;
+    background-size: contain;
+  }
+}

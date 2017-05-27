@@ -62,8 +62,8 @@
   /* Legacy iOS */
 }
 
-/* line 3, assets/scss/modules/loader.scss */
-.wrapper-loader {
+/* line 3, assets/scss/components/_loader.scss */
+.cd-loader {
   position: fixed;
   left: 0;
   top: 0;
@@ -75,8 +75,8 @@
   color: #2f3238;
 }
 
-/* line 15, assets/scss/modules/loader.scss */
-.sk-cube-grid {
+/* line 15, assets/scss/components/_loader.scss */
+.cd-loader__grid {
   width: 100px;
   height: 100px;
   position: absolute;
@@ -84,305 +84,205 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
 }
 
-/* line 24, assets/scss/modules/loader.scss */
-.sk-cube {
+/* line 25, assets/scss/components/_loader.scss */
+.cd-loader__item {
   width: 100%;
   height: 100%;
   background: #fff url(../img/footwear.svg) no-repeat center center;
-  -webkit-animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
-  animation: sk-cubeGridScaleDelay 1.3s infinite ease-in-out;
+  -webkit-animation: cd-loaderScaleDelay 1.3s infinite ease-in-out;
+          animation: cd-loaderScaleDelay 1.3s infinite ease-in-out;
 }
 
-/* line 32, assets/scss/modules/loader.scss */
-.sk-cube-grid .sk-cube1 {
-  -webkit-animation-delay: 0.2s;
-  animation-delay: 0.2s;
-}
-
-@-webkit-keyframes sk-cubeGridScaleDelay {
+@-webkit-keyframes cd-loaderScaleDelay {
   0%,
   70%,
   100% {
     -webkit-transform: scale3D(1, 1, 1);
-    transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
   }
   35% {
     -webkit-transform: scale3D(0.5, 0.5, 1);
-    transform: scale3D(0.5, 0.5, 1);
+            transform: scale3D(0.5, 0.5, 1);
   }
 }
 
-@keyframes sk-cubeGridScaleDelay {
+@keyframes cd-loaderScaleDelay {
   0%,
   70%,
   100% {
     -webkit-transform: scale3D(1, 1, 1);
-    transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
   }
   35% {
-    -webkit-transform: scale3D(0, 0.5, 1);
-    transform: scale3D(0.5, 0.5, 1);
+    -webkit-transform: scale3D(0.5, 0.5, 1);
+            transform: scale3D(0.5, 0.5, 1);
   }
 }
 
-/*/-----------------------------------------------------Global styles-------------------html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-/* HTML5 display-role reset for older browsers */
-/* line 21, assets/scss/layouts/global.scss */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, main {
+/*/--------------------Global styles-------------------*/
+/* line 4, assets/scss/base/_base.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
   display: block;
 }
 
-/* line 26, assets/scss/layouts/global.scss */
-html, body {
+/* line 19, assets/scss/base/_base.scss */
+html,
+body {
   height: 100%;
   margin: 0;
 }
 
-/* line 30, assets/scss/layouts/global.scss */
+/* line 25, assets/scss/base/_base.scss */
 body {
   font-family: "fira-regular", sans-serif;
   color: #2f3238;
 }
 
-/* line 34, assets/scss/layouts/global.scss */
-h1, h2 {
+/* line 30, assets/scss/base/_base.scss */
+h1,
+h2 {
   font-family: "montserrat-light", sans-serif;
 }
 
-/* line 39, assets/scss/layouts/global.scss */
-blockquote, q {
+/* line 35, assets/scss/base/_base.scss */
+blockquote,
+q {
   quotes: none;
 }
 
-/* line 42, assets/scss/layouts/global.scss */
-blockquote:before, blockquote:after,
-q:before, q:after {
+/* line 40, assets/scss/base/_base.scss */
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
 
-/* line 47, assets/scss/layouts/global.scss */
+/* line 48, assets/scss/base/_base.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 52, assets/scss/layouts/global.scss */
-*, *::after, *::before {
+/* line 54, assets/scss/base/_base.scss */
+*,
+*::after,
+*::before {
   box-sizing: border-box !important;
 }
 
-/* line 59, assets/scss/layouts/global.scss */
-a, a:hover {
+/* line 61, assets/scss/base/_base.scss */
+a,
+a:hover {
   text-decoration: none;
 }
 
-/* line 62, assets/scss/layouts/global.scss */
+/* line 66, assets/scss/base/_base.scss */
 .dn {
   display: none !important;
 }
 
-/* line 66, assets/scss/layouts/global.scss */
+/* line 71, assets/scss/base/_base.scss */
 .fl {
   float: left !important;
 }
 
-/* line 69, assets/scss/layouts/global.scss */
+/* line 75, assets/scss/base/_base.scss */
 .fr {
   float: right;
 }
 
-/* line 72, assets/scss/layouts/global.scss */
+/* line 79, assets/scss/base/_base.scss */
 .fn {
   float: none;
 }
 
-/* line 75, assets/scss/layouts/global.scss */
+/* line 83, assets/scss/base/_base.scss */
 .cb {
   clear: both;
 }
 
-/* line 81, assets/scss/layouts/global.scss */
+/* line 87, assets/scss/base/_base.scss */
+hr {
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
+/* line 92, assets/scss/base/_base.scss */
 a {
   color: #008d94;
 }
 
-/* line 85, assets/scss/layouts/global.scss */
-.contacto-visible {
-  display: none;
-}
-
-/* line 89, assets/scss/layouts/global.scss */
-.nav-principal-cam .contacto-visible {
-  display: block;
-}
-
-/* line 1, assets/scss/layouts/nav.scss */
+/* line 1, assets/scss/layout/_nav.scss */
 .navbar {
   font-family: "montserrat-light", sans-serif;
   border: 0;
   margin: 0;
 }
 
-/* line 6, assets/scss/layouts/nav.scss */
+/* line 6, assets/scss/layout/_nav.scss */
 .navbar .navbar-header .navbar-toggle {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 9, assets/scss/layouts/nav.scss */
+/* line 9, assets/scss/layout/_nav.scss */
 .navbar .navbar-header .navbar-toggle .icon-bar {
   margin: 0 auto;
   max-height: 4px;
   margin-bottom: 4px;
 }
 
-/* line 16, assets/scss/layouts/nav.scss */
+/* line 16, assets/scss/layout/_nav.scss */
 .navbar .nav-menu-primary-container {
   display: table;
   margin: 0 auto;
 }
 
-/* line 19, assets/scss/layouts/nav.scss */
+/* line 19, assets/scss/layout/_nav.scss */
 .navbar .nav-menu-primary-container .navbar-nav {
   text-align: center;
 }
 
-/* line 22, assets/scss/layouts/nav.scss */
+/* line 22, assets/scss/layout/_nav.scss */
 .navbar .nav-menu-primary-container .navbar-nav li {
   cursor: pointer;
 }
 
-/* line 25, assets/scss/layouts/nav.scss */
+/* line 25, assets/scss/layout/_nav.scss */
 .navbar .nav-menu-primary-container .navbar-nav a {
   font-size: 16px;
 }
 
-/* line 27, assets/scss/layouts/nav.scss */
+/* line 27, assets/scss/layout/_nav.scss */
 .navbar .nav-menu-primary-container .navbar-nav a:hover {
   color: #e22980;
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 36, assets/scss/layouts/nav.scss */
-  #logo-principal h1 {
+  /* line 36, assets/scss/layout/_nav.scss */
+  .logo-principal h1 {
     margin-top: 0;
   }
 }
 
-/*
-HOVERNAV
-========
-A simple addition to the dropdown menu (Bootstrap itself is unchanged). Navbar dropdowns appear on hover.
-This works only for screen sizes larger than phones.
-
-If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/bst-plus.js
-*/
-@media (min-width: 768px) {
-  /* line 53, assets/scss/layouts/nav.scss */
-  .navbar-nav .open ul {
-    display: none;
-  }
-  /* line 56, assets/scss/layouts/nav.scss */
-  .navbar-default .navbar-nav > .open > a,
-  .navbar-default .navbar-nav > .open > a:hover,
-  .navbar-default .navbar-nav > .open > a:focus {
-    color: #555;
-    background: none;
-  }
-  /* line 62, assets/scss/layouts/nav.scss */
-  .navbar-inverse .navbar-nav > .open > a,
-  .navbar-inverse .navbar-nav > .open > a:hover,
-  .navbar-inverse .navbar-nav > .open > a:focus {
-    color: #969696;
-    background: none;
-  }
-  /* line 68, assets/scss/layouts/nav.scss */
-  .navbar-nav .hovernav:hover > .dropdown-menu {
-    display: block;
-  }
-}
-
-/*
-MEGANAV
-=======
-A simple addition to the dropdown menu (Bootstrap itself is unchanged). When you add GRAND-CHILD links in the navbar: on screens larger than phones, Meganav will transform the dropdown into a mega-menu, with child-links displayed as menu-column heads (in bold).
-
-If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/bst-plus.js
-*/
-/* line 82, assets/scss/layouts/nav.scss */
-.mega-menu ul a {
-  color: #666;
-}
-
-/* line 86, assets/scss/layouts/nav.scss */
-.mega-menu > ul > li > a {
-  font-weight: bold !important;
-}
-
-@media (max-width: 767px) {
-  /* line 91, assets/scss/layouts/nav.scss */
-  .has-children ul {
-    display: block !important;
-    margin-left: 15px;
-  }
-}
-
-@media (min-width: 768px) {
-  /* line 98, assets/scss/layouts/nav.scss */
-  .dropdown.mega-menu {
-    position: static;
-  }
-  /* line 101, assets/scss/layouts/nav.scss */
-  .mega-menu > .dropdown-menu {
-    left: 0;
-    right: 0;
-    overflow-x: auto;
-  }
-  /* line 106, assets/scss/layouts/nav.scss */
-  .mega-menu > ul > li {
-    display: table-cell;
-  }
-  /* line 109, assets/scss/layouts/nav.scss */
-  .mega-menu > ul ul {
-    position: relative;
-    display: block !important;
-    border: 0;
-    border-radius: 0;
-    box-shadow: none;
-    padding: 0;
-  }
-  /* line 117, assets/scss/layouts/nav.scss */
-  .dropdown-menu li {
-    border-right: 1px solid #e7e7e7;
-  }
-  /* line 120, assets/scss/layouts/nav.scss */
-  .dropdown-menu li li,
-  .dropdown-menu li:last-of-type {
-    border-right: 0;
-  }
-}
-
-/* line 126, assets/scss/layouts/nav.scss */
+/* line 43, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:focus,
 .navbar-default .navbar-nav > .active > a:hover {
@@ -390,7 +290,7 @@ If you don't want this, delete this segment of the CSS and delete the correspond
   box-shadow: none;
 }
 
-/* line 133, assets/scss/layouts/nav.scss */
+/* line 50, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .active > a,
@@ -399,29 +299,33 @@ If you don't want this, delete this segment of the CSS and delete the correspond
   background: none;
 }
 
-/* line 141, assets/scss/layouts/nav.scss */
+/* line 58, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-nav > .active > a {
   color: none;
 }
 
-/* line 145, assets/scss/layouts/nav.scss */
+/* line 62, assets/scss/layout/_nav.scss */
 .navbar-default {
   background: none;
 }
 
-/* line 149, assets/scss/layouts/nav.scss */
-hr {
-  margin: 10px 0 10px 0;
-  padding: 0;
+/* line 66, assets/scss/layout/_nav.scss */
+.contacto-visible {
+  display: none;
 }
 
-/* line 2, assets/scss/layouts/contacto.scss */
+/* line 70, assets/scss/layout/_nav.scss */
+.nav-principal-cam .contacto-visible {
+  display: block;
+}
+
+/* line 2, assets/scss/layout/_contact.scss */
 .contacto #modalbox {
   border-radius: 0;
   opacity: 0.96;
 }
 
-/* line 7, assets/scss/layouts/contacto.scss */
+/* line 7, assets/scss/layout/_contact.scss */
 .contacto #social-media ul {
   list-style: none;
   margin: 0 auto;
@@ -429,23 +333,23 @@ hr {
   display: block;
 }
 
-/* line 12, assets/scss/layouts/contacto.scss */
+/* line 12, assets/scss/layout/_contact.scss */
 .contacto #social-media ul li {
   display: inline-block;
   margin-right: 10px;
 }
 
-/* line 16, assets/scss/layouts/contacto.scss */
+/* line 16, assets/scss/layout/_contact.scss */
 .contacto #social-media ul li a:hover {
   text-decoration: none;
 }
 
-/* line 20, assets/scss/layouts/contacto.scss */
+/* line 20, assets/scss/layout/_contact.scss */
 .contacto #social-media ul li span {
   font-size: 25px;
 }
 
-/* line 30, assets/scss/layouts/contacto.scss */
+/* line 30, assets/scss/layout/_contact.scss */
 .contacto .btn-contacto {
   width: 100%;
   margin: 25px 0;
@@ -454,33 +358,33 @@ hr {
   font-weight: bold;
 }
 
-/* line 37, assets/scss/layouts/contacto.scss */
+/* line 37, assets/scss/layout/_contact.scss */
 .contacto h3 {
   letter-spacing: 5px;
   font-weight: bold;
 }
 
-/* line 43, assets/scss/layouts/contacto.scss */
+/* line 43, assets/scss/layout/_contact.scss */
 .wpcf7 {
   text-align: center;
   margin: 0 auto;
 }
 
-/* line 48, assets/scss/layouts/contacto.scss */
+/* line 48, assets/scss/layout/_contact.scss */
 .wpcf7 textarea,
 .wpcf7 input {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 58, assets/scss/layouts/contacto.scss */
+/* line 58, assets/scss/layout/_contact.scss */
 .wpcf7 {
   margin: 0 auto;
   text-align: center;
   margin: 0 0 25px 0;
 }
 
-/* line 62, assets/scss/layouts/contacto.scss */
+/* line 62, assets/scss/layout/_contact.scss */
 .wpcf7 input[type=submit] {
   margin: 10px;
   width: 200px;
@@ -488,29 +392,29 @@ hr {
   height: 60px;
 }
 
-/* line 68, assets/scss/layouts/contacto.scss */
+/* line 68, assets/scss/layout/_contact.scss */
 .wpcf7 input[type=submit]:hover {
   color: white;
 }
 
-/* line 73, assets/scss/layouts/contacto.scss */
+/* line 73, assets/scss/layout/_contact.scss */
 .wpcf7 textarea,
 .wpcf7 input {
   max-width: 500px;
 }
 
-/* line 78, assets/scss/layouts/contacto.scss */
+/* line 78, assets/scss/layout/_contact.scss */
 #recaptcha {
   width: 304px;
   margin: 0 auto;
 }
 
-/* line 82, assets/scss/layouts/contacto.scss */
+/* line 82, assets/scss/layout/_contact.scss */
 #recaptcha_area, #recaptcha_table {
   margin: 0 auto !important;
 }
 
-/* line 85, assets/scss/layouts/contacto.scss */
+/* line 85, assets/scss/layout/_contact.scss */
 .icon-facebook,
 .icon-twitter,
 .icon-instagram {
@@ -518,64 +422,64 @@ hr {
   zoom: 1.3;
 }
 
-/* line 1, assets/scss/layouts/footer.scss */
+/* line 1, assets/scss/layout/_footer.scss */
 .site-footer {
   background: #f7f7f7;
 }
 
-/* line 3, assets/scss/layouts/footer.scss */
+/* line 3, assets/scss/layout/_footer.scss */
 .site-footer ul {
   list-style-type: none;
   padding: 0;
 }
 
-/* line 8, assets/scss/layouts/footer.scss */
+/* line 8, assets/scss/layout/_footer.scss */
 .site-footer .footer-cam {
   color: #2f3238;
   padding: 20px 0 20px 0;
 }
 
-/* line 9, assets/scss/layouts/footer.scss */
+/* line 9, assets/scss/layout/_footer.scss */
 .site-footer .footer-cam hr {
   border-color: #666666;
 }
 
-/* line 15, assets/scss/layouts/footer.scss */
+/* line 15, assets/scss/layout/_footer.scss */
 .site-footer .footer-cam .footer-nav h5 {
   text-transform: uppercase;
   padding-bottom: 10px;
   font-size: 16px;
 }
 
-/* line 21, assets/scss/layouts/footer.scss */
+/* line 21, assets/scss/layout/_footer.scss */
 .site-footer .footer-cam .footer-nav ul li {
   margin: 10px 0 0 0;
 }
 
-/* line 23, assets/scss/layouts/footer.scss */
+/* line 23, assets/scss/layout/_footer.scss */
 .site-footer .footer-cam .footer-nav ul li a {
   font-family: "montserrat-light", sans-serif;
   font-size: 16px;
 }
 
-/* line 26, assets/scss/layouts/footer.scss */
+/* line 26, assets/scss/layout/_footer.scss */
 .site-footer .footer-cam .footer-nav ul li a:hover {
   color: #e22980;
 }
 
-/* line 34, assets/scss/layouts/footer.scss */
+/* line 34, assets/scss/layout/_footer.scss */
 .site-footer .footer-estela {
   background: white;
   padding: 20px 0 0 0;
 }
 
-/* line 17, assets/scss/layouts/woocommerce/carrito.scss */
+/* line 17, assets/scss/layout/woocommerce/_cart.scss */
 .woocommerce button.button,
 a.button {
   font-weight: 400 !important;
 }
 
-/* line 22, assets/scss/layouts/woocommerce/carrito.scss */
+/* line 22, assets/scss/layout/woocommerce/_cart.scss */
 .woocommerce input.button.alt,
 a.checkout-button.button.alt.wc-forward {
   background: #008d94;
@@ -585,34 +489,34 @@ a.checkout-button.button.alt.wc-forward {
   font-weight: 400;
 }
 
-/* line 29, assets/scss/layouts/woocommerce/carrito.scss */
+/* line 29, assets/scss/layout/woocommerce/_cart.scss */
 .woocommerce input.button.alt:hover,
 a.checkout-button.button.alt.wc-forward:hover {
   background: #e22980;
   color: white;
 }
 
-/* line 35, assets/scss/layouts/woocommerce/carrito.scss */
+/* line 35, assets/scss/layout/woocommerce/_cart.scss */
 .woocommerce-checkout #payment div.payment_box {
   background: none;
 }
 
-/* line 39, assets/scss/layouts/woocommerce/carrito.scss */
+/* line 39, assets/scss/layout/woocommerce/_cart.scss */
 div.instacontainer {
   text-transform: capitalize;
 }
 
-/* line 41, assets/scss/layouts/woocommerce/carrito.scss */
+/* line 41, assets/scss/layout/woocommerce/_cart.scss */
 div.instacontainer div {
   padding: 4px 0 0 0;
 }
 
-/* line 44, assets/scss/layouts/woocommerce/carrito.scss */
+/* line 44, assets/scss/layout/woocommerce/_cart.scss */
 div.instacontainer .copy {
   margin: 24px 0 10px 0;
 }
 
-/* line 49, assets/scss/layouts/woocommerce/carrito.scss */
+/* line 49, assets/scss/layout/woocommerce/_cart.scss */
 .woocommerce-checkout #payment ul.payment_methods li img {
   position: inherit;
   margin: 0 auto;

@@ -26,7 +26,7 @@ gulp.task('sass', function () {
     }))
     .pipe(gulp.dest('./assets/css/'));
 
-    gulp.src('./assets/scss/layouts/woocommerce.scss')
+    gulp.src('./assets/scss/layout/woocommerce.scss')
     .pipe(sass({
         outputStyle: 'expanded',
         sourceComments: true

@@ -1,10 +1,11 @@
+@charset 'UTF-8';
 @import "node_modules/bourbon/app/assets/stylesheets/bourbon";//bourbon
-@import 'partials/_media'; // Media Queries MQ(s,m,l,xl)
-@import 'partials/_mixins'; // centrado vertical/horizontal y fallback fuentes
-@import 'partials/_variables'; // colores, tipos de letra y personalizados
-@import 'modules/loader';
-@import 'layouts/global';
-@import 'layouts/nav';
-@import 'layouts/contacto';
-@import 'layouts/footer';
-@import 'layouts//woocommerce/carrito';
+@import 'utils/_media'; // Media Queries MQ(s,m,l,xl)
+@import 'utils/_mixins'; // centrado vertical/horizontal y fallback fuentes
+@import 'utils/_variables'; // colores, tipos de letra y personalizados
+@import 'components/_loader';
+@import 'base/_base';
+@import 'layout/_nav';
+@import 'layout/_contact';
+@import 'layout/_footer';
+@import 'layout/woocommerce/_cart'; //Carrito, finalizar compra y cuenta son paginas con shortcodes no estan dentro de woocommerce

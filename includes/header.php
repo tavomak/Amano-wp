@@ -20,16 +20,22 @@
     </div>
     <![endif]-->
 
-        <div class="wrapper-loader">
+        <div class="cd-loader">
     <!--       <div class="preloader sk-cube"></div>-->
-            <div class="sk-cube-grid">
-                <div class="sk-cube sk-cube"></div>
+            <div class="cd-loader__grid">
+                <div class="cd-loader__item"></div>
                 <br>
                 <p class="text-center">Cargando...</p>
             </div>
         </div>
 
-        <div id="logo-principal" class="text-center">
+        <?php
+          if (is_woocommerce()){
+            echo get_template_part('includes/breadcrumb');
+          }
+        ?>
+
+        <div class="logo-principal text-center">
            <h1 class="text-center">
                <a href="<?php echo home_url('/'); ?>">
                    <img src="<?php bloginfo('template_directory'); ?>/assets/img/CAMLogo.png" alt="Calzados a mano">
