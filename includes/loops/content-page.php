@@ -10,7 +10,6 @@ The Page Loop
 	<?php tha_entry_before(); ?>
     <article role="article" id="post_<?php the_ID()?>" <?php post_class()?>>
         <header>
-            <h2><?php the_title()?></h2>
             <?php tha_entry_top(); ?>
         </header>
         <?php the_content()?>

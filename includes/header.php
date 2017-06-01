@@ -1,9 +1,9 @@
-<!doctype html>
+<!DOCTYPE html>
 <?php tha_html_before(); ?>
 <html class="no-js">
     <head>
         <?php tha_head_top(); ?>
-        <title><?php wp_title('•', true, 'right'); //bloginfo('name'); ?></title>
+        <title><?php wp_title('|', true, 'right'); //bloginfo('name'); ?></title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,6 +35,23 @@
           }
         ?>
 
+        <div class="modal_reg_pago">
+          <div id="modal_reg_pago" tabindex="-1" role="dialog" class="modal fade">
+              <div role="document" class="modal-dialog modal-lg">
+                  <div id="modalbox" class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" data-dismiss="modal" aria-label="Cerrar" class="close"><span aria-hidden="true">&times;</span></button>
+                          <h3 class="modal-tittle text-center">Registra tu pago</h3> </div>
+                      <div class="modal-body">
+                          <div>
+                              <?php echo do_shortcode( '[contact-form-7 id="802" title="Registrar Pago"]' ); ?>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
         <div class="logo-principal text-center">
            <h1 class="text-center">
                <a href="<?php echo home_url('/'); ?>">
@@ -56,7 +73,7 @@
                                     'menu'              => 'primary',
                                     'theme_location'    => 'primary',
                                     'depth'             => 3,
-                                    'container_class' => 'nav-menu-primary-container',
+                                    //'container_class' => 'nav-menu-primary-container',
                                     'menu_class'        => 'nav navbar-nav text-center',
                                     'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
                                     'walker'            => new wp_bootstrap_navwalker())

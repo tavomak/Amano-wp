@@ -1,9 +1,10 @@
 @charset 'UTF-8';
-@import "node_modules/bourbon/app/assets/stylesheets/bourbon";//bourbon
+@import "node_modules/bourbon/app/assets/stylesheets/bourbon"; //bourbon
 @import 'utils/_media'; // Media Queries MQ(s,m,l,xl)
 @import 'utils/_mixins'; // centrado vertical/horizontal y fallback fuentes
 @import 'utils/_variables'; // colores, tipos de letra y personalizados
 @import 'components/_loader';
+@import 'components/_slides';
 @import 'base/_base';
 @import 'layout/_nav';
 @import 'layout/_contact';

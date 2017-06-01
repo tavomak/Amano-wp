@@ -23,7 +23,7 @@
                 cursor: pointer;
             }
             a {
-                font-size: 16px;
+                font-size: 14px;
                 &:hover {
                     color: $rosa-cam;
                 }
@@ -69,5 +69,82 @@
 .nav-principal-cam{
     .contacto-visible{
         display: block;
+    }
+}
+
+/*
+HOVERNAV
+========
+A simple addition to the dropdown menu (Bootstrap itself is unchanged). Navbar dropdowns appear on hover.
+This works only for screen sizes larger than phones.
+
+If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/bst-plus.js
+*/
+@media (min-width: 768px) {
+  .navbar-nav .open ul {
+    display: none
+  }
+  .navbar-default .navbar-nav > .open > a,
+  .navbar-default .navbar-nav > .open > a:hover,
+  .navbar-default .navbar-nav > .open > a:focus {
+    color: #555;
+    background: none
+  }
+  .navbar-inverse .navbar-nav > .open > a,
+  .navbar-inverse .navbar-nav > .open > a:hover,
+  .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #969696;
+    background: none
+  }
+  .navbar-nav .hovernav:hover > .dropdown-menu {
+    display: block
+  }
+}
+
+/*
+MEGANAV
+=======
+A simple addition to the dropdown menu (Bootstrap itself is unchanged). When you add GRAND-CHILD links in the navbar: on screens larger than phones, Meganav will transform the dropdown into a mega-menu, with child-links displayed as menu-column heads (in bold).
+
+If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/bst-plus.js
+*/
+.mega-menu ul a {
+	color: #666;
+}
+.mega-menu > ul > li > a {
+	font-weight: bold !important
+}
+@media (max-width: 767px) {
+	.has-children ul {
+		display: block !important;
+		margin-left: 15px
+	}
+}
+@media (min-width: 768px) {
+	.dropdown.mega-menu {
+		position: static;
+	}
+	.mega-menu > .dropdown-menu {
+		left: 0;
+		right: 0;
+		overflow-x: auto
+	}
+	.mega-menu > ul > li {
+	  display:table-cell;
+	}
+	.mega-menu > ul ul {
+		position: relative;
+		display: block !important;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		padding: 0
+	}
+	.dropdown-menu li {
+		border-right: 1px solid #e7e7e7
+	}
+    .dropdown-menu li li,
+    .dropdown-menu li:last-of-type {
+        border-right: 0
     }
 }

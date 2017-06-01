@@ -6,13 +6,21 @@
   }
 }
 
+%no-margin{
+  margin: 0;
+  padding: 0;
+}
 .woo_user_nav{
+  @extend %no-margin;
+  padding-top: 5px;
   &__ul{
     list-style-type: none;
   }
   &__li{
-    width: 49%;
+    @extend %no-margin;
+    width: 32%;
     display: inline-block;
+    cursor: pointer;
   }
 }
 .cart_count{
@@ -23,8 +31,10 @@
   }
 }
 
+.register__link,
 .current_user__link,
 .cart_count__link{
+  font-size: 12px;
   &::before {
     content: "";
     display: block;
@@ -33,7 +43,7 @@
     top: 0;
     width: 22px;
     height: 22px;
-    padding: 4px;
+    margin-right: 4px;
     transition: .3s ease-in-out all;
   }
 }

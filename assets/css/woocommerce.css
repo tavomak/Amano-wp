@@ -332,25 +332,45 @@ div.pp_woocommerce .pp_close {
   display: none;
 }
 
-/* line 10, assets/scss/layout/woocommerce/_nav.scss */
+/* line 9, assets/scss/layout/woocommerce/_nav.scss */
+.woo_user_nav, .woo_user_nav__li {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, assets/scss/layout/woocommerce/_nav.scss */
+.woo_user_nav {
+  padding-top: 5px;
+}
+
+/* line 16, assets/scss/layout/woocommerce/_nav.scss */
 .woo_user_nav__ul {
   list-style-type: none;
 }
 
-/* line 13, assets/scss/layout/woocommerce/_nav.scss */
+/* line 19, assets/scss/layout/woocommerce/_nav.scss */
 .woo_user_nav__li {
-  width: 49%;
+  width: 32%;
   display: inline-block;
+  cursor: pointer;
 }
 
-/* line 19, assets/scss/layout/woocommerce/_nav.scss */
+/* line 27, assets/scss/layout/woocommerce/_nav.scss */
 .cart_count .woocommerce-Price-currencySymbol {
   color: rebeccapurple;
   font-size: 0.92em;
   margin: 0 5px 0 5px;
 }
 
-/* line 28, assets/scss/layout/woocommerce/_nav.scss */
+/* line 34, assets/scss/layout/woocommerce/_nav.scss */
+.register__link,
+.current_user__link,
+.cart_count__link {
+  font-size: 12px;
+}
+
+/* line 38, assets/scss/layout/woocommerce/_nav.scss */
+.register__link::before,
 .current_user__link::before,
 .cart_count__link::before {
   content: "";
@@ -360,29 +380,29 @@ div.pp_woocommerce .pp_close {
   top: 0;
   width: 22px;
   height: 22px;
-  padding: 4px;
+  margin-right: 4px;
   transition: .3s ease-in-out all;
 }
 
-/* line 42, assets/scss/layout/woocommerce/_nav.scss */
+/* line 52, assets/scss/layout/woocommerce/_nav.scss */
 .current_user__link:before {
   background: url("../img/usuario-icono.png") center no-repeat;
   background-size: contain;
 }
 
-/* line 46, assets/scss/layout/woocommerce/_nav.scss */
+/* line 56, assets/scss/layout/woocommerce/_nav.scss */
 .current_user__link:hover:before {
   background: url("../img/usuario-icono-hover.png") center no-repeat;
   background-size: contain;
 }
 
-/* line 53, assets/scss/layout/woocommerce/_nav.scss */
+/* line 63, assets/scss/layout/woocommerce/_nav.scss */
 .cart_count__link:before {
   background: url("../img/carrito-icono.png") center no-repeat;
   background-size: contain;
 }
 
-/* line 57, assets/scss/layout/woocommerce/_nav.scss */
+/* line 67, assets/scss/layout/woocommerce/_nav.scss */
 .cart_count__link:hover:before {
   background: url("../img/carrito-icono-hover.png") center no-repeat;
   background-size: contain;
@@ -462,7 +482,7 @@ div.pp_woocommerce .pp_close {
 /* line 51, assets/scss/layout/woocommerce/_single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario h1.product_title {
   font-family: "montserrat-ultralight", sans-serif;
-  font-size: 42px;
+  font-size: 26px;
   font-weight: 400;
 }
 

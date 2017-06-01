@@ -1,0 +1,7 @@
+%no-margin{
+  margin: 0;
+  padding: 0;
+}
+.cd_carousel{
+  @extend %no-margin;
+}
