@@ -17,24 +17,8 @@ gulp.task('sass', function () {
     }))
     .on("error", notify.onError(
         {
-            sound: true,
-            message: 'Error en base SCSS'
-        }
-    ))
-    .pipe(autoprefixer({
-        versions: ['last 2 browsers']
-    }))
-    .pipe(gulp.dest('./assets/css/'));
-
-    gulp.src('./assets/scss/layout/woocommerce.scss')
-    .pipe(sass({
-        outputStyle: 'expanded',
-        sourceComments: true
-    }))
-    .on("error", notify.onError(
-        {
-            sound: true,
-            message: 'Error en woo SCSS'
+          sound: true,
+          title: 'Error de copilación SCSS'
         }
     ))
     .pipe(autoprefixer({

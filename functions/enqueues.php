@@ -55,13 +55,13 @@ Un-comment the next two lines of code if you want to use WordPress's onboard jQu
     wp_localize_script('tlm-est-js', 'my_data', $script_data );
     wp_enqueue_script('cam-wp-js');
 
-    if ( class_exists( 'WooCommerce' ) ) {
+    /*if ( class_exists( 'WooCommerce' ) ) {
     // Si woocommerce exsiste cargar estilos
         if (is_woocommerce()) {
             wp_register_style('woomm', get_template_directory_uri() . '/assets/css/woocommerce-dist.css', false, null);
             wp_enqueue_style('woomm');
         }
-    }
+    }*/
 
 	if (is_singular() && comments_open() && get_option('thread_comments')) {
 		wp_enqueue_script('comment-reply');

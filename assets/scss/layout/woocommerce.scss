@@ -1,8 +1,0 @@
-@import "node_modules/bourbon/app/assets/stylesheets/bourbon";//bourbon
-@import '../utils/_media'; // Media Queries MQ(s,m,l,xl)
-@import '../utils/_mixins'; // centrado vertical/horizontal y fallback fuentes
-@import '../utils/_variables'; // colores, tipos de letra y personalizados
-@import 'woocommerce/_global'; //Estilos globales
-@import 'woocommerce/_gallery'; // Galerias y manejo de imagenes
-@import 'woocommerce/_nav'; //Single de productos
-@import 'woocommerce/_single-product'; //Single de productos
