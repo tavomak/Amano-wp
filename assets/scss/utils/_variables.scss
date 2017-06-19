@@ -1,71 +1,7 @@
-// fonts
-@font-face {
-  font-family: 'montserrat-regular';
-  src: url('../fonts/montserrat-regular-webfont.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/montserrat-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/montserrat-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/montserrat-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/montserrat-regular-webfont.svg#svgFontName') format('svg');
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'montserrat-light';
-  src: url('../fonts/montserrat-light-webfont.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/montserrat-light-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/montserrat-light-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/montserrat-light-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/montserrat-light-webfont.svg#svgFontName') format('svg');
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'montserrat-ultralight';
-  src: url('../fonts/montserrat-ultralight-webfont.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/montserrat-ultralight-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/montserrat-ultralight-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/montserrat-ultralight-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/montserrat-ultralight-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/montserrat-ultralight-webfont.svg#svgFontName') format('svg');
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'fira-regular';
-  src: url('../fonts/firasans-regular-webfont.eot');
-  /* IE9 Compat Modes */
-  src: url('../fonts/firasans-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('../fonts/firasans-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers */
-  url('../fonts/firasans-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers */
-  url('../fonts/firasans-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
-  url('../fonts/firasans-regular-webfont.svg#svgFontName') format('svg');
-  /* Legacy iOS */
-}
-
-$title-bold: (
-  'montserrat-regular',
-  sans-serif
-);
-$title-regular: (
-  'montserrat-light',
-  sans-serif
-);
-$title-light: (
-  'montserrat-ultralight',
-  sans-serif
-);
-$font-regular: (
-  'fira-regular',
-  sans-serif
-);
-
-$regular: 400;
-$bold:700;
+$primary-font: 'Montserrat', sans-serif;
+$font-light: 200;
+$font-bold: 400;
+$font-regular: 300;
 
 // Colores
 $gris-oscuro: #2f3238;

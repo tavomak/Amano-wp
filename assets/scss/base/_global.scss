@@ -1,0 +1,51 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: $primary-font;
+  color: $gris-oscuro;
+}
+
+h1,
+h2 {
+  font-weight: $font-light;
+}
+
+//decoracion---------------------------------------------
+a,
+a:hover {
+  text-decoration: none;
+}
+
+.dn {
+  display: none !important;
+}
+
+//flotantes----------------------------------------------
+.fl {
+  float: left !important;
+}
+
+.fr {
+  float: right;
+}
+
+.fn {
+  float: none;
+}
+
+.cb {
+  clear: both;
+}
+
+hr {
+  margin: 10px 0 10px 0;
+  padding: 0;
+}
+
+a {
+  color: $azul-cam;
+}

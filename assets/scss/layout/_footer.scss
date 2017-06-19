@@ -3,7 +3,6 @@
     ul{
         list-style-type: none;
         padding: 0;
-        li{}
     }
     .footer-cam{
         hr{
@@ -21,7 +20,7 @@
                 li{
                     margin: 10px 0 0 0;
                     a{
-                        font-family: $title-regular;
+                        font-weight: $font-regular;
                         font-size: 16px;
                         &:hover{
                             color: $rosa-cam;

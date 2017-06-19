@@ -1,5 +1,5 @@
-@import 'woocommerce/_global'; //Estilos globales
-@import 'woocommerce/_gallery'; // Galerias y manejo de imagenes
-@import 'woocommerce/_nav'; //Single de productos
-@import 'woocommerce/_single-product'; //Single de productos
-@import 'woocommerce/_cart'; //Carrito, finalizar compra y cuenta son paginas con shortcodes no estan dentro de woocommerce
+@import 'woocommerce/woo-global'; //Estilos globales
+@import 'woocommerce/woo-gallery'; // Galerias y manejo de imagenes
+@import 'woocommerce/woo-nav'; //Single de productos
+@import 'woocommerce/woo-single-product'; //Single de productos
+@import 'woocommerce/woo-cart'; //Carrito, finalizar compra y cuenta son paginas con shortcodes no estan dentro de woocommerce

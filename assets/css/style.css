@@ -1,136 +1,11 @@
-@font-face {
-  font-family: 'montserrat-regular';
-  src: url("../fonts/montserrat-regular-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat-regular-webfont.ttf") format("truetype"), url("../fonts/montserrat-regular-webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'montserrat-light';
-  src: url("../fonts/montserrat-light-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff"), url("../fonts/montserrat-light-webfont.ttf") format("truetype"), url("../fonts/montserrat-light-webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'montserrat-ultralight';
-  src: url("../fonts/montserrat-ultralight-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/montserrat-ultralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-ultralight-webfont.woff2") format("woff2"), url("../fonts/montserrat-ultralight-webfont.woff") format("woff"), url("../fonts/montserrat-ultralight-webfont.ttf") format("truetype"), url("../fonts/montserrat-ultralight-webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'fira-regular';
-  src: url("../fonts/firasans-regular-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/firasans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/firasans-regular-webfont.woff2") format("woff2"), url("../fonts/firasans-regular-webfont.woff") format("woff"), url("../fonts/firasans-regular-webfont.ttf") format("truetype"), url("../fonts/firasans-regular-webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'montserrat-regular';
-  src: url("../fonts/montserrat-regular-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff"), url("../fonts/montserrat-regular-webfont.ttf") format("truetype"), url("../fonts/montserrat-regular-webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'montserrat-light';
-  src: url("../fonts/montserrat-light-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff"), url("../fonts/montserrat-light-webfont.ttf") format("truetype"), url("../fonts/montserrat-light-webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'montserrat-ultralight';
-  src: url("../fonts/montserrat-ultralight-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/montserrat-ultralight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-ultralight-webfont.woff2") format("woff2"), url("../fonts/montserrat-ultralight-webfont.woff") format("woff"), url("../fonts/montserrat-ultralight-webfont.ttf") format("truetype"), url("../fonts/montserrat-ultralight-webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-}
-
-@font-face {
-  font-family: 'fira-regular';
-  src: url("../fonts/firasans-regular-webfont.eot");
-  /* IE9 Compat Modes */
-  src: url("../fonts/firasans-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/firasans-regular-webfont.woff2") format("woff2"), url("../fonts/firasans-regular-webfont.woff") format("woff"), url("../fonts/firasans-regular-webfont.ttf") format("truetype"), url("../fonts/firasans-regular-webfont.svg#svgFontName") format("svg");
-  /* Legacy iOS */
-}
-
-/* line 3, assets/scss/components/_loader.scss */
-.cd-loader {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1001;
-  width: 100%;
-  height: 100%;
-  overflow: visible;
-  background: #fff;
-  color: #2f3238;
-}
-
-/* line 15, assets/scss/components/_loader.scss */
-.cd-loader__grid {
-  width: 100px;
-  height: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-/* line 25, assets/scss/components/_loader.scss */
-.cd-loader__item {
-  width: 100%;
-  height: 100%;
-  background: #fff url(../img/footwear.svg) no-repeat center center;
-  -webkit-animation: cd-loaderScaleDelay 1.3s infinite ease-in-out;
-          animation: cd-loaderScaleDelay 1.3s infinite ease-in-out;
-}
-
-@-webkit-keyframes cd-loaderScaleDelay {
-  0%,
-  70%,
-  100% {
-    -webkit-transform: scale3D(1, 1, 1);
-            transform: scale3D(1, 1, 1);
-  }
-  35% {
-    -webkit-transform: scale3D(0.5, 0.5, 1);
-            transform: scale3D(0.5, 0.5, 1);
-  }
-}
-
-@keyframes cd-loaderScaleDelay {
-  0%,
-  70%,
-  100% {
-    -webkit-transform: scale3D(1, 1, 1);
-            transform: scale3D(1, 1, 1);
-  }
-  35% {
-    -webkit-transform: scale3D(0.5, 0.5, 1);
-            transform: scale3D(0.5, 0.5, 1);
-  }
-}
-
-/* line 1, assets/scss/components/_slides.scss */
-.cd_carousel, .woo_user_nav, .woo_user_nav__li {
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400");
+/* line 1, assets/scss/utils/_placeholders.scss */
+.woo_user_nav, .woo_user_nav__li, .cd_carousel {
   margin: 0;
   padding: 0;
 }
 
-/*/--------------------Global styles-------------------*/
-/* line 4, assets/scss/base/_base.scss */
+/* line 2, assets/scss/base/_reset.scss */
 article,
 aside,
 details,
@@ -146,32 +21,13 @@ main {
   display: block;
 }
 
-/* line 19, assets/scss/base/_base.scss */
-html,
-body {
-  height: 100%;
-  margin: 0;
-}
-
-/* line 25, assets/scss/base/_base.scss */
-body {
-  font-family: "fira-regular", sans-serif;
-  color: #2f3238;
-}
-
-/* line 30, assets/scss/base/_base.scss */
-h1,
-h2 {
-  font-family: "montserrat-light", sans-serif;
-}
-
-/* line 35, assets/scss/base/_base.scss */
+/* line 17, assets/scss/base/_reset.scss */
 blockquote,
 q {
   quotes: none;
 }
 
-/* line 40, assets/scss/base/_base.scss */
+/* line 22, assets/scss/base/_reset.scss */
 blockquote:before,
 blockquote:after,
 q:before,
@@ -180,64 +36,233 @@ q:after {
   content: none;
 }
 
-/* line 48, assets/scss/base/_base.scss */
+/* line 30, assets/scss/base/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 54, assets/scss/base/_base.scss */
+/* line 36, assets/scss/base/_reset.scss */
 *,
 *::after,
 *::before {
   box-sizing: border-box !important;
 }
 
-/* line 61, assets/scss/base/_base.scss */
+/*@font-face {
+  font-family: 'montserrat-regular';
+  src: url('../fonts/montserrat-regular-webfont.eot');
+  /* IE9 Compat Modes
+  src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8
+  url('../fonts/montserrat-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers
+  url('../fonts/montserrat-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers
+  url('../fonts/montserrat-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS
+  url('../fonts/montserrat-regular-webfont.svg#svgFontName') format('svg');
+  /* Legacy iOS
+}
+
+@font-face {
+  font-family: 'montserrat-light';
+  src: url('../fonts/montserrat-light-webfont.eot');
+  /* IE9 Compat Modes
+  src: url('../fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8
+  url('../fonts/montserrat-light-webfont.woff2') format('woff2'), /* Super Modern Browsers
+  url('../fonts/montserrat-light-webfont.woff') format('woff'), /* Pretty Modern Browsers
+  url('../fonts/montserrat-light-webfont.ttf') format('truetype'), /* Safari, Android, iOS
+  url('../fonts/montserrat-light-webfont.svg#svgFontName') format('svg');
+  /* Legacy iOS
+}
+
+@font-face {
+  font-family: 'montserrat-ultralight';
+  src: url('../fonts/montserrat-ultralight-webfont.eot');
+  /* IE9 Compat Modes
+  src: url('../fonts/montserrat-ultralight-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8
+  url('../fonts/montserrat-ultralight-webfont.woff2') format('woff2'), /* Super Modern Browsers
+  url('../fonts/montserrat-ultralight-webfont.woff') format('woff'), /* Pretty Modern Browsers
+  url('../fonts/montserrat-ultralight-webfont.ttf') format('truetype'), /* Safari, Android, iOS
+  url('../fonts/montserrat-ultralight-webfont.svg#svgFontName') format('svg');
+  /* Legacy iOS
+}
+
+@font-face {
+  font-family: 'fira-regular';
+  src: url('../fonts/firasans-regular-webfont.eot');
+  /* IE9 Compat Modes
+  src: url('../fonts/firasans-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8
+  url('../fonts/firasans-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers
+  url('../fonts/firasans-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers
+  url('../fonts/firasans-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS
+  url('../fonts/firasans-regular-webfont.svg#svgFontName') format('svg');
+  /* Legacy iOS
+}*/
+/* line 1, assets/scss/base/_global.scss */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* line 7, assets/scss/base/_global.scss */
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #2f3238;
+}
+
+/* line 12, assets/scss/base/_global.scss */
+h1,
+h2 {
+  font-weight: 200;
+}
+
+/* line 18, assets/scss/base/_global.scss */
 a,
 a:hover {
   text-decoration: none;
 }
 
-/* line 66, assets/scss/base/_base.scss */
+/* line 23, assets/scss/base/_global.scss */
 .dn {
   display: none !important;
 }
 
-/* line 71, assets/scss/base/_base.scss */
+/* line 28, assets/scss/base/_global.scss */
 .fl {
   float: left !important;
 }
 
-/* line 75, assets/scss/base/_base.scss */
+/* line 32, assets/scss/base/_global.scss */
 .fr {
   float: right;
 }
 
-/* line 79, assets/scss/base/_base.scss */
+/* line 36, assets/scss/base/_global.scss */
 .fn {
   float: none;
 }
 
-/* line 83, assets/scss/base/_base.scss */
+/* line 40, assets/scss/base/_global.scss */
 .cb {
   clear: both;
 }
 
-/* line 87, assets/scss/base/_base.scss */
+/* line 44, assets/scss/base/_global.scss */
 hr {
   margin: 10px 0 10px 0;
   padding: 0;
 }
 
-/* line 92, assets/scss/base/_base.scss */
+/* line 49, assets/scss/base/_global.scss */
 a {
   color: #008d94;
 }
 
+/* line 2, assets/scss/layout/_contact.scss */
+.contacto #modalbox {
+  border-radius: 0;
+  opacity: 0.96;
+}
+
+/* line 7, assets/scss/layout/_contact.scss */
+.contacto #social-media ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+}
+
+/* line 12, assets/scss/layout/_contact.scss */
+.contacto #social-media ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* line 16, assets/scss/layout/_contact.scss */
+.contacto #social-media ul li a:hover {
+  text-decoration: none;
+}
+
+/* line 20, assets/scss/layout/_contact.scss */
+.contacto #social-media ul li span {
+  font-size: 25px;
+}
+
+/* line 30, assets/scss/layout/_contact.scss */
+.contacto .btn-contacto {
+  width: 100%;
+  margin: 25px 0;
+  border-radius: 0;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* line 37, assets/scss/layout/_contact.scss */
+.contacto h3 {
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+/* line 43, assets/scss/layout/_contact.scss */
+.wpcf7 {
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* line 48, assets/scss/layout/_contact.scss */
+.wpcf7 textarea,
+.wpcf7 input {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* line 58, assets/scss/layout/_contact.scss */
+.wpcf7 {
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 0 25px 0;
+}
+
+/* line 62, assets/scss/layout/_contact.scss */
+.wpcf7 input[type=submit] {
+  margin: 10px;
+  width: 200px;
+  border: none;
+  height: 60px;
+}
+
+/* line 68, assets/scss/layout/_contact.scss */
+.wpcf7 input[type=submit]:hover {
+  color: white;
+}
+
+/* line 73, assets/scss/layout/_contact.scss */
+.wpcf7 textarea,
+.wpcf7 input {
+  max-width: 500px;
+}
+
+/* line 78, assets/scss/layout/_contact.scss */
+#recaptcha {
+  width: 304px;
+  margin: 0 auto;
+}
+
+/* line 82, assets/scss/layout/_contact.scss */
+#recaptcha_area, #recaptcha_table {
+  margin: 0 auto !important;
+}
+
+/* line 85, assets/scss/layout/_contact.scss */
+.icon-facebook,
+.icon-twitter,
+.icon-instagram {
+  margin: 0 10px 0 0;
+  zoom: 1.3;
+}
+
 /* line 1, assets/scss/layout/_nav.scss */
 .navbar {
-  font-family: "montserrat-light", sans-serif;
+  font-weight: 300;
   border: 0;
   margin: 0;
 }
@@ -418,109 +443,6 @@ If you don't want this, delete this segment of the CSS and delete the correspond
   }
 }
 
-/* line 2, assets/scss/layout/_contact.scss */
-.contacto #modalbox {
-  border-radius: 0;
-  opacity: 0.96;
-}
-
-/* line 7, assets/scss/layout/_contact.scss */
-.contacto #social-media ul {
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  display: block;
-}
-
-/* line 12, assets/scss/layout/_contact.scss */
-.contacto #social-media ul li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-/* line 16, assets/scss/layout/_contact.scss */
-.contacto #social-media ul li a:hover {
-  text-decoration: none;
-}
-
-/* line 20, assets/scss/layout/_contact.scss */
-.contacto #social-media ul li span {
-  font-size: 25px;
-}
-
-/* line 30, assets/scss/layout/_contact.scss */
-.contacto .btn-contacto {
-  width: 100%;
-  margin: 25px 0;
-  border-radius: 0;
-  font-size: 15px;
-  font-weight: bold;
-}
-
-/* line 37, assets/scss/layout/_contact.scss */
-.contacto h3 {
-  letter-spacing: 5px;
-  font-weight: bold;
-}
-
-/* line 43, assets/scss/layout/_contact.scss */
-.wpcf7 {
-  text-align: center;
-  margin: 0 auto;
-}
-
-/* line 48, assets/scss/layout/_contact.scss */
-.wpcf7 textarea,
-.wpcf7 input {
-  width: 80%;
-  margin: 0 auto;
-}
-
-/* line 58, assets/scss/layout/_contact.scss */
-.wpcf7 {
-  margin: 0 auto;
-  text-align: center;
-  margin: 0 0 25px 0;
-}
-
-/* line 62, assets/scss/layout/_contact.scss */
-.wpcf7 input[type=submit] {
-  margin: 10px;
-  width: 200px;
-  border: none;
-  height: 60px;
-}
-
-/* line 68, assets/scss/layout/_contact.scss */
-.wpcf7 input[type=submit]:hover {
-  color: white;
-}
-
-/* line 73, assets/scss/layout/_contact.scss */
-.wpcf7 textarea,
-.wpcf7 input {
-  max-width: 500px;
-}
-
-/* line 78, assets/scss/layout/_contact.scss */
-#recaptcha {
-  width: 304px;
-  margin: 0 auto;
-}
-
-/* line 82, assets/scss/layout/_contact.scss */
-#recaptcha_area, #recaptcha_table {
-  margin: 0 auto !important;
-}
-
-/* line 85, assets/scss/layout/_contact.scss */
-.icon-facebook,
-.icon-twitter,
-.icon-instagram {
-  margin: 0 10px 0 0;
-  zoom: 1.3;
-}
-
 /* line 1, assets/scss/layout/_footer.scss */
 .site-footer {
   background: #f7f7f7;
@@ -532,70 +454,70 @@ If you don't want this, delete this segment of the CSS and delete the correspond
   padding: 0;
 }
 
-/* line 8, assets/scss/layout/_footer.scss */
+/* line 7, assets/scss/layout/_footer.scss */
 .site-footer .footer-cam {
   color: #2f3238;
   padding: 20px 0 20px 0;
 }
 
-/* line 9, assets/scss/layout/_footer.scss */
+/* line 8, assets/scss/layout/_footer.scss */
 .site-footer .footer-cam hr {
   border-color: #666666;
 }
 
-/* line 15, assets/scss/layout/_footer.scss */
+/* line 14, assets/scss/layout/_footer.scss */
 .site-footer .footer-cam .footer-nav h5 {
   text-transform: uppercase;
   padding-bottom: 10px;
   font-size: 16px;
 }
 
-/* line 21, assets/scss/layout/_footer.scss */
+/* line 20, assets/scss/layout/_footer.scss */
 .site-footer .footer-cam .footer-nav ul li {
   margin: 10px 0 0 0;
 }
 
-/* line 23, assets/scss/layout/_footer.scss */
+/* line 22, assets/scss/layout/_footer.scss */
 .site-footer .footer-cam .footer-nav ul li a {
-  font-family: "montserrat-light", sans-serif;
+  font-weight: 300;
   font-size: 16px;
 }
 
-/* line 26, assets/scss/layout/_footer.scss */
+/* line 25, assets/scss/layout/_footer.scss */
 .site-footer .footer-cam .footer-nav ul li a:hover {
   color: #e22980;
 }
 
-/* line 34, assets/scss/layout/_footer.scss */
+/* line 33, assets/scss/layout/_footer.scss */
 .site-footer .footer-estela {
   background: white;
   padding: 20px 0 0 0;
 }
 
-/* line 2, assets/scss/layout/woocommerce/_global.scss */
+/* line 2, assets/scss/layout/woocommerce/_woo-global.scss */
 .upsells.products {
   clear: both;
 }
 
-/* line 6, assets/scss/layout/woocommerce/_global.scss */
+/* line 6, assets/scss/layout/woocommerce/_woo-global.scss */
 .related.products {
   clear: both;
   text-align: center;
 }
 
-/* line 13, assets/scss/layout/woocommerce/_global.scss */
+/* line 13, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce {
-  padding: 0 80px 0 80px;
+  padding: 80px 0 80px 0;
 }
 
-/* line 14, assets/scss/layout/woocommerce/_global.scss */
+/* line 14, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce .woocommerce-message,
 .woocommerce .woocommerce-error,
 .woocommerce .woocommerce-info {
   color: #666666;
 }
 
-/* line 18, assets/scss/layout/woocommerce/_global.scss */
+/* line 18, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce .woocommerce-message a,
 .woocommerce .woocommerce-error a,
 .woocommerce .woocommerce-info a {
@@ -606,7 +528,7 @@ If you don't want this, delete this segment of the CSS and delete the correspond
   font-weight: 400;
 }
 
-/* line 24, assets/scss/layout/woocommerce/_global.scss */
+/* line 24, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce .woocommerce-message a:hover,
 .woocommerce .woocommerce-error a:hover,
 .woocommerce .woocommerce-info a:hover {
@@ -615,79 +537,79 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 13, assets/scss/layout/woocommerce/_global.scss */
+  /* line 13, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce {
-    padding: 0 10px 0 10px;
+    padding: 10px 0 10px 0;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
-  /* line 13, assets/scss/layout/woocommerce/_global.scss */
+  /* line 13, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce {
-    padding: 0 20px 0 20px;
+    padding: 20px 0 20px 0;
   }
 }
 
-/* line 37, assets/scss/layout/woocommerce/_global.scss */
+/* line 37, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce label {
   color: #2f3238;
 }
 
-/* line 40, assets/scss/layout/woocommerce/_global.scss */
+/* line 40, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce .woocommerce-breadcrumb {
   margin: 0;
   font-size: 1.1em;
 }
 
-/* line 44, assets/scss/layout/woocommerce/_global.scss */
+/* line 44, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce .woocommerce-breadcrumb a:hover {
   color: #e22980;
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 40, assets/scss/layout/woocommerce/_global.scss */
+  /* line 40, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce .woocommerce-breadcrumb {
     text-align: center;
   }
 }
 
-/* line 53, assets/scss/layout/woocommerce/_global.scss */
+/* line 53, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce .woocommerce-result-count {
   color: #a7a7a7;
   font-size: 0.92em;
 }
 
-/* line 58, assets/scss/layout/woocommerce/_global.scss */
+/* line 58, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce .wapl-flash {
   top: -35px;
 }
 
 @media only screen and (min-width: 1281px) {
-  /* line 58, assets/scss/layout/woocommerce/_global.scss */
+  /* line 58, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce .wapl-flash {
     top: -15px;
   }
 }
 
-/* line 63, assets/scss/layout/woocommerce/_global.scss */
+/* line 63, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce .wapl-flash .woocommerce-advanced-product-label.product-label {
   border-color: #e3e3e3;
   width: 55px;
   height: 55px;
 }
 
-/* line 70, assets/scss/layout/woocommerce/_global.scss */
+/* line 70, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce .page-title,
 .woocommerce .woocommerce-ordering {
   display: none;
 }
 
-/* line 75, assets/scss/layout/woocommerce/_global.scss */
+/* line 75, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce ul.products {
   padding: 40px 0 0 0;
 }
 
-/* line 78, assets/scss/layout/woocommerce/_global.scss */
+/* line 78, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce ul.products li.product {
   margin-bottom: 20px;
   width: 13%;
@@ -698,50 +620,50 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 78, assets/scss/layout/woocommerce/_global.scss */
+  /* line 78, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce ul.products li.product {
     width: 45%;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
-  /* line 78, assets/scss/layout/woocommerce/_global.scss */
+  /* line 78, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce ul.products li.product {
     margin-bottom: 5px;
   }
 }
 
 @media only screen and (min-width: 1281px) {
-  /* line 78, assets/scss/layout/woocommerce/_global.scss */
+  /* line 78, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce ul.products li.product {
     margin-bottom: 0;
   }
 }
 
-/* line 94, assets/scss/layout/woocommerce/_global.scss */
+/* line 94, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce ul.products li.product a.button {
   display: none;
 }
 
-/* line 100, assets/scss/layout/woocommerce/_global.scss */
+/* line 100, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link:hover h3,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link:hover h2 {
   opacity: 1;
   color: #666666;
 }
 
-/* line 109, assets/scss/layout/woocommerce/_global.scss */
+/* line 109, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link span.price {
   display: none;
   text-align: center;
 }
 
-/* line 118, assets/scss/layout/woocommerce/_global.scss */
+/* line 118, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
   margin-right: 8px;
 }
 
-/* line 124, assets/scss/layout/woocommerce/_global.scss */
+/* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h2 {
   position: relative;
@@ -756,21 +678,21 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 }
 
 @media handheld {
-  /* line 124, assets/scss/layout/woocommerce/_global.scss */
+  /* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h2 {
     opacity: 1;
   }
 }
 
-/* line 137, assets/scss/layout/woocommerce/_global.scss */
+/* line 137, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3 .touch,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h2 .touch {
   opacity: 1;
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 124, assets/scss/layout/woocommerce/_global.scss */
+  /* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h2 {
     font-size: 1.2em;
@@ -779,7 +701,7 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 }
 
 @media only screen and (min-width: 1281px) {
-  /* line 124, assets/scss/layout/woocommerce/_global.scss */
+  /* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h2 {
     font-size: 1.4em;
@@ -787,86 +709,86 @@ If you don't want this, delete this segment of the CSS and delete the correspond
   }
 }
 
-/* line 151, assets/scss/layout/woocommerce/_global.scss */
+/* line 151, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
   padding: 20px;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
-  /* line 151, assets/scss/layout/woocommerce/_global.scss */
+  /* line 151, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
     padding: 10px;
   }
 }
 
 @media only screen and (min-width: 1281px) {
-  /* line 151, assets/scss/layout/woocommerce/_global.scss */
+  /* line 151, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
     padding: 30px;
   }
 }
 
-/* line 164, assets/scss/layout/woocommerce/_global.scss */
+/* line 164, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce nav.woocommerce-pagination {
   margin: 40px 0 30px 0;
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 168, assets/scss/layout/woocommerce/_global.scss */
+  /* line 168, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce nav.woocommerce-pagination ul.page-numbers li span,
   .woocommerce nav.woocommerce-pagination ul.page-numbers li a {
     font-size: 20px;
   }
 }
 
-/* line 180, assets/scss/layout/woocommerce/_global.scss */
+/* line 180, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce button.button,
 a.button {
   font-weight: 400 !important;
 }
 
-/* line 2, assets/scss/layout/woocommerce/_gallery.scss */
+/* line 2, assets/scss/layout/woocommerce/_woo-gallery.scss */
 .pp_pic_holder.pp_woocommerce {
   overflow-x: visible;
 }
 
-/* line 6, assets/scss/layout/woocommerce/_gallery.scss */
+/* line 6, assets/scss/layout/woocommerce/_woo-gallery.scss */
 div.pp_woocommerce a.pp_expand {
   left: .5em !important;
 }
 
-/* line 10, assets/scss/layout/woocommerce/_gallery.scss */
+/* line 10, assets/scss/layout/woocommerce/_woo-gallery.scss */
 div.pp_woocommerce .pp_close {
   right: .5em !important;
 }
 
-/* line 14, assets/scss/layout/woocommerce/_gallery.scss */
+/* line 14, assets/scss/layout/woocommerce/_woo-gallery.scss */
 .pp_gallery {
   margin-top: -20px;
 }
 
-/* line 16, assets/scss/layout/woocommerce/_gallery.scss */
+/* line 16, assets/scss/layout/woocommerce/_woo-gallery.scss */
 .pp_gallery ul {
   height: 100%;
 }
 
-/* line 18, assets/scss/layout/woocommerce/_gallery.scss */
+/* line 18, assets/scss/layout/woocommerce/_woo-gallery.scss */
 .pp_gallery ul a {
   height: 100%;
 }
 
-/* line 30, assets/scss/layout/woocommerce/_gallery.scss */
+/* line 30, assets/scss/layout/woocommerce/_woo-gallery.scss */
 .single.single-product .woocommerce-content-cam div.imagenes a.woocommerce-main-image {
   margin: 0 auto;
   max-width: 460px;
 }
 
-/* line 35, assets/scss/layout/woocommerce/_gallery.scss */
+/* line 35, assets/scss/layout/woocommerce/_woo-gallery.scss */
 .single.single-product .woocommerce-content-cam div.imagenes div.thumb {
   padding: 0;
 }
 
-/* line 37, assets/scss/layout/woocommerce/_gallery.scss */
+/* line 37, assets/scss/layout/woocommerce/_woo-gallery.scss */
 .single.single-product .woocommerce-content-cam div.imagenes div.thumb a {
   width: 100%;
   margin: 0;
@@ -874,58 +796,58 @@ div.pp_woocommerce .pp_close {
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 37, assets/scss/layout/woocommerce/_gallery.scss */
+  /* line 37, assets/scss/layout/woocommerce/_woo-gallery.scss */
   .single.single-product .woocommerce-content-cam div.imagenes div.thumb a {
     width: 33%;
     float: left;
   }
 }
 
-/* line 2, assets/scss/layout/woocommerce/_nav.scss */
+/* line 2, assets/scss/layout/woocommerce/_woo-nav.scss */
 .woocommerce-content-cam .term-description {
   color: #a7a7a7;
   font-size: 0.92em;
   display: none;
 }
 
-/* line 9, assets/scss/layout/woocommerce/_nav.scss */
-.cd_carousel, .woo_user_nav, .woo_user_nav__li {
+/* line 9, assets/scss/layout/woocommerce/_woo-nav.scss */
+.woo_user_nav, .woo_user_nav__li, .cd_carousel {
   margin: 0;
   padding: 0;
 }
 
-/* line 13, assets/scss/layout/woocommerce/_nav.scss */
+/* line 13, assets/scss/layout/woocommerce/_woo-nav.scss */
 .woo_user_nav {
   padding-top: 5px;
 }
 
-/* line 16, assets/scss/layout/woocommerce/_nav.scss */
+/* line 16, assets/scss/layout/woocommerce/_woo-nav.scss */
 .woo_user_nav__ul {
   list-style-type: none;
 }
 
-/* line 19, assets/scss/layout/woocommerce/_nav.scss */
+/* line 19, assets/scss/layout/woocommerce/_woo-nav.scss */
 .woo_user_nav__li {
   width: 32%;
   display: inline-block;
   cursor: pointer;
 }
 
-/* line 27, assets/scss/layout/woocommerce/_nav.scss */
+/* line 27, assets/scss/layout/woocommerce/_woo-nav.scss */
 .cart_count .woocommerce-Price-currencySymbol {
   color: rebeccapurple;
   font-size: 0.92em;
   margin: 0 5px 0 5px;
 }
 
-/* line 34, assets/scss/layout/woocommerce/_nav.scss */
+/* line 34, assets/scss/layout/woocommerce/_woo-nav.scss */
 .register__link,
 .current_user__link,
 .cart_count__link {
   font-size: 12px;
 }
 
-/* line 38, assets/scss/layout/woocommerce/_nav.scss */
+/* line 38, assets/scss/layout/woocommerce/_woo-nav.scss */
 .register__link::before,
 .current_user__link::before,
 .cart_count__link::before {
@@ -940,162 +862,161 @@ div.pp_woocommerce .pp_close {
   transition: .3s ease-in-out all;
 }
 
-/* line 52, assets/scss/layout/woocommerce/_nav.scss */
+/* line 52, assets/scss/layout/woocommerce/_woo-nav.scss */
 .current_user__link:before {
   background: url("../img/usuario-icono.png") center no-repeat;
   background-size: contain;
 }
 
-/* line 56, assets/scss/layout/woocommerce/_nav.scss */
+/* line 56, assets/scss/layout/woocommerce/_woo-nav.scss */
 .current_user__link:hover:before {
   background: url("../img/usuario-icono-hover.png") center no-repeat;
   background-size: contain;
 }
 
-/* line 63, assets/scss/layout/woocommerce/_nav.scss */
+/* line 63, assets/scss/layout/woocommerce/_woo-nav.scss */
 .cart_count__link:before {
   background: url("../img/carrito-icono.png") center no-repeat;
   background-size: contain;
 }
 
-/* line 67, assets/scss/layout/woocommerce/_nav.scss */
+/* line 67, assets/scss/layout/woocommerce/_woo-nav.scss */
 .cart_count__link:hover:before {
   background: url("../img/carrito-icono-hover.png") center no-repeat;
   background-size: contain;
 }
 
-/* line 6, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 6, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam .product_meta {
   display: none;
 }
 
-/* line 9, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 9, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.related {
   color: #666666;
   padding: 32px 0 0 0;
 }
 
-/* line 12, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 12, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.related h2 {
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
 }
 
-/* line 16, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 16, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.related ul.products {
   padding: 0;
 }
 
-/* line 20, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 20, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.upsells {
   color: #666666;
   padding: 32px 0 0 0;
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 20, assets/scss/layout/woocommerce/_single-product.scss */
+  /* line 20, assets/scss/layout/woocommerce/_woo-single-product.scss */
   .single.single-product .woocommerce-content-cam div.upsells {
     text-align: center;
   }
 }
 
-/* line 27, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 27, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.upsells ul.products {
   padding: 10px 0 0 0;
 }
 
-/* line 29, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 29, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.upsells ul.products a {
   padding: 15px 5px 5px 5px;
   position: relative;
 }
 
-/* line 32, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 32, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.upsells ul.products a img {
   transition: all .4s ease-in-out;
   padding: 5px;
 }
 
-/* line 36, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 36, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.upsells ul.products a:hover img {
   -webkit-transform: scale(1.2) rotate(-180deg);
-  transform: scale(1.2) rotate(-180deg);
+          transform: scale(1.2) rotate(-180deg);
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 43, assets/scss/layout/woocommerce/_single-product.scss */
+  /* line 43, assets/scss/layout/woocommerce/_woo-single-product.scss */
   .single.single-product .woocommerce-content-cam div.product div.sumario {
     text-align: center;
     clear: both;
   }
 }
 
-/* line 49, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 49, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario {
   margin: 40px 0 0 0;
 }
 
-/* line 51, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 51, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario h1.product_title {
-  font-family: "montserrat-ultralight", sans-serif;
   font-size: 26px;
-  font-weight: 400;
+  font-weight: 200;
 }
 
-/* line 57, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 56, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario .price span {
   color: #008d94;
   font-size: 24px;
 }
 
-/* line 60, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 59, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario .price span .woocommerce-Price-currencySymbol {
   margin-right: 10px;
   color: #666666;
   font-size: 18px;
 }
 
-/* line 68, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 67, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario p.stock {
   color: #008d94;
 }
 
-/* line 71, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 70, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario form {
   width: 200px;
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 71, assets/scss/layout/woocommerce/_single-product.scss */
+  /* line 70, assets/scss/layout/woocommerce/_woo-single-product.scss */
   .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario form {
     margin: 0 auto;
   }
 }
 
-/* line 78, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 77, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario form .quantity .qty {
   height: 30px;
 }
 
-/* line 82, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 81, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario form .button {
   background: #008d94;
   transition: ease-in-out 0.3s all;
   border-radius: 0;
 }
 
-/* line 86, assets/scss/layout/woocommerce/_single-product.scss */
+/* line 85, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario form .button:hover {
   background: #e22980;
 }
 
-/* line 17, assets/scss/layout/woocommerce/_cart.scss */
+/* line 17, assets/scss/layout/woocommerce/_woo-cart.scss */
 .woocommerce button.button,
 a.button {
   font-weight: 400 !important;
 }
 
-/* line 22, assets/scss/layout/woocommerce/_cart.scss */
+/* line 22, assets/scss/layout/woocommerce/_woo-cart.scss */
 .woocommerce input.button.alt,
 a.checkout-button.button.alt.wc-forward {
   background: #008d94;
@@ -1105,36 +1026,97 @@ a.checkout-button.button.alt.wc-forward {
   font-weight: 400;
 }
 
-/* line 29, assets/scss/layout/woocommerce/_cart.scss */
+/* line 29, assets/scss/layout/woocommerce/_woo-cart.scss */
 .woocommerce input.button.alt:hover,
 a.checkout-button.button.alt.wc-forward:hover {
   background: #e22980;
   color: white;
 }
 
-/* line 35, assets/scss/layout/woocommerce/_cart.scss */
+/* line 35, assets/scss/layout/woocommerce/_woo-cart.scss */
 .woocommerce-checkout #payment div.payment_box {
   background: none;
 }
 
-/* line 39, assets/scss/layout/woocommerce/_cart.scss */
+/* line 39, assets/scss/layout/woocommerce/_woo-cart.scss */
 div.instacontainer {
   text-transform: capitalize;
 }
 
-/* line 41, assets/scss/layout/woocommerce/_cart.scss */
+/* line 41, assets/scss/layout/woocommerce/_woo-cart.scss */
 div.instacontainer div {
   padding: 4px 0 0 0;
 }
 
-/* line 44, assets/scss/layout/woocommerce/_cart.scss */
+/* line 44, assets/scss/layout/woocommerce/_woo-cart.scss */
 div.instacontainer .copy {
   margin: 24px 0 10px 0;
 }
 
-/* line 49, assets/scss/layout/woocommerce/_cart.scss */
+/* line 49, assets/scss/layout/woocommerce/_woo-cart.scss */
 .woocommerce-checkout #payment ul.payment_methods li img {
   position: inherit;
   margin: 0 auto;
   padding: 0;
+}
+
+/* line 2, assets/scss/components/_loader.scss */
+.cd-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1001;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  background: #fff;
+  color: #2f3238;
+}
+
+/* line 14, assets/scss/components/_loader.scss */
+.cd-loader__grid {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+/* line 24, assets/scss/components/_loader.scss */
+.cd-loader__item {
+  width: 100%;
+  height: 100%;
+  background: #fff url(../img/footwear.svg) no-repeat center center;
+  -webkit-animation: cd-loaderScaleDelay 1.3s infinite ease-in-out;
+          animation: cd-loaderScaleDelay 1.3s infinite ease-in-out;
+}
+
+@-webkit-keyframes cd-loaderScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0.5, 0.5, 1);
+            transform: scale3D(0.5, 0.5, 1);
+  }
+}
+
+@keyframes cd-loaderScaleDelay {
+  0%,
+  70%,
+  100% {
+    -webkit-transform: scale3D(1, 1, 1);
+            transform: scale3D(1, 1, 1);
+  }
+  35% {
+    -webkit-transform: scale3D(0.5, 0.5, 1);
+            transform: scale3D(0.5, 0.5, 1);
+  }
 }

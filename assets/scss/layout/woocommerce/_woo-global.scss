@@ -27,12 +27,12 @@
       }
     }
   }
-  padding:0 80px 0 80px;
+  padding: 80px 0 80px 0;
   @include MQ(SM) {
-    padding: 0 10px 0 10px;
+    padding: 10px 0 10px 0;
   }
   @include MQ(L) {
-    padding: 0 20px 0 20px;
+    padding: 20px 0 20px 0;
   }
   label {
     color: $gris-oscuro;

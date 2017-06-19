@@ -1,12 +1,19 @@
 @charset 'UTF-8';
-@import "node_modules/bourbon/app/assets/stylesheets/bourbon"; //bourbon
-@import 'utils/_media'; // Media Queries MQ(s,m,l,xl)
-@import 'utils/_mixins'; // centrado vertical/horizontal y fallback fuentes
-@import 'utils/_variables'; // colores, tipos de letra y personalizados
-@import 'components/_loader';
-@import 'components/_slides';
-@import 'base/_base';
-@import 'layout/_nav';
-@import 'layout/_contact';
-@import 'layout/_footer';
-@import 'layout/_woocommerce';
+@import "node_modules/bourbon/app/assets/stylesheets/bourbon";
+
+@import 'utils/variables';
+@import 'utils/media';
+@import 'utils/mixins';
+@import 'utils/placeholders';
+
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/global';
+
+@import 'layout/contact';
+@import 'layout/nav';
+@import 'layout/footer';
+@import 'layout/woocommerce';
+
+@import 'components/loader';
+@import 'components/slides';
