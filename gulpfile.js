@@ -5,12 +5,14 @@ var gulp = require('gulp'),
     concat = require('gulp-concat'),//Concatena archivos js (hay ubo para css)
     uglify = require('gulp-uglify'),//Minifica JS
     cleanCSS = require('gulp-clean-css'),//Minifica CSS
-    rename = require("gulp-rename"),//Renombra archivos
-    notify = require("gulp-notify");//Notificaciones
+    rename = require('gulp-rename'),//Renombra archivos
+    notify = require('gulp-notify'),//Notificaciones
+    sourcemaps = require('gulp-sourcemaps');//SourceMaps
 
 
 gulp.task('sass', function () {
     gulp.src('./assets/scss/style.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({
         outputStyle: 'expanded',
         sourceComments: true
@@ -24,18 +26,12 @@ gulp.task('sass', function () {
     .pipe(autoprefixer({
         versions: ['last 2 browsers']
     }))
+    .pipe(sourcemaps.write('.'/*, { mapFile: function(mapFilePath) { return mapFilePath.replace('style.css.map', 'style-dist.css.map');}}*/))
     .pipe(gulp.dest('./assets/css/'));
 });
 
 gulp.task('minify-css', function () {
     gulp.src('./assets/css/style.css')
-    .pipe(cleanCSS())
-    .pipe(rename({
-        suffix: '-dist'
-    }))
-    .pipe(gulp.dest('./assets/css/'))
-    .pipe(browserSync.stream());
-    gulp.src('./assets/css/woocommerce.css')
     .pipe(cleanCSS())
     .pipe(rename({
         suffix: '-dist'
@@ -63,6 +59,8 @@ gulp.task('minify-js', function () {
         onLast: true
     }));
 });
+
+gulp.task('default', ['sass', 'minify-css', 'minify-js']);
 
 gulp.task('watch', function () {
     browserSync.init({

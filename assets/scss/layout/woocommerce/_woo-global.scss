@@ -10,7 +10,14 @@
 
 //Estilos Generales paginas de Archivo
 //contenedor de woocommerce
-.woocommerce {
+.woocommerce-content-cam {
+    padding: 0 80px 0 80px;
+    @include MQ(SM) {
+      padding: 0 10px 0 10px;
+    }
+    @include MQ(L) {
+      padding: 0 20px 0 20px;
+    }
   .woocommerce-message,
   .woocommerce-error,
   .woocommerce-info {
@@ -26,13 +33,6 @@
         color: $white;
       }
     }
-  }
-  padding: 80px 0 80px 0;
-  @include MQ(SM) {
-    padding: 10px 0 10px 0;
-  }
-  @include MQ(L) {
-    padding: 20px 0 20px 0;
   }
   label {
     color: $gris-oscuro;

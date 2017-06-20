@@ -99,60 +99,59 @@ table {
 /* line 1, assets/scss/base/_global.scss */
 html,
 body {
-  height: 100%;
   margin: 0;
 }
 
-/* line 7, assets/scss/base/_global.scss */
+/* line 6, assets/scss/base/_global.scss */
 body {
   font-family: "Montserrat", sans-serif;
   color: #2f3238;
 }
 
-/* line 12, assets/scss/base/_global.scss */
+/* line 11, assets/scss/base/_global.scss */
 h1,
 h2 {
   font-weight: 200;
 }
 
-/* line 18, assets/scss/base/_global.scss */
+/* line 17, assets/scss/base/_global.scss */
 a,
 a:hover {
   text-decoration: none;
 }
 
-/* line 23, assets/scss/base/_global.scss */
+/* line 22, assets/scss/base/_global.scss */
 .dn {
   display: none !important;
 }
 
-/* line 28, assets/scss/base/_global.scss */
+/* line 27, assets/scss/base/_global.scss */
 .fl {
   float: left !important;
 }
 
-/* line 32, assets/scss/base/_global.scss */
+/* line 31, assets/scss/base/_global.scss */
 .fr {
   float: right;
 }
 
-/* line 36, assets/scss/base/_global.scss */
+/* line 35, assets/scss/base/_global.scss */
 .fn {
   float: none;
 }
 
-/* line 40, assets/scss/base/_global.scss */
+/* line 39, assets/scss/base/_global.scss */
 .cb {
   clear: both;
 }
 
-/* line 44, assets/scss/base/_global.scss */
+/* line 43, assets/scss/base/_global.scss */
 hr {
   margin: 10px 0 10px 0;
   padding: 0;
 }
 
-/* line 49, assets/scss/base/_global.scss */
+/* line 48, assets/scss/base/_global.scss */
 a {
   color: #008d94;
 }
@@ -506,21 +505,35 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 }
 
 /* line 13, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce {
-  padding: 80px 0 80px 0;
+.woocommerce-content-cam {
+  padding: 0 80px 0 80px;
 }
 
-/* line 14, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce .woocommerce-message,
-.woocommerce .woocommerce-error,
-.woocommerce .woocommerce-info {
+@media handheld, only screen and (max-width: 768px) {
+  /* line 13, assets/scss/layout/woocommerce/_woo-global.scss */
+  .woocommerce-content-cam {
+    padding: 0 10px 0 10px;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  /* line 13, assets/scss/layout/woocommerce/_woo-global.scss */
+  .woocommerce-content-cam {
+    padding: 0 20px 0 20px;
+  }
+}
+
+/* line 21, assets/scss/layout/woocommerce/_woo-global.scss */
+.woocommerce-content-cam .woocommerce-message,
+.woocommerce-content-cam .woocommerce-error,
+.woocommerce-content-cam .woocommerce-info {
   color: #666666;
 }
 
-/* line 18, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce .woocommerce-message a,
-.woocommerce .woocommerce-error a,
-.woocommerce .woocommerce-info a {
+/* line 25, assets/scss/layout/woocommerce/_woo-global.scss */
+.woocommerce-content-cam .woocommerce-message a,
+.woocommerce-content-cam .woocommerce-error a,
+.woocommerce-content-cam .woocommerce-info a {
   background: #008d94;
   transition: ease-in-out 0.3s all;
   border-radius: 0;
@@ -528,89 +541,75 @@ If you don't want this, delete this segment of the CSS and delete the correspond
   font-weight: 400;
 }
 
-/* line 24, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce .woocommerce-message a:hover,
-.woocommerce .woocommerce-error a:hover,
-.woocommerce .woocommerce-info a:hover {
+/* line 31, assets/scss/layout/woocommerce/_woo-global.scss */
+.woocommerce-content-cam .woocommerce-message a:hover,
+.woocommerce-content-cam .woocommerce-error a:hover,
+.woocommerce-content-cam .woocommerce-info a:hover {
   background: #e22980;
   color: white;
 }
 
-@media handheld, only screen and (max-width: 768px) {
-  /* line 13, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce {
-    padding: 10px 0 10px 0;
-  }
-}
-
-@media only screen and (min-width: 769px) and (max-width: 1280px) {
-  /* line 13, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce {
-    padding: 20px 0 20px 0;
-  }
-}
-
 /* line 37, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce label {
+.woocommerce-content-cam label {
   color: #2f3238;
 }
 
 /* line 40, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce .woocommerce-breadcrumb {
+.woocommerce-content-cam .woocommerce-breadcrumb {
   margin: 0;
   font-size: 1.1em;
 }
 
 /* line 44, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce .woocommerce-breadcrumb a:hover {
+.woocommerce-content-cam .woocommerce-breadcrumb a:hover {
   color: #e22980;
 }
 
 @media handheld, only screen and (max-width: 768px) {
   /* line 40, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce .woocommerce-breadcrumb {
+  .woocommerce-content-cam .woocommerce-breadcrumb {
     text-align: center;
   }
 }
 
 /* line 53, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce .woocommerce-result-count {
+.woocommerce-content-cam .woocommerce-result-count {
   color: #a7a7a7;
   font-size: 0.92em;
 }
 
 /* line 58, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce .wapl-flash {
+.woocommerce-content-cam .wapl-flash {
   top: -35px;
 }
 
 @media only screen and (min-width: 1281px) {
   /* line 58, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce .wapl-flash {
+  .woocommerce-content-cam .wapl-flash {
     top: -15px;
   }
 }
 
 /* line 63, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce .wapl-flash .woocommerce-advanced-product-label.product-label {
+.woocommerce-content-cam .wapl-flash .woocommerce-advanced-product-label.product-label {
   border-color: #e3e3e3;
   width: 55px;
   height: 55px;
 }
 
 /* line 70, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce .page-title,
-.woocommerce .woocommerce-ordering {
+.woocommerce-content-cam .page-title,
+.woocommerce-content-cam .woocommerce-ordering {
   display: none;
 }
 
 /* line 75, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce ul.products {
+.woocommerce-content-cam ul.products {
   padding: 40px 0 0 0;
 }
 
 /* line 78, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce ul.products li.product {
+.woocommerce-content-cam ul.products li.product {
   margin-bottom: 20px;
   width: 13%;
   display: inline-block;
@@ -621,51 +620,51 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 
 @media handheld, only screen and (max-width: 768px) {
   /* line 78, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce ul.products li.product {
+  .woocommerce-content-cam ul.products li.product {
     width: 45%;
   }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
   /* line 78, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce ul.products li.product {
+  .woocommerce-content-cam ul.products li.product {
     margin-bottom: 5px;
   }
 }
 
 @media only screen and (min-width: 1281px) {
   /* line 78, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce ul.products li.product {
+  .woocommerce-content-cam ul.products li.product {
     margin-bottom: 0;
   }
 }
 
 /* line 94, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce ul.products li.product a.button {
+.woocommerce-content-cam ul.products li.product a.button {
   display: none;
 }
 
 /* line 100, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce ul.products li.product a.woocommerce-LoopProduct-link:hover h3,
-.woocommerce ul.products li.product a.woocommerce-LoopProduct-link:hover h2 {
+.woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link:hover h3,
+.woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link:hover h2 {
   opacity: 1;
   color: #666666;
 }
 
 /* line 109, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce ul.products li.product a.woocommerce-LoopProduct-link span.price {
+.woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link span.price {
   display: none;
   text-align: center;
 }
 
 /* line 118, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce ul.products li.product a.woocommerce-LoopProduct-link span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
+.woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
   margin-right: 8px;
 }
 
 /* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
-.woocommerce ul.products li.product a.woocommerce-LoopProduct-link h2 {
+.woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
+.woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2 {
   position: relative;
   top: -15px;
   text-align: center;
@@ -679,22 +678,22 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 
 @media handheld {
   /* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
-  .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h2 {
+  .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
+  .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2 {
     opacity: 1;
   }
 }
 
 /* line 137, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3 .touch,
-.woocommerce ul.products li.product a.woocommerce-LoopProduct-link h2 .touch {
+.woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3 .touch,
+.woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2 .touch {
   opacity: 1;
 }
 
 @media handheld, only screen and (max-width: 768px) {
   /* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
-  .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h2 {
+  .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
+  .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2 {
     font-size: 1.2em;
     opacity: 1;
   }
@@ -702,41 +701,41 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 
 @media only screen and (min-width: 1281px) {
   /* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
-  .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h2 {
+  .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
+  .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2 {
     font-size: 1.4em;
     top: -25px;
   }
 }
 
 /* line 151, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
+.woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
   padding: 20px;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
   /* line 151, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
+  .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
     padding: 10px;
   }
 }
 
 @media only screen and (min-width: 1281px) {
   /* line 151, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
+  .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
     padding: 30px;
   }
 }
 
 /* line 164, assets/scss/layout/woocommerce/_woo-global.scss */
-.woocommerce nav.woocommerce-pagination {
+.woocommerce-content-cam nav.woocommerce-pagination {
   margin: 40px 0 30px 0;
 }
 
 @media handheld, only screen and (max-width: 768px) {
   /* line 168, assets/scss/layout/woocommerce/_woo-global.scss */
-  .woocommerce nav.woocommerce-pagination ul.page-numbers li span,
-  .woocommerce nav.woocommerce-pagination ul.page-numbers li a {
+  .woocommerce-content-cam nav.woocommerce-pagination ul.page-numbers li span,
+  .woocommerce-content-cam nav.woocommerce-pagination ul.page-numbers li a {
     font-size: 20px;
   }
 }
@@ -1120,3 +1119,5 @@ div.instacontainer .copy {
             transform: scale3D(0.5, 0.5, 1);
   }
 }
+
+/*# sourceMappingURL=style.css.map */
