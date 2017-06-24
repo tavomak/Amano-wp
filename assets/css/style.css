@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400");
+@import url("https://file.myfontastic.com/dhMhwWGPxzpYEzacwQrQrK/icons.css");
 /* line 1, assets/scss/utils/_placeholders.scss */
 .cd_carousel {
   margin: 0;
@@ -463,10 +464,36 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 /* line 4, assets/scss/layout/_footer.scss */
 .site-footer ul {
   list-style-type: none;
-  padding: 0;
+  padding: 0 0 0 20px;
 }
 
-/* line 9, assets/scss/layout/_footer.scss */
+/* line 8, assets/scss/layout/_footer.scss */
+.site-footer hr {
+  border-color: #e3e3e3;
+}
+
+/* line 11, assets/scss/layout/_footer.scss */
+.site-footer-shop-icons {
+  font-size: .9em;
+}
+
+/* line 13, assets/scss/layout/_footer.scss */
+.site-footer-shop-icons span {
+  font-size: 2em;
+  margin-top: -5px;
+  padding-right: 6px;
+  display: inline-block;
+  float: left;
+}
+
+/* line 21, assets/scss/layout/_footer.scss */
+.site-footer-social-icons {
+  display: inline-block;
+  margin-right: 20px;
+  float: right;
+}
+
+/* line 27, assets/scss/layout/_footer.scss */
 .footer-estela {
   padding-top: 15px;
 }
@@ -1114,8 +1141,8 @@ div.instacontainer .copy {
 }
 
 /* line 8, assets/scss/components/_select.scss */
-.widget_layered_nav select option[value='amarillo'] {
-  background: yellow;
+.widget_layered_nav select:focus {
+  color: #666666;
 }
 
 /* line 12, assets/scss/components/_select.scss */
@@ -1135,98 +1162,6 @@ div.instacontainer .copy {
   border-style: solid;
   border-width: 6px 6px 0 6px;
   border-color: lightgrey transparent transparent transparent;
-}
-
-/* line 28, assets/scss/components/_select.scss */
-.select-hidden {
-  display: none;
-  visibility: hidden;
-  padding-right: 10px;
-}
-
-/* line 34, assets/scss/components/_select.scss */
-.select {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  font-size: 16px;
-  color: #fff;
-  width: 220px;
-  height: 40px;
-}
-
-/* line 44, assets/scss/components/_select.scss */
-.select-styled {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: #24b1c2;
-  padding: 8px 15px;
-  transition: all 0.2s ease-in;
-}
-
-/* line 58, assets/scss/components/_select.scss */
-.select-styled:after {
-  content: "";
-  width: 0;
-  height: 0;
-  border: 7px solid transparent;
-  border-color: #fff transparent transparent transparent;
-  position: absolute;
-  top: 16px;
-  right: 10px;
-}
-
-/* line 69, assets/scss/components/_select.scss */
-.select-styled:hover {
-  background-color: #22a9b9;
-}
-
-/* line 71, assets/scss/components/_select.scss */
-.select-styled:active, .select-styled.active {
-  background-color: #209dac;
-}
-
-/* line 73, assets/scss/components/_select.scss */
-.select-styled:active:after, .select-styled.active:after {
-  top: 9px;
-  border-color: transparent transparent #fff transparent;
-}
-
-/* line 78, assets/scss/components/_select.scss */
-.select-options {
-  display: none;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  left: 0;
-  z-index: 999;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: #209dac;
-}
-
-/* line 91, assets/scss/components/_select.scss */
-.select-options li {
-  margin: 0;
-  padding: 12px 0;
-  text-indent: 15px;
-  border-top: 1px solid #1c8a97;
-  transition: all 0.15s ease-in;
-}
-
-/* line 102, assets/scss/components/_select.scss */
-.select-options li:hover {
-  color: #24b1c2;
-  background: #fff;
-}
-
-/* line 107, assets/scss/components/_select.scss */
-.select-options li[rel="hide"] {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

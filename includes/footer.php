@@ -31,39 +31,35 @@
       <div class="container">
         <!--Iconos informativos-->
         <div class="row">
-          <div class="col-xs-4">
-            <span class="icon-cart"></span>
-            <p>Pago seguro con el respaldo de Instapago</p>
+          <div class="col-xs-4 site-footer-shop-icons">
+            <p><span class="icon-card"></span> Pago seguro con el respaldo de Instapago</p>
           </div>
-          <div class="col-xs-4">
-            <span class="icon-shop"></span>
-            <p>Entrega en 7 días laborables con ZOOM</p>
+          <div class="col-xs-4 site-footer-shop-icons">
+            <p><span class="icon-truck"></span> Entrega en 7 días laborables con ZOOM</p>
             </div>
-          <div class="col-xs-4">
-            <span class="icon-smile"></span>
-            <p>Felicidad garantizada, te entregaremos calidad.</p>
+          <div class="col-xs-4 site-footer-shop-icons">
+            <p><span class="icon-happy-smiley"></span> Felicidad garantizada, te entregaremos calidad.</p>
           </div>
 
         </div>
+        <hr>
         <!--Contenido del footer-->
         <div class="row">
 
-          <div class="col-sm-4">
+          <div class="col-xs-4 col-sm-4">
             <h3>SHOP</h3>
-            <div class="col-xs-6 col-sm-4">
               <?php
               wp_nav_menu( array(
                 'theme_location'  => 'a-mano-navbar',
-                'menu_class'      => 'subeibaja-navbar',
+                'menu_class'      => 'footer-nav-links',
                 'fallback_cb'     => 'wp_bootstrap_navwalker::fallback',
                 'walker'          => new wp_bootstrap_navwalker()
               ));
               ?>
-            </div>
 
           </div>
 
-          <div class="col-sm-4">
+          <div class="col-xs-8 col-sm-4">
             <h3>CONTACTO</h3>
             <p><b>Tienda San Luis Urb. San Luis.</b>
               <br>El Cafetal. Caracas.
@@ -74,7 +70,11 @@
           </div>
 
           <div class="col-sm-4">
-            <h3>SOCIAL</h3>
+            <h3>SOCIAL
+              <a href="https://www.instagram.com/calzadosamano/" target="_blank" class="site-footer-social-icons"><span class="icon-social-instagram-outline"></span></a>
+              <a href="" target="_blank" class="site-footer-social-icons"><span class="icon-social-twitter"></span></a>
+              <a href="https://www.facebook.com/CalzadosAmano/" target="_blank" class="site-footer-social-icons"><span class="icon-social-facebook"></span></a>
+            </h3>
             <strong>Ventas Online - Al mayor</strong>
             <p>info@calzadosamano.com </p>
             <p><strong>Teléfono:</strong> +58 212 991 30 02</p><strong>Lunes a Viernes:</strong>
@@ -83,6 +83,7 @@
 
         </div>
 
+         <hr>
           <div class="row">
             <h4 class="text-center">SUBIBAJA C.A RIF: J-405745282</h4>
           </div>
