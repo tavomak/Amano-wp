@@ -33,18 +33,19 @@ function themename_related_products_count( $args ) {
 
 //insertar widget horizontal
 function prefix_add_my_widget() {
- echo '<div id="my-sidebar" class="">';
+ echo '<div class="woo-horizontal-filter">';
  dynamic_sidebar( 'woo-horizontal-widget-area' );
  echo '</div>';
 }
 add_action( 'woocommerce_before_shop_loop', 'prefix_add_my_widget'  );
-//Ocultar editor de texto de wordpress
+
+//Ocultar editor de texto de wordpress en las entradas de productos
 function remove_product_editor() {
   remove_post_type_support( 'product', 'editor' );
 }
 add_action( 'init', 'remove_product_editor' );
 
-// Remove WooCommerce Updater
+// Remueve WooCommerce Updater notificacion
 remove_action('admin_notices', 'woothemes_updater_notice');
 
 

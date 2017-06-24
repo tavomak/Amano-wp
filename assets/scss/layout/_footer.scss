@@ -1,37 +1,11 @@
-.site-footer{
-    background: $gris-footer;
-    ul{
-        list-style-type: none;
-        padding: 0;
-    }
-    .footer-cam{
-        hr{
-            border-color: $gris-claro;
-        }
-        color:$gris-oscuro;
-        padding: 20px 0 20px 0;
-        .footer-nav{
-            h5{
-                text-transform: uppercase;
-                padding-bottom: 10px;
-                font-size: 16px;
-            }
-            ul{
-                li{
-                    margin: 10px 0 0 0;
-                    a{
-                        font-weight: $font-regular;
-                        font-size: 16px;
-                        &:hover{
-                            color: $rosa-cam;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .footer-estela{
-        background: $white;
-        padding: 20px 0 0 0;
-    }
+.site-footer {
+  background: $gris-footer;
+  padding-top: 15px;
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}
+.footer-estela{
+  padding-top: 15px;
 }

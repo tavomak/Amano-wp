@@ -26,10 +26,10 @@
         </div>
     </div>
 
-    <!--Insercion de menu de usuario-->
-    <?php
+
+    <?php // Insercion de menu de usuario
     if (is_woocommerce()){
-      echo get_template_part('includes/breadcrumb');
+      echo get_template_part('includes/user-nav');
     }
     ?>
 
@@ -52,7 +52,6 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-            <?php /* <a class="navbar-brand" href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a> */ ?>
         </div>
         <div class="collapse navbar-collapse" id="navbar-upper">
           <?php
@@ -66,10 +65,9 @@
             'walker'            => new wp_bootstrap_navwalker())
           );
           ?>
-          <?php //get_template_part('includes/navbar-search'); ?>
         </div>
       </div>
     </nav>
 
     <?php tha_header_before(); ?>
-    <!--<div class="wrapper">-->
+    <div class="content-wrapper">

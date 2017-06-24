@@ -6,11 +6,12 @@ body {
 body {
   font-family: $primary-font;
   color: $gris-oscuro;
+  font-size: 1.2em;
 }
 
 h1,
 h2 {
-  font-weight: $font-light;
+  font-weight: $font-regular;
 }
 
 //decoracion---------------------------------------------
@@ -46,5 +47,12 @@ hr {
 }
 
 a {
-  color: $azul-cam;
+  color: $gris-claro;
+  transition: .2s ease-in-out all;
+  &:hover{
+    color: $azul-cam;
+  }
+  &:focus{
+    text-decoration: none;
+  }
 }

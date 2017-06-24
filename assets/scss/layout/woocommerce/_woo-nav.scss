@@ -1,71 +1,60 @@
-.woocommerce-content-cam {
-  .term-description {
-    color: #a7a7a7;
-    font-size: 0.92em;
-    display: none;
-  }
-}
-
-%no-margin{
-  margin: 0;
-  padding: 0;
-}
 .woo_user_nav{
-  @extend %no-margin;
-  padding-top: 5px;
-  &__ul{
-    list-style-type: none;
+  background: $gris-superclaro;
+  height: 20px;
+  margin-bottom: 10px;
+  line-height: 160%;
+  &-search{
+    margin: 0;
+    padding: 0;
   }
-  &__li{
-    @extend %no-margin;
-    width: 32%;
+}
+.cart-amount{
+  position: relative;
+  left: -20px;
+}
+.bag-count{
+  z-index: $zindex-5;
+  color: $white;
+  position: relative;
+  top: 18px;
+  left:23px;
+  &__icon{
     display: inline-block;
-    cursor: pointer;
+    position: absolute;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    background: url('../img/bag-icon.png') no-repeat;
+  }
+  &__disabled{
+    display: inline-block;
+    position: absolute;
+    margin-left: -25px;
+    width: 50px;
+    height: 50px;
+    background: url('../img/bag-icon-disabled.png') no-repeat;
   }
 }
-.cart_count{
-  .woocommerce-Price-currencySymbol {
-    color: rebeccapurple;
-    font-size: 0.92em;
-    margin: 0 5px 0 5px;
+.cam-search-form{
+  position: absolute;
+  top: 0;
+  &:hover > button{
+    background: $azul-cam;
+    color: $white;
   }
-}
-
-.register__link,
-.current_user__link,
-.cart_count__link{
-  font-size: 12px;
-  &::before {
-    content: "";
-    display: block;
-    float: 'left';
-    left: 0;
-    top: 0;
-    width: 22px;
-    height: 22px;
-    margin-right: 4px;
-    transition: .3s ease-in-out all;
+  & input, & button{
+    color: $gris-claro;
+    background: rgba($white,.4);
+    padding: 0 5px 0 5px;
+    height: 20px;
+    border: none;
   }
-}
-
-.current_user__link{
-  &:before {
-    background: url('../img/usuario-icono.png') center no-repeat;
-    background-size: contain;
-  }
-  &:hover:before {
-    background: url('../img/usuario-icono-hover.png') center no-repeat;
-    background-size: contain;
-  }
-}
-
-.cart_count__link {
-  &:before {
-    background: url('../img/carrito-icono.png') center no-repeat;
-    background-size: contain;
-  }
-  &:hover:before {
-    background: url('../img/carrito-icono-hover.png') center no-repeat;
-    background-size: contain;
+  & button{
+    border-left: 3px solid $gris-superclaro;
+    transition: .2s ease-in-out all;
+    &:hover{
+      background: $azul-cam;
+      color: $white;
+    }
   }
 }

@@ -7,9 +7,7 @@ Then you can insert the Search Widget into the sidebar.
 */
 ?>
 
-<form class="navbar-form navbar-right" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-	<div class="form-group">
-		<input class="form-control" type="text" value="<?php echo get_search_query(); ?>" placeholder="Search..." name="s" id="s">
-	</div>
-	<button type="submit" id="searchsubmit" value="<?php esc_attr_x('Search', 'cam-wp') ?>" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
+<form class="cam-search-form" role="search" method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+  <input class="fl" type="text" value="<?php echo get_search_query(); ?>" placeholder="Buscar..." name="s" id="s">
+  <button type="submit" id="searchsubmit" value="<?php esc_attr_x('Buscar', 'cam-wp') ?>" class="fl"><i class="glyphicon glyphicon-search fl"></i></button>
 </form>

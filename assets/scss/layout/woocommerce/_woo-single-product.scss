@@ -1,93 +1,93 @@
 //Pagina single de productos
 .single.single-product {
-    //Conetenedor de woocommerce
-    .woocommerce-content-cam {
-        //SKU
-        .product_meta {
-            display: none;
-        }
-        div.related {
-            color: $gris-claro;
-            padding: 32px 0 0 0;
-            h2 {
-                border-top: 1px solid $gris-superclaro;
-                border-bottom: 1px solid $gris-superclaro;
-            }
-            ul.products {
-                padding: 0;
-            }
-        }
-        div.upsells,
-        {
-            color: $gris-claro;
-            padding: 32px 0 0 0;
-            @include MQ(SM) {
-                text-align: center;
-            }
-            ul.products {
-                padding: 10px 0 0 0;
-                a {
-                    padding: 15px 5px 5px 5px;
-                    position: relative;
-                    img {
-                        transition: all .4s ease-in-out;
-                        padding: 5px;
-                    }
-                    &:hover img {
-                        transform: scale(1.2) rotate(-180deg);
-                    }
-                }
-            }
-        }
-        //Datos del producto
-        div.product div.sumario {
-            @include MQ(SM) {
-                text-align: center;
-                clear: both;
-            }
-            //envoltorio del sumario
-            .wrap-sumario {
-                margin: 40px 0 0 0;
-                h1.product_title {
-                    font-size: 26px;
-                    font-weight: $font-light;
-                }
-                .price {
-                    span {
-                        color: $azul-cam;
-                        font-size: 24px;
-                        .woocommerce-Price-currencySymbol {
-                            margin-right: 10px;
-                            color: $gris-claro;
-                            font-size: 18px;
-                        }
-                    }
-                }
-                div.description {}
-                p.stock {
-                    color: $azul-cam;
-                }
-                form {
-                    width: 200px;
-                    @include MQ(SM) {
-                        //text-align: center;
-                        margin: 0 auto;
-                    }
-                    .quantity {
-                        .qty {
-                            height: 30px;
-                        }
-                    }
-                    .button {
-                        background: $azul-cam;
-                        transition: ease-in-out 0.3s all;
-                        border-radius: 0;
-                        &:hover {
-                            background: $rosa-cam;
-                        }
-                    }
-                }
-            }
-        }
+  //Conetenedor de woocommerce
+  .woocommerce-content-cam {
+    //SKU
+    .product_meta {
+      display: none;
     }
+    div.related {
+      color: $gris-claro;
+      padding: 32px 0 0 0;
+      h2 {
+        border-top: 1px solid $gris-superclaro;
+        border-bottom: 1px solid $gris-superclaro;
+      }
+      ul.products {
+        padding: 0;
+      }
+    }
+    div.upsells,
+    {
+      color: $gris-claro;
+      padding: 32px 0 0 0;
+      @include MQ(SM) {
+        text-align: center;
+      }
+      ul.products {
+        padding: 10px 0 0 0;
+        a {
+          padding: 15px 5px 5px 5px;
+          position: relative;
+          img {
+            transition: all .4s ease-in-out;
+            padding: 5px;
+          }
+          &:hover img {
+            transform: scale(1.2) rotate(-180deg);
+          }
+        }
+      }
+    }
+    //Datos del producto
+    div.product div.sumario {
+      @include MQ(SM) {
+        text-align: center;
+        clear: both;
+      }
+      //envoltorio del sumario
+      .wrap-sumario {
+        margin: 40px 0 0 0;
+        h1.product_title {
+          font-size: 26px;
+          //font-weight: $font-light;
+        }
+        .price {
+          span {
+            color: $azul-cam;
+            font-size: 24px;
+            .woocommerce-Price-currencySymbol {
+              margin-right: 10px;
+              color: $gris-claro;
+              font-size: 18px;
+            }
+          }
+        }
+        div.description {}
+        p.stock {
+          color: $azul-cam;
+        }
+        form {
+          width: 200px;
+          @include MQ(SM) {
+            //text-align: center;
+            margin: 0 auto;
+          }
+          .quantity {
+            .qty {
+              height: 30px;
+            }
+          }
+          .button {
+            background: $azul-cam;
+            transition: ease-in-out 0.3s all;
+            border-radius: 0;
+            &:hover {
+              background: $rosa-cam;
+            }
+          }
+        }
+      }
+    }
+  }
 }

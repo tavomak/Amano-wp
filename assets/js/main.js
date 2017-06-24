@@ -18,6 +18,8 @@ $(document).ready(function () {
     $('.woocommerce-content-cam div.imagenes div.thumbnails').removeClass('thumbnails columns-3').addClass('col-sm-2 col-sm-offset-1 thumb');
     //Agregar wrap a sumario
     $('.woocommerce-content-cam div.sumario').wrapInner('<div class="wrap-sumario"></div>');
+    //select
+    $('.widget_layered_nav select').wrap('<span class="span-wrapper" />');
 
   // HOVERNAV - navbar dropdown on hover.
 	// Delete this segment if you don't want it, and delete the corresponding CSS in bst.css
