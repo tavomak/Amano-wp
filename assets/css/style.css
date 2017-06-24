@@ -47,7 +47,7 @@ table {
 *,
 *::after,
 *::before {
-  box-sizing: border-box !important;
+  box-sizing: border-box;
 }
 
 /*@font-face {
@@ -167,6 +167,11 @@ a:hover {
 /* line 55, assets/scss/base/_global.scss */
 a:focus {
   text-decoration: none;
+}
+
+/* line 59, assets/scss/base/_global.scss */
+.content-wrapper {
+  min-height: calc(100vh - 420px);
 }
 
 /* line 2, assets/scss/layout/_contact.scss */

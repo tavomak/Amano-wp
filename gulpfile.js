@@ -9,7 +9,6 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),//Notificaciones
     sourcemaps = require('gulp-sourcemaps');//SourceMaps
 
-
 gulp.task('sass', function () {
     gulp.src('./assets/scss/style.scss')
     .pipe(sourcemaps.init())
@@ -26,16 +25,18 @@ gulp.task('sass', function () {
     .pipe(autoprefixer({
         versions: ['last 2 browsers']
     }))
-    .pipe(sourcemaps.write('.'/*, { mapFile: function(mapFilePath) { return mapFilePath.replace('style.css.map', 'style-dist.css.map');}}*/))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./assets/css/'));
 });
 
 gulp.task('minify-css', function () {
     gulp.src('./assets/css/style.css')
-    .pipe(cleanCSS())
     .pipe(rename({
         suffix: '-dist'
     }))
+    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(cleanCSS())
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./assets/css/'))
     .pipe(browserSync.stream())
     .pipe(notify({
