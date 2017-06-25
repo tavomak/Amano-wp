@@ -58,7 +58,7 @@
           wp_nav_menu( array(
             'menu'              => 'primary',
             'theme_location'    => 'primary',
-            'depth'             => 3,
+            'depth'             => 4,
             'container_class' => 'container',
             'menu_class'        => 'nav navbar-nav',
             'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
