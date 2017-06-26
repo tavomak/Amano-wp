@@ -43,29 +43,27 @@
     </div>
 
     <!--Navegacion principal-->
-    <nav class="navbar navbar-default navbar-static-top navbar-upper nav-principal-cam">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-upper">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbar-upper">
-          <?php
-          wp_nav_menu( array(
-            'menu'              => 'primary',
-            'theme_location'    => 'primary',
-            'depth'             => 4,
-            'container_class' => 'container',
-            'menu_class'        => 'nav navbar-nav',
-            'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-            'walker'            => new wp_bootstrap_navwalker())
-          );
-          ?>
-        </div>
+    <nav class="navbar navbar-default nav-principal-cam">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-upper">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbar-upper">
+        <?php
+        wp_nav_menu( array(
+          'menu'              => 'primary',
+          'theme_location'    => 'primary',
+          'depth'             => 4,
+          'container_class' => 'container',
+          'menu_class'        => 'nav navbar-nav',
+          'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+          'walker'            => new wp_bootstrap_navwalker())
+        );
+        ?>
       </div>
     </nav>
 

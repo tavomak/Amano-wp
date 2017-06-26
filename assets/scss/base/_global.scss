@@ -46,7 +46,7 @@ hr {
   padding: 0;
 }
 
-a {
+a, .cam-links{
   color: $gris-claro;
   transition: .2s ease-in-out all;
   &:hover{

@@ -50,53 +50,6 @@ table {
   box-sizing: border-box;
 }
 
-/*@font-face {
-  font-family: 'montserrat-regular';
-  src: url('../fonts/montserrat-regular-webfont.eot');
-  /* IE9 Compat Modes
-  src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8
-  url('../fonts/montserrat-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers
-  url('../fonts/montserrat-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers
-  url('../fonts/montserrat-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS
-  url('../fonts/montserrat-regular-webfont.svg#svgFontName') format('svg');
-  /* Legacy iOS
-}
-
-@font-face {
-  font-family: 'montserrat-light';
-  src: url('../fonts/montserrat-light-webfont.eot');
-  /* IE9 Compat Modes
-  src: url('../fonts/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8
-  url('../fonts/montserrat-light-webfont.woff2') format('woff2'), /* Super Modern Browsers
-  url('../fonts/montserrat-light-webfont.woff') format('woff'), /* Pretty Modern Browsers
-  url('../fonts/montserrat-light-webfont.ttf') format('truetype'), /* Safari, Android, iOS
-  url('../fonts/montserrat-light-webfont.svg#svgFontName') format('svg');
-  /* Legacy iOS
-}
-
-@font-face {
-  font-family: 'montserrat-ultralight';
-  src: url('../fonts/montserrat-ultralight-webfont.eot');
-  /* IE9 Compat Modes
-  src: url('../fonts/montserrat-ultralight-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8
-  url('../fonts/montserrat-ultralight-webfont.woff2') format('woff2'), /* Super Modern Browsers
-  url('../fonts/montserrat-ultralight-webfont.woff') format('woff'), /* Pretty Modern Browsers
-  url('../fonts/montserrat-ultralight-webfont.ttf') format('truetype'), /* Safari, Android, iOS
-  url('../fonts/montserrat-ultralight-webfont.svg#svgFontName') format('svg');
-  /* Legacy iOS
-}
-
-@font-face {
-  font-family: 'fira-regular';
-  src: url('../fonts/firasans-regular-webfont.eot');
-  /* IE9 Compat Modes
-  src: url('../fonts/firasans-regular-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8
-  url('../fonts/firasans-regular-webfont.woff2') format('woff2'), /* Super Modern Browsers
-  url('../fonts/firasans-regular-webfont.woff') format('woff'), /* Pretty Modern Browsers
-  url('../fonts/firasans-regular-webfont.ttf') format('truetype'), /* Safari, Android, iOS
-  url('../fonts/firasans-regular-webfont.svg#svgFontName') format('svg');
-  /* Legacy iOS
-}*/
 /* line 1, assets/scss/base/_global.scss */
 html,
 body {
@@ -154,18 +107,18 @@ hr {
 }
 
 /* line 49, assets/scss/base/_global.scss */
-a {
+a, .cam-links {
   color: #666666;
   transition: .2s ease-in-out all;
 }
 
 /* line 52, assets/scss/base/_global.scss */
-a:hover {
+a:hover, .cam-links:hover {
   color: #008d94;
 }
 
 /* line 55, assets/scss/base/_global.scss */
-a:focus {
+a:focus, .cam-links:focus {
   text-decoration: none;
 }
 
@@ -279,90 +232,70 @@ a:focus {
 
 /* line 1, assets/scss/layout/_nav.scss */
 .navbar {
-  font-weight: 300;
+  font-size: 1.3rem;
+  font-weight: 400;
   border: 0;
   margin: 0;
 }
 
 /* line 6, assets/scss/layout/_nav.scss */
-.navbar .navbar-header .navbar-toggle {
+.navbar-default {
+  background: none;
+}
+
+/* line 9, assets/scss/layout/_nav.scss */
+.navbar-toggle {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 9, assets/scss/layout/_nav.scss */
-.navbar .navbar-header .navbar-toggle .icon-bar {
+/* line 12, assets/scss/layout/_nav.scss */
+.navbar-toggle .icon-bar {
   margin: 0 auto;
   max-height: 4px;
   margin-bottom: 4px;
 }
 
-/* line 16, assets/scss/layout/_nav.scss */
-.navbar .nav-menu-primary-container {
-  display: table;
-  margin: 0 auto;
-}
-
 /* line 19, assets/scss/layout/_nav.scss */
-.navbar .nav-menu-primary-container .navbar-nav {
-  text-align: center;
-}
-
-/* line 22, assets/scss/layout/_nav.scss */
-.navbar .nav-menu-primary-container .navbar-nav li {
-  cursor: pointer;
-}
-
-/* line 25, assets/scss/layout/_nav.scss */
-.navbar .nav-menu-primary-container .navbar-nav a {
-  font-size: 14px;
-}
-
-/* line 27, assets/scss/layout/_nav.scss */
-.navbar .nav-menu-primary-container .navbar-nav a:hover {
-  color: #e22980;
-}
-
-@media only screen and (min-width: 768px) {
-  /* line 36, assets/scss/layout/_nav.scss */
-  .logo-principal h1 {
-    margin-top: 0;
-  }
-}
-
-/* line 43, assets/scss/layout/_nav.scss */
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
+.dropdown-menu {
   background: none;
-  box-shadow: none;
+  font-size: 1.3rem;
+  transition: 1s ease-in-out all;
 }
 
-/* line 50, assets/scss/layout/_nav.scss */
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .open > a,
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
+/* line 23, assets/scss/layout/_nav.scss */
+.dropdown-menu li > a {
+  color: #666666;
+  transition: .2s ease-in-out all;
+}
+
+/* line 26, assets/scss/layout/_nav.scss */
+.dropdown-menu li > a:hover {
+  color: #008d94;
   background: none;
 }
 
-/* line 58, assets/scss/layout/_nav.scss */
-.navbar-default .navbar-nav > .active > a {
-  color: none;
+/* line 30, assets/scss/layout/_nav.scss */
+.dropdown-menu li > a:focus {
+  text-decoration: none;
 }
 
-/* line 62, assets/scss/layout/_nav.scss */
-.navbar-default {
-  background: none;
+/* line 35, assets/scss/layout/_nav.scss */
+.nav.navbar-nav {
+  width: 100%;
 }
 
-/* line 66, assets/scss/layout/_nav.scss */
+/* line 37, assets/scss/layout/_nav.scss */
+.nav.navbar-nav li {
+  min-width: 14.1%;
+}
+
+/* line 41, assets/scss/layout/_nav.scss */
 .contacto-visible {
   display: none;
 }
 
-/* line 70, assets/scss/layout/_nav.scss */
+/* line 45, assets/scss/layout/_nav.scss */
 .nav-principal-cam .contacto-visible {
   display: block;
 }
@@ -372,31 +305,31 @@ HOVERNAV
 ========
 A simple addition to the dropdown menu (Bootstrap itself is unchanged). Navbar dropdowns appear on hover.
 This works only for screen sizes larger than phones.
-
-If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/bst-plus.js
 */
 @media (min-width: 768px) {
-  /* line 84, assets/scss/layout/_nav.scss */
+  /* line 57, assets/scss/layout/_nav.scss */
   .navbar-nav .open ul {
     display: none;
   }
-  /* line 87, assets/scss/layout/_nav.scss */
+  /* line 60, assets/scss/layout/_nav.scss */
   .navbar-default .navbar-nav > .open > a,
   .navbar-default .navbar-nav > .open > a:hover,
   .navbar-default .navbar-nav > .open > a:focus {
-    color: #555;
     background: none;
   }
-  /* line 93, assets/scss/layout/_nav.scss */
+  /* line 65, assets/scss/layout/_nav.scss */
   .navbar-inverse .navbar-nav > .open > a,
   .navbar-inverse .navbar-nav > .open > a:hover,
   .navbar-inverse .navbar-nav > .open > a:focus {
-    color: #969696;
     background: none;
   }
-  /* line 99, assets/scss/layout/_nav.scss */
+  /* line 70, assets/scss/layout/_nav.scss */
   .navbar-nav .hovernav:hover > .dropdown-menu {
     display: block;
+    width: 100%;
+    padding-left: 15%;
+    min-height: 20vh;
+    background: rgba(255, 255, 255, 0.9);
   }
 }
 
@@ -404,43 +337,31 @@ If you don't want this, delete this segment of the CSS and delete the correspond
 MEGANAV
 =======
 A simple addition to the dropdown menu (Bootstrap itself is unchanged). When you add GRAND-CHILD links in the navbar: on screens larger than phones, Meganav will transform the dropdown into a mega-menu, with child-links displayed as menu-column heads (in bold).
-
-If you don't want this, delete this segment of the CSS and delete the corresponding segment of js/bst-plus.js
 */
-/* line 111, assets/scss/layout/_nav.scss */
-.mega-menu ul a {
-  color: #666;
-}
-
-/* line 114, assets/scss/layout/_nav.scss */
-.mega-menu > ul > li > a {
-  font-weight: bold !important;
-}
-
-@media (max-width: 767px) {
-  /* line 118, assets/scss/layout/_nav.scss */
+@media handheld, only screen and (max-width: 480px) {
+  /* line 85, assets/scss/layout/_nav.scss */
   .has-children ul {
     display: block !important;
     margin-left: 15px;
   }
 }
 
-@media (min-width: 768px) {
-  /* line 124, assets/scss/layout/_nav.scss */
+@media only screen and (min-width: 768px) {
+  /* line 92, assets/scss/layout/_nav.scss */
   .dropdown.mega-menu {
     position: static;
   }
-  /* line 127, assets/scss/layout/_nav.scss */
+  /* line 95, assets/scss/layout/_nav.scss */
   .mega-menu > .dropdown-menu {
     left: 0;
     right: 0;
-    overflow-x: auto;
   }
-  /* line 132, assets/scss/layout/_nav.scss */
+  /* line 99, assets/scss/layout/_nav.scss */
   .mega-menu > ul > li {
     display: table-cell;
+    min-width: 22%;
   }
-  /* line 135, assets/scss/layout/_nav.scss */
+  /* line 103, assets/scss/layout/_nav.scss */
   .mega-menu > ul ul {
     position: relative;
     display: block !important;
@@ -449,11 +370,7 @@ If you don't want this, delete this segment of the CSS and delete the correspond
     box-shadow: none;
     padding: 0;
   }
-  /* line 143, assets/scss/layout/_nav.scss */
-  .dropdown-menu li {
-    border-right: 1px solid #e7e7e7;
-  }
-  /* line 146, assets/scss/layout/_nav.scss */
+  /* line 114, assets/scss/layout/_nav.scss */
   .dropdown-menu li li,
   .dropdown-menu li:last-of-type {
     border-right: 0;
