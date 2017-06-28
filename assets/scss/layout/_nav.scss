@@ -1,3 +1,6 @@
+.current_user{
+  text-transform: capitalize;
+}
 .navbar {
   font-size: 1.3rem;
   font-weight: $font-regular;
@@ -6,6 +9,23 @@
   margin-bottom: 20px;
   &-default {
     background: none;
+    & .navbar-nav>li>a {
+      color: $gris-claro;
+      font-weight: $font-regular !important;
+      &:hover{ 
+         color: $azul-cam;
+      }
+    }
+    & .navbar-nav>.active>a {
+      background: none;
+      color: $rosa-cam;
+      &:hover{ 
+         background: none;
+      }
+      &:focus{ 
+         background: none;
+      }
+    }
     .navbar-toggle {
       width: 100%;
       margin: 0 auto;
@@ -35,7 +55,7 @@
       transition: .2s ease-in-out all;
       &:hover {
         color: $azul-cam;
-        background: none;
+        background: rgba($gris-claro, .1);
       }
       &:focus {
         text-decoration: none;
@@ -54,7 +74,7 @@
       }
     }
     &>.active>a {
-      background: rgba($azul-cam, .3);
+      background: rgba($azul-cam, .1);
       color: $azul-cam;
       font-weight: $font-bold !important;
     }
