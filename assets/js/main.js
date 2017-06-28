@@ -19,53 +19,59 @@ $(document).ready(function () {
   $('.woocommerce-content-cam div.sumario').wrapInner('<div class="wrap-sumario"></div>');
   //select
   $('.widget_layered_nav select').wrap('<span class="span-wrapper" />');
-  //$('#menu-item-1144 ul.dropdown-menu').wrapInner('<div class="container"></div>');
 
   // HOVERNAV - navbar dropdown on hover.
-  // Delete this segment if you don't want it, and delete the corresponding CSS in bst.css
   // Uses jQuery Media Query - see http://www.sitepoint.com/javascript-media-queries/
   var mq = window.matchMedia('(min-width: 768px)');
+
   if (mq.matches) {
     $('ul.navbar-nav > li').addClass('hovernav');
-  }
-  else {
+  } else {
     $('ul.navbar-nav > li').removeClass('hovernav');
+    
   };
+
   // The addClass/removeClass also needs to be triggered on page resize <=> 768px
   function WidthChange(mq) {
     if (mq.matches) {
       $('ul.navbar-nav > li').addClass('hovernav');
-    }
-    else {
+    } else {
       $('ul.navbar-nav > li').removeClass('hovernav');
     }
   };
+
   if (matchMedia) {
     var mq = window.matchMedia('(min-width: 768px)');
     mq.addListener(WidthChange);
     WidthChange(mq);
   }
+
   // Remove dropdowns "data-toggle" for screens >= 768, and restore for small screens after resize.
   // (Delete this if you don't need it. It is only here because some people find that if they have
   // a highly complicated mega-menu, their grand-child links disappear if they click the parent link.)
   if ($(window).width() >= 768) {
     $('.hovernav .dropdown-toggle').removeAttr('data-toggle');
   }
+
   $(window).resize(function () {
     if ($(window).width() < 768) {
       if (!$('.hovernav .dropdown-toggle').attr('data-toggle')) {
         $('.hovernav .dropdown-toggle').attr('data-toggle', 'dropdown');
       }
-    }
-    else {
+    } else {
       $('.hovernav .dropdown-toggle').removeAttr('data-toggle');
     }
   });
-  // Restore "clickable parent links" in navbar
-  //$('.hovernav a').click(function () {
-  //	window.location = this.href;
-  //});
+
   //MEGANAV - allows GRAND-CHILD links to be displayed in a mega-menu on screens larger than phones.
   $('.navbar').addClass('meganav');
   $('.meganav .dropdown-menu .dropdown-menu').parent().addClass('has-children').parents('li').addClass('dropdown mega-menu');
+
+  $('#menu-principal > li.menu-item').addClass('menu__item');
+
+  $('#menu-principal .dropdown-toggle + ul.dropdown-menu').wrapInner('<ul class="container menu-wrapper" />');
+  ////////////////////////////////////////////////////////////////////////////////////////////////
+  $('#menu-principal .dropdown-menu .menu-item-has-children').wrapInner('<div class="item-wrapper" />');
+  $('#menu-principal .dropdown-menu .menu-item a[title="Damas"').html('<p>Damas</p><div class="img-damas" ><img src="' + my_data.template_directory_uri + '/assets/img/damas.jpg" alt="Zapatos de dama"/></div>');
+  $('#menu-principal .dropdown-menu .menu-item a[title="Plantillas"').html('<p>Plantillas</p> <img src="' + my_data.template_directory_uri + '/assets/img/plantillas.jpg" alt="Conoce nuestra linea de Plantillas" class="img-damas" />');
 });

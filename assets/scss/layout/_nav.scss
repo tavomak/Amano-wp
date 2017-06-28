@@ -1,106 +1,124 @@
 .navbar {
   font-size: 1.3rem;
-  font-weight: $font-bold;
+  font-weight: $font-regular;
   border: 0;
   margin: 0;
-  &-default{
+  margin-bottom: 20px;
+  &-default {
     background: none;
-  }
-  &-toggle {
-    width: 100%;
-    margin: 0 auto;
-    .icon-bar {
+    .navbar-toggle {
+      width: 100%;
       margin: 0 auto;
-      max-height: 4px;
-      margin-bottom: 4px;
+      &:hover {
+        background: none;
+      }
+      .icon-bar {
+        margin: 0 auto;
+        max-height: 4px;
+        margin-bottom: 4px;
+      }
     }
   }
-}
-.dropdown-menu {
-  background: none;
-  font-size: 1.3rem;
-  transition: 1s ease-in-out all;
-  & li > a {
-    color: $gris-claro;
-    transition: .2s ease-in-out all;
-    &:hover {
+  &-collapse {
+    border: 0;
+  }
+  .dropdown-menu {
+    background: none;
+    font-size: 1.3rem;
+    transition: 1s ease-in-out all;
+    border: 1px solid $gris-superclaro;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    & li>a {
+      color: $gris-claro;
+      transition: .2s ease-in-out all;
+      &:hover {
+        color: $azul-cam;
+        background: none;
+      }
+      &:focus {
+        text-decoration: none;
+      }
+    }
+    & .menu-wrapper {
+      list-style-type: none;
+    }
+    & .item-wrapper {
+      display: table;
+      &>a {
+        font-weight: $font-bold !important;
+      }
+      a[title] {
+        display: block;
+      }
+    }
+    &>.active>a {
+      background: rgba($azul-cam, .3);
       color: $azul-cam;
-      background: none;
-    }
-    &:focus {
-      text-decoration: none;
+      font-weight: $font-bold !important;
     }
   }
 }
-.nav.navbar-nav{
+
+.nav.navbar-nav {
   width: 100%;
-  li{
+  .menu__item {
     min-width: 14.1%;
+    @include MQ(L) {
+      min-width: 12.7%;
+    }
   }
 }
+
 .contacto-visible {
   display: none;
 }
+
 .nav-principal-cam {
   .contacto-visible {
     display: block;
   }
 }
 
-/*
-HOVERNAV
-========
-A simple addition to the dropdown menu (Bootstrap itself is unchanged). Navbar dropdowns appear on hover.
-This works only for screen sizes larger than phones.
-*/
-@media (min-width: 768px) {
-  .navbar-nav .open ul {
-    display: none
-  }
-  .navbar-default .navbar-nav > .open > a,
-  .navbar-default .navbar-nav > .open > a:hover,
-  .navbar-default .navbar-nav > .open > a:focus {
+.navbar-default .navbar-nav>.open>a {
+  background: none;
+  &:hover,
+  &:focus {
     background: none;
-  }
-  .navbar-inverse .navbar-nav > .open > a,
-  .navbar-inverse .navbar-nav > .open > a:hover,
-  .navbar-inverse .navbar-nav > .open > a:focus {
-    background: none;
-  }
-  .navbar-nav .hovernav:hover > .dropdown-menu {
-    display: block;
-    width: 100%;
-    padding-left: 15%;
-    min-height: 20vh;
-    background: rgba($white, .9);
   }
 }
-/*
-MEGANAV
-=======
-A simple addition to the dropdown menu (Bootstrap itself is unchanged). When you add GRAND-CHILD links in the navbar: on screens larger than phones, Meganav will transform the dropdown into a mega-menu, with child-links displayed as menu-column heads (in bold).
-*/
 
-@include MQ(S) {
+@include MQ(SM) {
   .has-children ul {
     display: block !important;
     margin-left: 15px;
   }
+  .menu-item {
+    & img {
+      display: none;
+    }
+  }
 }
 
 @include MQ(MXL) {
+  .navbar-nav .open ul {
+    display: none
+  }
+  .navbar-nav .hovernav:hover>.dropdown-menu {
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    background: rgba($white, .9);
+  }
   .dropdown.mega-menu {
     position: static;
   }
-  .mega-menu > .dropdown-menu {
+  .mega-menu>.dropdown-menu {
     left: 0;
     right: 0;
   }
-  .mega-menu > ul > li {
-    display: table-cell;
-    min-width: 22%;
-  }
-  .mega-menu > ul ul {
+  .mega-menu>ul ul.dropdown-menu {
     position: relative;
     display: block !important;
     border: 0;
@@ -108,11 +126,22 @@ A simple addition to the dropdown menu (Bootstrap itself is unchanged). When you
     box-shadow: none;
     padding: 0
   }
-  .dropdown-menu li {
-    //border-right: 1px solid #e7e7e7
+  .dropdown-menu .container li {
+    display: block;
+  } //Layout megamenu
+  .menu-wrapper>.menu-item {
+    padding: 5px;
+    width: 25%;
+    float: left;
   }
-  .dropdown-menu li li,
-  .dropdown-menu li:last-of-type {
-    border-right: 0
+  .menu-wrapper>.menu-item>a,
+  .item-wrapper>a {
+    font-weight: $font-bold !important;
+  }
+  .menu-wrapper :nth-child(5) {
+    clear: left;
+  }
+  .img-damas {
+    background: #e9e8e6;
   }
 }

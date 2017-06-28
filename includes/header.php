@@ -43,7 +43,7 @@
     </div>
 
     <!--Navegacion principal-->
-    <nav class="navbar navbar-default nav-principal-cam">
+    <nav class="navbar navbar-default">
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-upper">
           <span class="sr-only">Toggle navigation</span>
@@ -59,7 +59,7 @@
           'theme_location'    => 'primary',
           'depth'             => 4,
           'container_class' => 'container',
-          'menu_class'        => 'nav navbar-nav',
+          'menu_class'        => 'nav navbar-nav js-mega-menu',
           'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
           'walker'            => new wp_bootstrap_navwalker())
         );

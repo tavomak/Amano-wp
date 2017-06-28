@@ -49,6 +49,7 @@ hr {
 a, .cam-links{
   color: $gris-claro;
   transition: .2s ease-in-out all;
+  font-weight: $font-regular !important;
   &:hover{
     color: $azul-cam;
   }

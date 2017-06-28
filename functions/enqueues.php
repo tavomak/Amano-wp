@@ -52,7 +52,7 @@ Un-comment the next two lines of code if you want to use WordPress's onboard jQu
 	$script_data = array(
         'template_directory_uri' => get_template_directory_uri()
     );
-    wp_localize_script('tlm-est-js', 'my_data', $script_data );
+    wp_localize_script('cam-wp-js', 'my_data', $script_data );
     wp_enqueue_script('cam-wp-js');
 
     /*if ( class_exists( 'WooCommerce' ) ) {

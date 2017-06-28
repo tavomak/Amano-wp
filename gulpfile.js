@@ -42,7 +42,7 @@ gulp.task('minify-css', function () {
       message: 'Css Procesado',
       onLast: true
     }))
-    .pipe(browserSync.stream());
+    .pipe(browserSync.stream({match: '**/*.css'}));
 });
 
 gulp.task('minify-js', function () {

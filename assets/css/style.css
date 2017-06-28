@@ -110,19 +110,20 @@ hr {
 a, .cam-links {
   color: #666666;
   transition: .2s ease-in-out all;
+  font-weight: 300 !important;
 }
 
-/* line 52, assets/scss/base/_global.scss */
+/* line 53, assets/scss/base/_global.scss */
 a:hover, .cam-links:hover {
   color: #008d94;
 }
 
-/* line 55, assets/scss/base/_global.scss */
+/* line 56, assets/scss/base/_global.scss */
 a:focus, .cam-links:focus {
   text-decoration: none;
 }
 
-/* line 59, assets/scss/base/_global.scss */
+/* line 60, assets/scss/base/_global.scss */
 .content-wrapper {
   min-height: calc(100vh - 420px);
 }
@@ -233,136 +234,167 @@ a:focus, .cam-links:focus {
 /* line 1, assets/scss/layout/_nav.scss */
 .navbar {
   font-size: 1.3rem;
-  font-weight: 400;
+  font-weight: 300;
   border: 0;
   margin: 0;
+  margin-bottom: 20px;
 }
 
-/* line 6, assets/scss/layout/_nav.scss */
+/* line 7, assets/scss/layout/_nav.scss */
 .navbar-default {
   background: none;
 }
 
 /* line 9, assets/scss/layout/_nav.scss */
-.navbar-toggle {
+.navbar-default .navbar-toggle {
   width: 100%;
   margin: 0 auto;
 }
 
 /* line 12, assets/scss/layout/_nav.scss */
-.navbar-toggle .icon-bar {
+.navbar-default .navbar-toggle:hover {
+  background: none;
+}
+
+/* line 15, assets/scss/layout/_nav.scss */
+.navbar-default .navbar-toggle .icon-bar {
   margin: 0 auto;
   max-height: 4px;
   margin-bottom: 4px;
 }
 
-/* line 19, assets/scss/layout/_nav.scss */
-.dropdown-menu {
+/* line 22, assets/scss/layout/_nav.scss */
+.navbar-collapse {
+  border: 0;
+}
+
+/* line 25, assets/scss/layout/_nav.scss */
+.navbar .dropdown-menu {
   background: none;
   font-size: 1.3rem;
   transition: 1s ease-in-out all;
+  border: 1px solid #e3e3e3;
+  border-right: 0;
+  border-left: 0;
+  border-radius: 0;
 }
 
-/* line 23, assets/scss/layout/_nav.scss */
-.dropdown-menu li > a {
+/* line 33, assets/scss/layout/_nav.scss */
+.navbar .dropdown-menu li > a {
   color: #666666;
   transition: .2s ease-in-out all;
 }
 
-/* line 26, assets/scss/layout/_nav.scss */
-.dropdown-menu li > a:hover {
+/* line 36, assets/scss/layout/_nav.scss */
+.navbar .dropdown-menu li > a:hover {
   color: #008d94;
   background: none;
 }
 
-/* line 30, assets/scss/layout/_nav.scss */
-.dropdown-menu li > a:focus {
+/* line 40, assets/scss/layout/_nav.scss */
+.navbar .dropdown-menu li > a:focus {
   text-decoration: none;
 }
 
-/* line 35, assets/scss/layout/_nav.scss */
+/* line 44, assets/scss/layout/_nav.scss */
+.navbar .dropdown-menu .menu-wrapper {
+  list-style-type: none;
+}
+
+/* line 47, assets/scss/layout/_nav.scss */
+.navbar .dropdown-menu .item-wrapper {
+  display: table;
+}
+
+/* line 49, assets/scss/layout/_nav.scss */
+.navbar .dropdown-menu .item-wrapper > a {
+  font-weight: 400 !important;
+}
+
+/* line 52, assets/scss/layout/_nav.scss */
+.navbar .dropdown-menu .item-wrapper a[title] {
+  display: block;
+}
+
+/* line 56, assets/scss/layout/_nav.scss */
+.navbar .dropdown-menu > .active > a {
+  background: rgba(0, 141, 148, 0.3);
+  color: #008d94;
+  font-weight: 400 !important;
+}
+
+/* line 64, assets/scss/layout/_nav.scss */
 .nav.navbar-nav {
   width: 100%;
 }
 
-/* line 37, assets/scss/layout/_nav.scss */
-.nav.navbar-nav li {
+/* line 66, assets/scss/layout/_nav.scss */
+.nav.navbar-nav .menu__item {
   min-width: 14.1%;
 }
 
-/* line 41, assets/scss/layout/_nav.scss */
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  /* line 66, assets/scss/layout/_nav.scss */
+  .nav.navbar-nav .menu__item {
+    min-width: 12.7%;
+  }
+}
+
+/* line 74, assets/scss/layout/_nav.scss */
 .contacto-visible {
   display: none;
 }
 
-/* line 45, assets/scss/layout/_nav.scss */
+/* line 79, assets/scss/layout/_nav.scss */
 .nav-principal-cam .contacto-visible {
   display: block;
 }
 
-/*
-HOVERNAV
-========
-A simple addition to the dropdown menu (Bootstrap itself is unchanged). Navbar dropdowns appear on hover.
-This works only for screen sizes larger than phones.
-*/
-@media (min-width: 768px) {
-  /* line 57, assets/scss/layout/_nav.scss */
-  .navbar-nav .open ul {
-    display: none;
-  }
-  /* line 60, assets/scss/layout/_nav.scss */
-  .navbar-default .navbar-nav > .open > a,
-  .navbar-default .navbar-nav > .open > a:hover,
-  .navbar-default .navbar-nav > .open > a:focus {
-    background: none;
-  }
-  /* line 65, assets/scss/layout/_nav.scss */
-  .navbar-inverse .navbar-nav > .open > a,
-  .navbar-inverse .navbar-nav > .open > a:hover,
-  .navbar-inverse .navbar-nav > .open > a:focus {
-    background: none;
-  }
-  /* line 70, assets/scss/layout/_nav.scss */
-  .navbar-nav .hovernav:hover > .dropdown-menu {
-    display: block;
-    width: 100%;
-    padding-left: 15%;
-    min-height: 20vh;
-    background: rgba(255, 255, 255, 0.9);
-  }
+/* line 84, assets/scss/layout/_nav.scss */
+.navbar-default .navbar-nav > .open > a {
+  background: none;
 }
 
-/*
-MEGANAV
-=======
-A simple addition to the dropdown menu (Bootstrap itself is unchanged). When you add GRAND-CHILD links in the navbar: on screens larger than phones, Meganav will transform the dropdown into a mega-menu, with child-links displayed as menu-column heads (in bold).
-*/
-@media handheld, only screen and (max-width: 480px) {
-  /* line 85, assets/scss/layout/_nav.scss */
+/* line 86, assets/scss/layout/_nav.scss */
+.navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  background: none;
+}
+
+@media handheld, only screen and (max-width: 768px) {
+  /* line 93, assets/scss/layout/_nav.scss */
   .has-children ul {
     display: block !important;
     margin-left: 15px;
   }
+  /* line 98, assets/scss/layout/_nav.scss */
+  .menu-item img {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 92, assets/scss/layout/_nav.scss */
+  /* line 105, assets/scss/layout/_nav.scss */
+  .navbar-nav .open ul {
+    display: none;
+  }
+  /* line 108, assets/scss/layout/_nav.scss */
+  .navbar-nav .hovernav:hover > .dropdown-menu {
+    display: block;
+    width: 100%;
+    min-height: 20vh;
+    background: rgba(255, 255, 255, 0.9);
+  }
+  /* line 114, assets/scss/layout/_nav.scss */
   .dropdown.mega-menu {
     position: static;
   }
-  /* line 95, assets/scss/layout/_nav.scss */
+  /* line 117, assets/scss/layout/_nav.scss */
   .mega-menu > .dropdown-menu {
     left: 0;
     right: 0;
   }
-  /* line 99, assets/scss/layout/_nav.scss */
-  .mega-menu > ul > li {
-    display: table-cell;
-    min-width: 22%;
-  }
-  /* line 103, assets/scss/layout/_nav.scss */
-  .mega-menu > ul ul {
+  /* line 121, assets/scss/layout/_nav.scss */
+  .mega-menu > ul ul.dropdown-menu {
     position: relative;
     display: block !important;
     border: 0;
@@ -370,10 +402,28 @@ A simple addition to the dropdown menu (Bootstrap itself is unchanged). When you
     box-shadow: none;
     padding: 0;
   }
-  /* line 114, assets/scss/layout/_nav.scss */
-  .dropdown-menu li li,
-  .dropdown-menu li:last-of-type {
-    border-right: 0;
+  /* line 129, assets/scss/layout/_nav.scss */
+  .dropdown-menu .container li {
+    display: block;
+  }
+  /* line 132, assets/scss/layout/_nav.scss */
+  .menu-wrapper > .menu-item {
+    padding: 5px;
+    width: 25%;
+    float: left;
+  }
+  /* line 137, assets/scss/layout/_nav.scss */
+  .menu-wrapper > .menu-item > a,
+  .item-wrapper > a {
+    font-weight: 400 !important;
+  }
+  /* line 141, assets/scss/layout/_nav.scss */
+  .menu-wrapper :nth-child(5) {
+    clear: left;
+  }
+  /* line 144, assets/scss/layout/_nav.scss */
+  .img-damas {
+    background: #e9e8e6;
   }
 }
 
