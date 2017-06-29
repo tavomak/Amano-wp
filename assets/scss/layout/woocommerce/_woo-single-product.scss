@@ -17,8 +17,7 @@
         padding: 0;
       }
     }
-    div.upsells,
-    {
+    div.upsells {
       color: $gris-claro;
       padding: 32px 0 0 0;
       @include MQ(SM) {
@@ -38,19 +37,16 @@
           }
         }
       }
-    }
-    //Datos del producto
+    } //Datos del producto
     div.product div.sumario {
       @include MQ(SM) {
         text-align: center;
         clear: both;
-      }
-      //envoltorio del sumario
+      } //envoltorio del sumario
       .wrap-sumario {
         margin: 40px 0 0 0;
         h1.product_title {
-          font-size: 26px;
-          //font-weight: $font-light;
+          font-size: 26px; //font-weight: $font-light;
         }
         .price {
           span {

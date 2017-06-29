@@ -1,0 +1,41 @@
+.nofound {
+    color: $gris-claro;
+    min-height: 60vh;
+    background: fn-url('404.jpg') no-repeat;
+    background-size: cover;
+    @include MQ(S) {
+        background: fn-url('404-movil.jpg') no-repeat;
+    }
+    @include MQ(ML) {
+        background: fn-url('404-tablet.jpg') no-repeat;
+    }
+    &-container {
+        min-height: 60vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    &-content {
+        min-height: 30%;
+    }
+    &-text {
+        margin-bottom: 20px;
+    }
+    &-img {
+        @include MQ(SM) {
+            display: none;
+        }
+        height: 250px;
+        background: fn-url('globos.png') no-repeat;
+        &::after {
+            content: '';
+            position: relative;
+            top: -40px;
+            left: -80px;
+            display: block;
+            height: 100px;
+            background: fn-url('un-globo.png') no-repeat;
+        }
+    }
+}

@@ -30,7 +30,7 @@ function add_after_summary($parent_cat_ID) {
 
         if ( $products->have_posts() ) :
 
-        echo '<div class=" col-lg-6">';
+        echo '<div class=" col-lg-6"><p> Tambien disponible en:</p>';
 
                      while ( $products->have_posts() ) : $products->the_post();
 

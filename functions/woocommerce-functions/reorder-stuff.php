@@ -6,7 +6,11 @@ return 6;
 }
 add_filter('loop_shop_columns', 'loop_columns', 999);
 // productis por pagina
-add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 24;' ), 20 );
+if (wp_is_mobile()){
+  add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 12;' ), 20 );
+}else{
+  add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 24;' ), 20 );
+}
 /*
 Remover tablas
 */

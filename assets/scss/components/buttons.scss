@@ -1,0 +1,15 @@
+.cam-button {
+    color: $white;
+    background: $azul-cam;
+    transition: ease-in-out 0.3s all;
+    border: none;
+    padding: 8px 10px 8px 10px;
+    &:hover {
+        background: $rosa-cam;
+        color: $white;
+    }
+    &:focus{
+        background: rgba($white, .5);
+        color: $azul-cam;
+    }
+}

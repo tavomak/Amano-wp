@@ -1,21 +1,20 @@
 <?php get_template_part('includes/header'); ?>
 
-<div class="container">
-  <div class="row">
-
-    <div class="col-xs-12 col-sm-8">
-        <?php tha_content_before(); ?>
-        <div class="alert alert-warning">
-          <h1><i class="glyphicon glyphicon-warning-sign"></i> <?php _e('Error', 'cam-wp'); ?> 404</h1>
-          <p><?php _e('The page you were looking for does not exist.', 'cam-wp'); ?></p>
+<div class="container-fluid nofound">
+  <div class="container nofound-container">
+    <div class="row nofound-content">
+      <div class="col-sm-4">
+        <div class="nofound-text">
+          <h2>¡Lo sentimos, <br>no encontramos <br>lo que buscas !</h2>
         </div>
-    </div>
-
-    <div class="col-xs-6 col-sm-4" id="sidebar" role="navigation">
-       <?php //get_template_part('includes/sidebar'); ?>
-    </div>
-
-  </div><!-- /.row -->
+        <a href="<?php echo home_url('/'); ?>" class="cam-button">Volver a la tienda</a>
+      </div>
+      <div class="col-sm-4 col-sm-offset-2">
+        <div class="nofound-img">
+        </div>
+      </div>
+    </div><!-- /.row -->
+  </div>
 </div><!-- /.container -->
 
 <?php get_template_part('includes/footer'); ?>
