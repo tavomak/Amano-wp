@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
@@ -14,17 +18,10 @@ h2 {
   font-weight: $font-regular;
 }
 
-//decoracion---------------------------------------------
-a,
-a:hover {
-  text-decoration: none;
-}
-
 .dn {
   display: none !important;
 }
 
-//flotantes----------------------------------------------
 .fl {
   float: left !important;
 }
@@ -47,16 +44,19 @@ hr {
 }
 
 a {
-  color: $gris-claro;
   transition: .2s ease-in-out all;
+  color: $gris-claro;
   font-weight: $font-regular !important;
-  &:hover{
+  text-decoration: none;
+  &:hover {
     color: $azul-cam;
+    text-decoration: none;
   }
-  &:focus{
+  &:focus {
     text-decoration: none;
   }
 }
-.content-wrapper{
+
+.content-wrapper {
   min-height: calc(100vh - 420px);
 }

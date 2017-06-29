@@ -1,53 +1,37 @@
-.woocommerce-cart {
-    article {
-        header {
-            h2 {}
-        }
-    }
-    .woocommerce {
-        form {}
-        .cart-collaterals {
-            .cart-collaterals {
-                .cart_totals.calculated_shipping {}
-            }
-        }
-    }
-}
-
 .woocommerce button.button,
 a.button {
-    font-weight: 400 !important;
+  font-weight: 400 !important;
 }
 
 .woocommerce input.button.alt,
 a.checkout-button.button.alt.wc-forward {
-    background: $azul-cam;
-    transition: ease-in-out 0.3s all;
-    border-radius: 0;
+  background: $azul-cam;
+  transition: ease-in-out 0.3s all;
+  border-radius: 0;
+  color: $white;
+  font-weight: 400;
+  &:hover {
+    background: $rosa-cam;
     color: $white;
-    font-weight: 400;
-    &:hover {
-        background: $rosa-cam;
-        color: $white;
-    }
+  }
 }
 
 .woocommerce-checkout #payment div.payment_box {
-    background: none;
+  background: none;
 }
 
 div.instacontainer {
-    text-transform: capitalize;
-    div {
-        padding: 4px 0 0 0;
-    }
-    .copy {
-        margin: 24px 0 10px 0;
-    }
+  text-transform: capitalize;
+  div {
+    padding: 4px 0 0 0;
+  }
+  .copy {
+    margin: 24px 0 10px 0;
+  }
 }
 
 .woocommerce-checkout #payment ul.payment_methods li img {
-    position: inherit;
-    margin: 0 auto;
-    padding: 0;
+  position: inherit;
+  margin: 0 auto;
+  padding: 0;
 }

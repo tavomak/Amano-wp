@@ -1,6 +1,7 @@
-.current_user{
+.current_user {
   text-transform: capitalize;
 }
+
 .navbar {
   font-size: 1.3rem;
   font-weight: $font-regular;
@@ -12,18 +13,18 @@
     & .navbar-nav>li>a {
       color: $gris-claro;
       font-weight: $font-regular !important;
-      &:hover{ 
-         color: $azul-cam;
+      &:hover {
+        color: $azul-cam;
       }
     }
     & .navbar-nav>.active>a {
       background: none;
       color: $rosa-cam;
-      &:hover{ 
-         background: none;
+      &:hover {
+        background: none;
       }
-      &:focus{ 
-         background: none;
+      &:focus {
+        background: none;
       }
     }
     .navbar-toggle {
@@ -158,7 +159,7 @@
   .item-wrapper>a {
     font-weight: $font-bold !important;
   }
-  .menu-wrapper :nth-child(5) {
+  .menu-wrapper:nth-child(5) {
     clear: left;
   }
   .img-damas {

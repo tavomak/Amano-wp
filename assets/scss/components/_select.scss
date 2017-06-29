@@ -17,7 +17,7 @@
   width: 100%;
   display: inline-block;
   position: relative;
-  &:after {
+  &::after {
     content: "";
     display: inline-block;
     position:absolute;

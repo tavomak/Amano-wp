@@ -1,11 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,300,400");
 @import url("https://file.myfontastic.com/dhMhwWGPxzpYEzacwQrQrK/icons.css");
-/* line 1, assets/scss/utils/_placeholders.scss */
-.cd_carousel {
-  margin: 0;
-  padding: 0;
-}
-
 /* line 2, assets/scss/base/_reset.scss */
 article,
 aside,
@@ -43,82 +37,76 @@ table {
   border-spacing: 0;
 }
 
-/* line 36, assets/scss/base/_reset.scss */
-*,
-*::after,
-*::before {
+/* line 1, assets/scss/base/_global.scss */
+* {
   box-sizing: border-box;
 }
 
-/* line 1, assets/scss/base/_global.scss */
+/* line 5, assets/scss/base/_global.scss */
 html,
 body {
   margin: 0;
 }
 
-/* line 6, assets/scss/base/_global.scss */
+/* line 10, assets/scss/base/_global.scss */
 body {
   font-family: "Montserrat", sans-serif;
   color: #2f3238;
   font-size: 1.2em;
 }
 
-/* line 12, assets/scss/base/_global.scss */
+/* line 16, assets/scss/base/_global.scss */
 h1,
 h2 {
   font-weight: 300;
 }
 
-/* line 18, assets/scss/base/_global.scss */
-a,
-a:hover {
-  text-decoration: none;
-}
-
-/* line 23, assets/scss/base/_global.scss */
+/* line 21, assets/scss/base/_global.scss */
 .dn {
   display: none !important;
 }
 
-/* line 28, assets/scss/base/_global.scss */
+/* line 25, assets/scss/base/_global.scss */
 .fl {
   float: left !important;
 }
 
-/* line 32, assets/scss/base/_global.scss */
+/* line 29, assets/scss/base/_global.scss */
 .fr {
   float: right;
 }
 
-/* line 36, assets/scss/base/_global.scss */
+/* line 33, assets/scss/base/_global.scss */
 .fn {
   float: none;
 }
 
-/* line 40, assets/scss/base/_global.scss */
+/* line 37, assets/scss/base/_global.scss */
 .cb {
   clear: both;
 }
 
-/* line 44, assets/scss/base/_global.scss */
+/* line 41, assets/scss/base/_global.scss */
 hr {
   margin: 10px 0 10px 0;
   padding: 0;
 }
 
-/* line 49, assets/scss/base/_global.scss */
+/* line 46, assets/scss/base/_global.scss */
 a {
-  color: #666666;
   transition: .2s ease-in-out all;
+  color: #666666;
   font-weight: 300 !important;
+  text-decoration: none;
 }
 
-/* line 53, assets/scss/base/_global.scss */
+/* line 51, assets/scss/base/_global.scss */
 a:hover {
   color: #008d94;
+  text-decoration: none;
 }
 
-/* line 56, assets/scss/base/_global.scss */
+/* line 55, assets/scss/base/_global.scss */
 a:focus {
   text-decoration: none;
 }
@@ -212,23 +200,16 @@ a:focus {
   max-width: 500px;
 }
 
-/* line 78, assets/scss/layout/_contact.scss */
+/* line 79, assets/scss/layout/_contact.scss */
 #recaptcha {
   width: 304px;
   margin: 0 auto;
 }
 
-/* line 82, assets/scss/layout/_contact.scss */
-#recaptcha_area, #recaptcha_table {
+/* line 84, assets/scss/layout/_contact.scss */
+#recaptcha_area,
+#recaptcha_table {
   margin: 0 auto !important;
-}
-
-/* line 85, assets/scss/layout/_contact.scss */
-.icon-facebook,
-.icon-twitter,
-.icon-instagram {
-  margin: 0 10px 0 0;
-  zoom: 1.3;
 }
 
 /* line 1, assets/scss/layout/_nav.scss */
@@ -236,7 +217,7 @@ a:focus {
   text-transform: capitalize;
 }
 
-/* line 4, assets/scss/layout/_nav.scss */
+/* line 5, assets/scss/layout/_nav.scss */
 .navbar {
   font-size: 1.3rem;
   font-weight: 300;
@@ -245,62 +226,62 @@ a:focus {
   margin-bottom: 20px;
 }
 
-/* line 10, assets/scss/layout/_nav.scss */
+/* line 11, assets/scss/layout/_nav.scss */
 .navbar-default {
   background: none;
 }
 
-/* line 12, assets/scss/layout/_nav.scss */
+/* line 13, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-nav > li > a {
   color: #666666;
   font-weight: 300 !important;
 }
 
-/* line 15, assets/scss/layout/_nav.scss */
+/* line 16, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-nav > li > a:hover {
   color: #008d94;
 }
 
-/* line 19, assets/scss/layout/_nav.scss */
+/* line 20, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-nav > .active > a {
   background: none;
   color: #e22980;
 }
 
-/* line 22, assets/scss/layout/_nav.scss */
+/* line 23, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-nav > .active > a:hover {
   background: none;
 }
 
-/* line 25, assets/scss/layout/_nav.scss */
+/* line 26, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-nav > .active > a:focus {
   background: none;
 }
 
-/* line 29, assets/scss/layout/_nav.scss */
+/* line 30, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-toggle {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 32, assets/scss/layout/_nav.scss */
+/* line 33, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-toggle:hover {
   background: none;
 }
 
-/* line 35, assets/scss/layout/_nav.scss */
+/* line 36, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-toggle .icon-bar {
   margin: 0 auto;
   max-height: 4px;
   margin-bottom: 4px;
 }
 
-/* line 42, assets/scss/layout/_nav.scss */
+/* line 43, assets/scss/layout/_nav.scss */
 .navbar-collapse {
   border: 0;
 }
 
-/* line 45, assets/scss/layout/_nav.scss */
+/* line 46, assets/scss/layout/_nav.scss */
 .navbar .dropdown-menu {
   background: none;
   font-size: 1.3rem;
@@ -311,121 +292,121 @@ a:focus {
   border-radius: 0;
 }
 
-/* line 53, assets/scss/layout/_nav.scss */
+/* line 54, assets/scss/layout/_nav.scss */
 .navbar .dropdown-menu li > a {
   color: #666666;
   transition: .2s ease-in-out all;
 }
 
-/* line 56, assets/scss/layout/_nav.scss */
+/* line 57, assets/scss/layout/_nav.scss */
 .navbar .dropdown-menu li > a:hover {
   color: #008d94;
   background: rgba(102, 102, 102, 0.1);
 }
 
-/* line 60, assets/scss/layout/_nav.scss */
+/* line 61, assets/scss/layout/_nav.scss */
 .navbar .dropdown-menu li > a:focus {
   text-decoration: none;
 }
 
-/* line 64, assets/scss/layout/_nav.scss */
+/* line 65, assets/scss/layout/_nav.scss */
 .navbar .dropdown-menu .menu-wrapper {
   list-style-type: none;
 }
 
-/* line 67, assets/scss/layout/_nav.scss */
+/* line 68, assets/scss/layout/_nav.scss */
 .navbar .dropdown-menu .item-wrapper {
   display: table;
 }
 
-/* line 69, assets/scss/layout/_nav.scss */
+/* line 70, assets/scss/layout/_nav.scss */
 .navbar .dropdown-menu .item-wrapper > a {
   font-weight: 400 !important;
 }
 
-/* line 72, assets/scss/layout/_nav.scss */
+/* line 73, assets/scss/layout/_nav.scss */
 .navbar .dropdown-menu .item-wrapper a[title] {
   display: block;
 }
 
-/* line 76, assets/scss/layout/_nav.scss */
+/* line 77, assets/scss/layout/_nav.scss */
 .navbar .dropdown-menu > .active > a {
   background: rgba(0, 141, 148, 0.1);
   color: #008d94;
   font-weight: 400 !important;
 }
 
-/* line 84, assets/scss/layout/_nav.scss */
+/* line 85, assets/scss/layout/_nav.scss */
 .nav.navbar-nav {
   width: 100%;
 }
 
-/* line 86, assets/scss/layout/_nav.scss */
+/* line 87, assets/scss/layout/_nav.scss */
 .nav.navbar-nav .menu__item {
   min-width: 14.1%;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
-  /* line 86, assets/scss/layout/_nav.scss */
+  /* line 87, assets/scss/layout/_nav.scss */
   .nav.navbar-nav .menu__item {
     min-width: 12.7%;
   }
 }
 
-/* line 94, assets/scss/layout/_nav.scss */
+/* line 95, assets/scss/layout/_nav.scss */
 .contacto-visible {
   display: none;
 }
 
-/* line 99, assets/scss/layout/_nav.scss */
+/* line 100, assets/scss/layout/_nav.scss */
 .nav-principal-cam .contacto-visible {
   display: block;
 }
 
-/* line 104, assets/scss/layout/_nav.scss */
+/* line 105, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-nav > .open > a {
   background: none;
 }
 
-/* line 106, assets/scss/layout/_nav.scss */
+/* line 107, assets/scss/layout/_nav.scss */
 .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
   background: none;
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 113, assets/scss/layout/_nav.scss */
+  /* line 114, assets/scss/layout/_nav.scss */
   .has-children ul {
     display: block !important;
     margin-left: 15px;
   }
-  /* line 118, assets/scss/layout/_nav.scss */
+  /* line 119, assets/scss/layout/_nav.scss */
   .menu-item img {
     display: none;
   }
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 125, assets/scss/layout/_nav.scss */
+  /* line 126, assets/scss/layout/_nav.scss */
   .navbar-nav .open ul {
     display: none;
   }
-  /* line 128, assets/scss/layout/_nav.scss */
+  /* line 129, assets/scss/layout/_nav.scss */
   .navbar-nav .hovernav:hover > .dropdown-menu {
     display: block;
     width: 100%;
     min-height: 20vh;
     background: rgba(255, 255, 255, 0.9);
   }
-  /* line 134, assets/scss/layout/_nav.scss */
+  /* line 135, assets/scss/layout/_nav.scss */
   .dropdown.mega-menu {
     position: static;
   }
-  /* line 137, assets/scss/layout/_nav.scss */
+  /* line 138, assets/scss/layout/_nav.scss */
   .mega-menu > .dropdown-menu {
     left: 0;
     right: 0;
   }
-  /* line 141, assets/scss/layout/_nav.scss */
+  /* line 142, assets/scss/layout/_nav.scss */
   .mega-menu > ul ul.dropdown-menu {
     position: relative;
     display: block !important;
@@ -434,26 +415,26 @@ a:focus {
     box-shadow: none;
     padding: 0;
   }
-  /* line 149, assets/scss/layout/_nav.scss */
+  /* line 150, assets/scss/layout/_nav.scss */
   .dropdown-menu .container li {
     display: block;
   }
-  /* line 152, assets/scss/layout/_nav.scss */
+  /* line 153, assets/scss/layout/_nav.scss */
   .menu-wrapper > .menu-item {
     padding: 5px;
     width: 25%;
     float: left;
   }
-  /* line 157, assets/scss/layout/_nav.scss */
+  /* line 158, assets/scss/layout/_nav.scss */
   .menu-wrapper > .menu-item > a,
   .item-wrapper > a {
     font-weight: 400 !important;
   }
-  /* line 161, assets/scss/layout/_nav.scss */
-  .menu-wrapper :nth-child(5) {
+  /* line 162, assets/scss/layout/_nav.scss */
+  .menu-wrapper:nth-child(5) {
     clear: left;
   }
-  /* line 164, assets/scss/layout/_nav.scss */
+  /* line 165, assets/scss/layout/_nav.scss */
   .img-damas {
     background: #e9e8e6;
   }
@@ -497,7 +478,7 @@ a:focus {
   float: right;
 }
 
-/* line 27, assets/scss/layout/_footer.scss */
+/* line 28, assets/scss/layout/_footer.scss */
 .footer-estela {
   padding-top: 15px;
 }
@@ -1070,13 +1051,13 @@ div.pp_woocommerce .pp_close {
   background: #e22980;
 }
 
-/* line 17, assets/scss/layout/woocommerce/_woo-cart.scss */
+/* line 1, assets/scss/layout/woocommerce/_woo-cart.scss */
 .woocommerce button.button,
 a.button {
   font-weight: 400 !important;
 }
 
-/* line 22, assets/scss/layout/woocommerce/_woo-cart.scss */
+/* line 6, assets/scss/layout/woocommerce/_woo-cart.scss */
 .woocommerce input.button.alt,
 a.checkout-button.button.alt.wc-forward {
   background: #008d94;
@@ -1086,34 +1067,34 @@ a.checkout-button.button.alt.wc-forward {
   font-weight: 400;
 }
 
-/* line 29, assets/scss/layout/woocommerce/_woo-cart.scss */
+/* line 13, assets/scss/layout/woocommerce/_woo-cart.scss */
 .woocommerce input.button.alt:hover,
 a.checkout-button.button.alt.wc-forward:hover {
   background: #e22980;
   color: white;
 }
 
-/* line 35, assets/scss/layout/woocommerce/_woo-cart.scss */
+/* line 19, assets/scss/layout/woocommerce/_woo-cart.scss */
 .woocommerce-checkout #payment div.payment_box {
   background: none;
 }
 
-/* line 39, assets/scss/layout/woocommerce/_woo-cart.scss */
+/* line 23, assets/scss/layout/woocommerce/_woo-cart.scss */
 div.instacontainer {
   text-transform: capitalize;
 }
 
-/* line 41, assets/scss/layout/woocommerce/_woo-cart.scss */
+/* line 25, assets/scss/layout/woocommerce/_woo-cart.scss */
 div.instacontainer div {
   padding: 4px 0 0 0;
 }
 
-/* line 44, assets/scss/layout/woocommerce/_woo-cart.scss */
+/* line 28, assets/scss/layout/woocommerce/_woo-cart.scss */
 div.instacontainer .copy {
   margin: 24px 0 10px 0;
 }
 
-/* line 49, assets/scss/layout/woocommerce/_woo-cart.scss */
+/* line 33, assets/scss/layout/woocommerce/_woo-cart.scss */
 .woocommerce-checkout #payment ul.payment_methods li img {
   position: inherit;
   margin: 0 auto;
@@ -1133,7 +1114,7 @@ div.instacontainer .copy {
   color: #2f3238;
 }
 
-/* line 14, assets/scss/components/_loader.scss */
+/* line 12, assets/scss/components/_loader.scss */
 .cd-loader__grid {
   width: 100px;
   height: 100px;
@@ -1146,16 +1127,16 @@ div.instacontainer .copy {
           animation-delay: 0.2s;
 }
 
-/* line 24, assets/scss/components/_loader.scss */
+/* line 21, assets/scss/components/_loader.scss */
 .cd-loader__item {
   width: 100%;
   height: 100%;
-  background: #fff url(../img/footwear.svg) no-repeat center center;
-  -webkit-animation: cd-loaderScaleDelay 1.3s infinite ease-in-out;
-          animation: cd-loaderScaleDelay 1.3s infinite ease-in-out;
+  background: #fff url("../img/footwear.svg") no-repeat center center;
+  -webkit-animation: cd-loader-scale-delay 1.3s infinite ease-in-out;
+          animation: cd-loader-scale-delay 1.3s infinite ease-in-out;
 }
 
-@-webkit-keyframes cd-loaderScaleDelay {
+@-webkit-keyframes cd-loader-scale-delay {
   0%,
   70%,
   100% {
@@ -1168,7 +1149,7 @@ div.instacontainer .copy {
   }
 }
 
-@keyframes cd-loaderScaleDelay {
+@keyframes cd-loader-scale-delay {
   0%,
   70%,
   100% {
@@ -1212,7 +1193,7 @@ div.instacontainer .copy {
 }
 
 /* line 20, assets/scss/components/_select.scss */
-.span-wrapper:after {
+.span-wrapper::after {
   content: "";
   display: inline-block;
   position: absolute;

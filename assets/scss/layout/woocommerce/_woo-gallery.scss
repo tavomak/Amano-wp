@@ -1,49 +1,49 @@
 //mesa de luz
 .pp_pic_holder.pp_woocommerce {
-    overflow-x: visible;
+  overflow-x: visible;
 }
 
 div.pp_woocommerce a.pp_expand {
-    left: .5em !important;
+  left: .5em !important;
 }
 
 div.pp_woocommerce .pp_close {
-    right: .5em !important;
+  right: .5em !important;
 }
 
 .pp_gallery {
-    margin-top: -20px;
-    ul {
-        height: 100%;
-        a {
-            height: 100%;
-        }
+  margin-top: -20px;
+  ul {
+    height: 100%;
+    a {
+      height: 100%;
     }
+  }
 }
 
 //Pagina single de productos
 .single.single-product {
-    //Conetenedor de woocommerce
-    .woocommerce-content-cam {
-        //Page single - Div de imagenes de producto
-        div.imagenes {
-            a.woocommerce-main-image {
-                margin: 0 auto;
-                max-width: 460px;
-                @include MQ(S) {}
-            }
-            div.thumb {
-                padding: 0;
-                a {
-                    width: 100%;
-                    margin: 0;
-                    float: none;
-                    @include MQ(SM) {
-                        width: 33%;
-                        float: left;
-                    }
-                }
-            }
+  //Conetenedor de woocommerce
+  .woocommerce-content-cam {
+    //Page single - Div de imagenes de producto
+    div.imagenes {
+      a.woocommerce-main-image {
+        margin: 0 auto;
+        max-width: 460px;
+        @include MQ(S) {}
+      }
+      div.thumb {
+        padding: 0;
+        a {
+          width: 100%;
+          margin: 0;
+          float: none;
+          @include MQ(SM) {
+            width: 33%;
+            float: left;
+          }
         }
+      }
     }
+  }
 }

@@ -1,90 +1,87 @@
 .contacto {
-    #modalbox {
-        border-radius: 0;
-        opacity: 0.96;
-    }
-    #social-media {
-        ul {
-            list-style: none;
-            margin: 0 auto;
-            padding: 0;
-            display: block;
-            li {
-                display: inline-block;
-                margin-right: 10px;
-                a {
-                    &:hover {
-                        text-decoration: none;
-                    }
-                }
-                span {
-                    font-size: 25px;
-                    //color: $color-3;
-                    &:hover {
-                       // color: $color-1
-                    }
-                }
-            }
+  #modalbox {
+    border-radius: 0;
+    opacity: 0.96;
+  }
+  #social-media {
+    ul {
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      display: block;
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        a {
+          &:hover {
+            text-decoration: none;
+          }
         }
+        span {
+          font-size: 25px;
+          //color: $color-3;
+          &:hover {
+            // color: $color-1
+          }
+        }
+      }
     }
-    .btn-contacto {
-        width: 100%;
-        margin: 25px 0;
-        border-radius: 0;
-        font-size: 15px;
-        font-weight: bold;
-    }
-    h3 {
-        letter-spacing: 5px;
-        font-weight: bold;
-    }
+  }
+  .btn-contacto {
+    width: 100%;
+    margin: 25px 0;
+    border-radius: 0;
+    font-size: 15px;
+    font-weight: bold;
+  }
+  h3 {
+    letter-spacing: 5px;
+    font-weight: bold;
+  }
 }
 
 .wpcf7 {
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .wpcf7 textarea,
 .wpcf7 input {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .wpcf7 input[type=submit] {
-    //background: $color-3;
+  //background: $color-3;
 }
 
 .wpcf7 {
-    margin: 0 auto;
-    text-align: center;
-    margin: 0 0 25px 0;
-    input[type=submit] {
-        margin: 10px;
-        width: 200px;
-        //background: $color-3;
-        border: none;
-        height: 60px;
-        &:hover {
-            //background: $color-1;
-            color: white;
-        }
+  margin: 0 auto;
+  text-align: center;
+  margin: 0 0 25px 0;
+  input[type=submit] {
+    margin: 10px;
+    width: 200px;
+    //background: $color-3;
+    border: none;
+    height: 60px;
+    &:hover {
+      //background: $color-1;
+      color: white;
     }
-    textarea,
-    input {
-        max-width: 500px;
-    }
+  }
+  textarea,
+  input {
+    max-width: 500px;
+  }
 }
+
 #recaptcha {
-    width: 304px;
-    margin: 0 auto;
+  width: 304px;
+  margin: 0 auto;
 }
-#recaptcha_area, #recaptcha_table {
-      margin: 0 auto !important;
-}
-.icon-facebook,
-.icon-twitter,
-.icon-instagram{
-    margin: 0 10px 0 0;
-    zoom:1.3;
+
+#recaptcha_area,
+#recaptcha_table {
+  margin: 0 auto !important;
 }

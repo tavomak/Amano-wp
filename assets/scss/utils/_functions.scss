@@ -1,0 +1,5 @@
+$path: '../assets/img/';
+
+@function fn-url($img){
+  @return url($path + $img);
+}

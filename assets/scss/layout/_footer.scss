@@ -5,12 +5,12 @@
     list-style-type: none;
     padding: 0 0 0 20px;
   }
-  hr{
+  hr {
     border-color: $gris-superclaro;
   }
   &-shop-icons {
     font-size: .9em;
-    span{
+    span {
       font-size: 2em;
       margin-top: -5px;
       padding-right: 6px;
@@ -18,12 +18,13 @@
       float: left;
     }
   }
-  &-social-icons{
+  &-social-icons {
     display: inline-block;
     margin-right: 20px;
     float: right;
   }
 }
-.footer-estela{
+
+.footer-estela {
   padding-top: 15px;
 }
