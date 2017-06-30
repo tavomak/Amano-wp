@@ -1,0 +1,14 @@
+.cam-product-texture {
+    position: absolute;
+    bottom: -80px;
+    &__img {
+        transition: all .4s ease-in-out;
+    }
+    &__link {
+        padding: 10px 3px 0 3px;
+        position: relative;
+        &:hover .cam-product-texture__img {
+            transform: scale(1.1) rotate(-180deg);
+        }
+    }
+}

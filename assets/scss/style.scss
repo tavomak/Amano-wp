@@ -14,7 +14,12 @@
 @import 'layout/contact';
 @import 'layout/nav';
 @import 'layout/footer';
-@import 'layout/woocommerce';
+@import 'layout/woocommerce/woo-global'; //Estilos globales
+@import 'layout/woocommerce/woo-gallery'; // Galerias y manejo de imagenes
+@import 'layout/woocommerce/woo-nav'; //Single de productos
+@import 'layout/woocommerce/woo-single-product'; //Single de productos
+@import 'layout/woocommerce/woo-cart'; //Carrito, finalizar compra y cuenta son paginas con shortcodes no estan dentro de woocommerce
+@import 'layout/woocommerce/product-texture';//Texturas disponibles de productos
 
 @import 'components/loader';
 @import 'components/slides';

@@ -16,28 +16,7 @@
       ul.products {
         padding: 0;
       }
-    }
-    div.upsells {
-      color: $gris-claro;
-      padding: 32px 0 0 0;
-      @include MQ(SM) {
-        text-align: center;
-      }
-      ul.products {
-        padding: 10px 0 0 0;
-        a {
-          padding: 15px 5px 5px 5px;
-          position: relative;
-          img {
-            transition: all .4s ease-in-out;
-            padding: 5px;
-          }
-          &:hover img {
-            transform: scale(1.2) rotate(-180deg);
-          }
-        }
-      }
-    } //Datos del producto
+    }//Datos del producto
     div.product div.sumario {
       @include MQ(SM) {
         text-align: center;

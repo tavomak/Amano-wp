@@ -1,9 +1,9 @@
 <?php
 
 // Disponibilidad de color
-function add_after_summary($parent_cat_ID) {
+function add_texture($parent_cat_ID) {
 
-    echo '<div class="col-sm-12 cb">';
+    //echo '<div class="">';
     $image = get_field('textura');
     $terms = get_the_terms( $post->ID, 'product_cat' );
     $postid = get_the_ID();
@@ -30,7 +30,7 @@ function add_after_summary($parent_cat_ID) {
 
         if ( $products->have_posts() ) :
 
-        echo '<div class=" col-lg-6"><p> Tambien disponible en:</p>';
+        echo '<div class="cam-product-texture"><p> Tambien disponible en:</p>';
 
                      while ( $products->have_posts() ) : $products->the_post();
 
@@ -39,7 +39,7 @@ function add_after_summary($parent_cat_ID) {
 
                         if( !empty($image) ):
 
-                            echo '<a href="'.get_the_permalink().'"><img src="'. $image['url'].'" alt="'.$image['alt'].'"/></a>';
+                            echo '<a href="'.get_the_permalink().'" class="cam-product-texture__link"><img src="'. $image['url'].'" alt="'.$image['alt'].'" class="cam-product-texture__img"/></a>';
                             /*echo '<p>'.$term->term_id.'</p>';
                             echo '<p>'.$term->name.'</p>';
                             echo '<p>'.$term->slug.'</p>';
@@ -63,6 +63,6 @@ function add_after_summary($parent_cat_ID) {
 
 }
 // add the action
-add_action( 'woocommerce_after_single_product_summary', 'add_after_summary', 10, 2 );
+add_action( 'woocommerce_product_thumbnails', 'add_texture', 10, 2 );
 
 ?>
