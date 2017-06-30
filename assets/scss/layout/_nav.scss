@@ -7,7 +7,9 @@
   font-weight: $font-regular;
   border: 0;
   margin: 0;
-  margin-bottom: 20px;
+  @include MQ(LXL) {
+    margin-bottom: 20px;
+  }
   &-default {
     background: none;
     & .navbar-nav>li>a {
@@ -30,6 +32,7 @@
     .navbar-toggle {
       width: 100%;
       margin: 0 auto;
+      border-radius: 0;
       &:hover {
         background: none;
       }

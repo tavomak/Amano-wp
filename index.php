@@ -1,5 +1,9 @@
 <?php get_template_part('includes/header'); ?>
-
+<?php
+	if ( is_home() ) {
+	//echo 'Default Blog';
+	}
+?>
 <div class="container">
 	<div class="row">
 

@@ -1,0 +1,34 @@
+.welcome {
+    margin-bottom: 2em;
+    &-txt{
+        @include MQ(LXL) {
+            position: absolute;
+            color: rgba($white, .9);
+            margin-top: 10%;
+        }
+    }
+    &-img{
+        margin: 0 auto;
+    }
+    &-subtitle{
+        margin-top: 0;
+    }
+}
+.adv-subibaja{
+    color: $white;
+    background: #cea271;
+    padding: 25px 0 45px 0;
+    @include MQ(XL){
+        width: 1280px;
+        margin: 0 auto;
+    }
+    &-title{
+        font-weight: $font-regular;
+    }
+    &-img{
+        padding-top: 10%;
+    }
+    .cam-button{
+        margin: 25px 0 10px 0;
+    }
+}

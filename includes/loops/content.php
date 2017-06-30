@@ -46,4 +46,4 @@ Alternatively, notice that index.php, category.php and single.php have a post_cl
     <li class="newer"><?php previous_posts_link(__('Next', 'cam-wp') . ' <i class="glyphicon glyphicon-arrow-right"></i>') ?></li>
   </ul>
 <?php } ?>
-<?php else: wp_redirect(get_bloginfo('siteurl').'/404', 404); exit; endif; ?>
+<?php else: echo 'Aún no hay noticias'; endif; ?>
