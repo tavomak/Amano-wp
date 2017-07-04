@@ -40,6 +40,7 @@
   }
   label {
     color: $gris-oscuro;
+    font-weight: $font-regular !important;
   }
   .woocommerce-breadcrumb {
     margin: 0;
@@ -188,4 +189,14 @@ a.button {
 
 .woocommerce-Price-currencySymbol {
   margin-right: 6px;
+}
+
+.woocommerce table.shop_table, .woocommerce-checkout #payment{
+  border-radius: 0;
+}
+.woocommerce-cart table.cart img{
+  width: 64px;
+}
+.checkbox{
+  margin: 0;
 }
