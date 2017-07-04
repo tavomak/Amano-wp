@@ -1,6 +1,8 @@
 .cam-product-texture {
-    position: absolute;
-    bottom: -80px;
+    clear: both;
+    &__title{
+        color: $gris-superclaro;
+    }
     &__img {
         transition: all .4s ease-in-out;
     }

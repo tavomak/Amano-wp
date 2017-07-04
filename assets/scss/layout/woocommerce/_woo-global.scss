@@ -58,10 +58,13 @@
     font-size: 0.92em;
     display: block;
     width: 100%;
-    padding: 25px 0 25px 0;
+    padding: 25px 0 0px 0;
   } //Etiqueta de descuento
   .wapl-flash {
     top: -35px;
+    @include MQ(L) {
+      top: -20px;
+    }
     @include MQ(XL) {
       top: -15px;
     }
@@ -72,6 +75,12 @@
       line-height: 40px;
       font-weight: $font-regular;
       font-size: 12px;
+      @include MQ(L){
+        width: 38px;
+        height: 38px;
+        line-height: 34px;
+        font-size: 10px;
+      }
     }
   } //Titulo de la pagina, categoria de woo h1
   .page-title, //orden de los productos form
@@ -89,7 +98,7 @@
         width: 45%;
       }
       @include MQ(L) {
-        margin-bottom: 5px;
+        margin-bottom: 25px;
       }
       @include MQ(XL) {
         margin-bottom: 0;
@@ -105,15 +114,11 @@
             opacity: 1;
             color: $gris-claro;
           }
-        } //Span aviso de oferta
-        span.onsale {}
+        }
         //Span de precios
         span.price {
           display: none;
-          text-align: center; //Precio de descuento
-          del {}
-          //Precio a pagar
-          ins {}
+          text-align: center;
           //Estos span estan dentro de las etiquetas del e ins anteriores
           span.woocommerce-Price-amount {
             span.woocommerce-Price-currencySymbol {

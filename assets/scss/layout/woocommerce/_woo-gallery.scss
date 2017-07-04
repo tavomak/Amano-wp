@@ -28,12 +28,26 @@ div.pp_woocommerce .pp_close {
     //Page single - Div de imagenes de producto
     div.imagenes {
       a.woocommerce-main-image {
+        display: block;
         margin: 0 auto;
         max-width: 460px;
-        @include MQ(S) {}
+        @include MQ(S) {
+          padding-top: 150px;
+        }
+        @include MQ(M) {
+          padding-top: 240px;
+        }
+
       }
       div.thumb {
         padding: 0;
+        position: absolute;
+        top: 0;
+        @include MQ(LXL) {
+          position: absolute;
+          right: 0;
+          top: 0;
+        }
         a {
           width: 100%;
           margin: 0;

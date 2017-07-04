@@ -30,7 +30,7 @@ function add_texture($parent_cat_ID) {
 
         if ( $products->have_posts() ) :
 
-        echo '<div class="cam-product-texture"><p> Tambien disponible en:</p>';
+        echo '<div class="cam-product-texture"><p class="cam-product-texture__title"> Tambien disponible en:</p>';
 
                      while ( $products->have_posts() ) : $products->the_post();
 

@@ -588,13 +588,21 @@ a:focus {
   font-size: 0.92em;
   display: block;
   width: 100%;
-  padding: 25px 0 25px 0;
+  padding: 25px 0 0px 0;
 }
 
 /* line 63, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam .wapl-flash,
 .woocommerce .wapl-flash {
   top: -35px;
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  /* line 63, assets/scss/layout/woocommerce/_woo-global.scss */
+  .woocommerce-content-cam .wapl-flash,
+  .woocommerce .wapl-flash {
+    top: -20px;
+  }
 }
 
 @media only screen and (min-width: 1281px) {
@@ -605,7 +613,7 @@ a:focus {
   }
 }
 
-/* line 68, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 71, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam .wapl-flash .woocommerce-advanced-product-label.product-label,
 .woocommerce .wapl-flash .woocommerce-advanced-product-label.product-label {
   border-color: #e3e3e3;
@@ -616,7 +624,18 @@ a:focus {
   font-size: 12px;
 }
 
-/* line 77, assets/scss/layout/woocommerce/_woo-global.scss */
+@media only screen and (min-width: 769px) and (max-width: 1280px) {
+  /* line 71, assets/scss/layout/woocommerce/_woo-global.scss */
+  .woocommerce-content-cam .wapl-flash .woocommerce-advanced-product-label.product-label,
+  .woocommerce .wapl-flash .woocommerce-advanced-product-label.product-label {
+    width: 38px;
+    height: 38px;
+    line-height: 34px;
+    font-size: 10px;
+  }
+}
+
+/* line 86, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam .page-title,
 .woocommerce-content-cam .woocommerce-ordering,
 .woocommerce .page-title,
@@ -624,13 +643,13 @@ a:focus {
   display: none;
 }
 
-/* line 81, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 90, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products,
 .woocommerce ul.products {
   padding: 40px 0 0 0;
 }
 
-/* line 83, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 92, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product,
 .woocommerce ul.products li.product {
   margin-bottom: 20px;
@@ -640,7 +659,7 @@ a:focus {
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 83, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 92, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product,
   .woocommerce ul.products li.product {
     width: 45%;
@@ -648,28 +667,28 @@ a:focus {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
-  /* line 83, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 92, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product,
   .woocommerce ul.products li.product {
-    margin-bottom: 5px;
+    margin-bottom: 25px;
   }
 }
 
 @media only screen and (min-width: 1281px) {
-  /* line 83, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 92, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product,
   .woocommerce ul.products li.product {
     margin-bottom: 0;
   }
 }
 
-/* line 97, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 106, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.button,
 .woocommerce ul.products li.product a.button {
   display: none;
 }
 
-/* line 103, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 112, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link:hover h3,
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link:hover h2,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link:hover h3,
@@ -678,20 +697,20 @@ a:focus {
   color: #666666;
 }
 
-/* line 111, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 119, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link span.price,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link span.price {
   display: none;
   text-align: center;
 }
 
-/* line 119, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
   margin-right: 8px;
 }
 
-/* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 129, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
@@ -709,7 +728,7 @@ a:focus {
 }
 
 @media handheld {
-  /* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 129, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
@@ -718,7 +737,7 @@ a:focus {
   }
 }
 
-/* line 138, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 143, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3 .touch,
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2 .touch,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3 .touch,
@@ -727,7 +746,7 @@ a:focus {
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 129, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
@@ -738,7 +757,7 @@ a:focus {
 }
 
 @media only screen and (min-width: 1281px) {
-  /* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 129, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
@@ -748,14 +767,14 @@ a:focus {
   }
 }
 
-/* line 151, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 156, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
   padding: 20px;
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1280px) {
-  /* line 151, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 156, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
     padding: 10px;
@@ -763,21 +782,21 @@ a:focus {
 }
 
 @media only screen and (min-width: 1281px) {
-  /* line 151, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 156, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
     padding: 30px;
   }
 }
 
-/* line 163, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 168, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam nav.woocommerce-pagination,
 .woocommerce nav.woocommerce-pagination {
   margin: 40px 0 30px 0;
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 167, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 172, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam nav.woocommerce-pagination ul.page-numbers li span,
   .woocommerce-content-cam nav.woocommerce-pagination ul.page-numbers li a,
   .woocommerce nav.woocommerce-pagination ul.page-numbers li span,
@@ -786,13 +805,13 @@ a:focus {
   }
 }
 
-/* line 179, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 184, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce button.button,
 a.button {
   font-weight: 300 !important;
 }
 
-/* line 184, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 189, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-Price-currencySymbol {
   margin-right: 6px;
 }
@@ -829,16 +848,42 @@ div.pp_woocommerce .pp_close {
 
 /* line 30, assets/scss/layout/woocommerce/_woo-gallery.scss */
 .single.single-product .woocommerce-content-cam div.imagenes a.woocommerce-main-image {
+  display: block;
   margin: 0 auto;
   max-width: 460px;
 }
 
-/* line 35, assets/scss/layout/woocommerce/_woo-gallery.scss */
-.single.single-product .woocommerce-content-cam div.imagenes div.thumb {
-  padding: 0;
+@media handheld, only screen and (max-width: 480px) {
+  /* line 30, assets/scss/layout/woocommerce/_woo-gallery.scss */
+  .single.single-product .woocommerce-content-cam div.imagenes a.woocommerce-main-image {
+    padding-top: 150px;
+  }
 }
 
-/* line 37, assets/scss/layout/woocommerce/_woo-gallery.scss */
+@media handheld, only screen and (min-width: 481px) and (max-width: 768px) {
+  /* line 30, assets/scss/layout/woocommerce/_woo-gallery.scss */
+  .single.single-product .woocommerce-content-cam div.imagenes a.woocommerce-main-image {
+    padding-top: 240px;
+  }
+}
+
+/* line 42, assets/scss/layout/woocommerce/_woo-gallery.scss */
+.single.single-product .woocommerce-content-cam div.imagenes div.thumb {
+  padding: 0;
+  position: absolute;
+  top: 0;
+}
+
+@media only screen and (min-width: 769px) {
+  /* line 42, assets/scss/layout/woocommerce/_woo-gallery.scss */
+  .single.single-product .woocommerce-content-cam div.imagenes div.thumb {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+}
+
+/* line 51, assets/scss/layout/woocommerce/_woo-gallery.scss */
 .single.single-product .woocommerce-content-cam div.imagenes div.thumb a {
   width: 100%;
   margin: 0;
@@ -846,7 +891,7 @@ div.pp_woocommerce .pp_close {
 }
 
 @media handheld, only screen and (max-width: 768px) {
-  /* line 37, assets/scss/layout/woocommerce/_woo-gallery.scss */
+  /* line 51, assets/scss/layout/woocommerce/_woo-gallery.scss */
   .single.single-product .woocommerce-content-cam div.imagenes div.thumb a {
     width: 33%;
     float: left;
@@ -1074,22 +1119,26 @@ div.instacontainer .copy {
 
 /* line 1, assets/scss/layout/woocommerce/_product-texture.scss */
 .cam-product-texture {
-  position: absolute;
-  bottom: -80px;
+  clear: both;
 }
 
-/* line 4, assets/scss/layout/woocommerce/_product-texture.scss */
+/* line 3, assets/scss/layout/woocommerce/_product-texture.scss */
+.cam-product-texture__title {
+  color: #e3e3e3;
+}
+
+/* line 6, assets/scss/layout/woocommerce/_product-texture.scss */
 .cam-product-texture__img {
   transition: all .4s ease-in-out;
 }
 
-/* line 7, assets/scss/layout/woocommerce/_product-texture.scss */
+/* line 9, assets/scss/layout/woocommerce/_product-texture.scss */
 .cam-product-texture__link {
   padding: 10px 3px 0 3px;
   position: relative;
 }
 
-/* line 10, assets/scss/layout/woocommerce/_product-texture.scss */
+/* line 12, assets/scss/layout/woocommerce/_product-texture.scss */
 .cam-product-texture__link:hover .cam-product-texture__img {
   -webkit-transform: scale(1.1) rotate(-180deg);
           transform: scale(1.1) rotate(-180deg);
