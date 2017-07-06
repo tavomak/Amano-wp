@@ -18,6 +18,9 @@
   @include MQ(L) {
     padding: 0 20px 0 20px;
   }
+  .term-description{
+    display: none;
+  }
 }
 
 .woocommerce-content-cam,
