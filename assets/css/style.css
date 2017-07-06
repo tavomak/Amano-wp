@@ -474,17 +474,15 @@ a:focus {
   margin-top: -5px;
   padding-right: 6px;
   display: inline-block;
-  float: left;
 }
 
-/* line 21, assets/scss/layout/_footer.scss */
+/* line 20, assets/scss/layout/_footer.scss */
 .site-footer-social-icons {
   display: inline-block;
   margin-right: 20px;
-  float: right;
 }
 
-/* line 28, assets/scss/layout/_footer.scss */
+/* line 26, assets/scss/layout/_footer.scss */
 .footer-estela {
   padding-top: 15px;
 }

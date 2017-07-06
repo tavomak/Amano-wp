@@ -1,6 +1,6 @@
 <?php get_template_part('includes/header'); ?>
 
-  <?php if ( is_front_page() ) : ?>
+  <?php if ( is_front_page() || is_page('Home')) : ?>
 
   <section class="welcome">
 
@@ -36,7 +36,7 @@
   </div><!-- /.row -->
 </div><!-- /.container -->
 
-<?php if ( is_front_page() ) : ?>
+<?php if ( is_front_page() || is_page('Home')) : ?>
 <section class="adv-subibaja">
   <div class="container">
     <div class="row">
