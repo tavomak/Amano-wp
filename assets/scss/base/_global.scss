@@ -15,28 +15,9 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: $font-regular;
-}
-
-.dn {
-  display: none !important;
-}
-
-.fl {
-  float: left !important;
-}
-
-.fr {
-  float: right;
-}
-
-.fn {
-  float: none;
-}
-
-.cb {
-  clear: both;
 }
 
 hr {
@@ -59,4 +40,23 @@ a {
 }
 .content-wrapper {
   min-height: calc(100vh - 420px);
+}
+.dn {
+  display: none !important;
+}
+
+.fl {
+  float: left !important;
+}
+
+.fr {
+  float: right;
+}
+
+.fn {
+  float: none;
+}
+
+.cb {
+  clear: both;
 }

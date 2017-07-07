@@ -58,42 +58,18 @@ body {
 /* line 16, assets/scss/base/_global.scss */
 h1,
 h2,
-h3 {
+h3,
+h4 {
   font-weight: 300;
 }
 
-/* line 22, assets/scss/base/_global.scss */
-.dn {
-  display: none !important;
-}
-
-/* line 26, assets/scss/base/_global.scss */
-.fl {
-  float: left !important;
-}
-
-/* line 30, assets/scss/base/_global.scss */
-.fr {
-  float: right;
-}
-
-/* line 34, assets/scss/base/_global.scss */
-.fn {
-  float: none;
-}
-
-/* line 38, assets/scss/base/_global.scss */
-.cb {
-  clear: both;
-}
-
-/* line 42, assets/scss/base/_global.scss */
+/* line 23, assets/scss/base/_global.scss */
 hr {
   margin: 10px 0 10px 0;
   padding: 0;
 }
 
-/* line 47, assets/scss/base/_global.scss */
+/* line 28, assets/scss/base/_global.scss */
 a {
   transition: .2s ease-in-out all;
   color: #666666;
@@ -101,20 +77,45 @@ a {
   text-decoration: none;
 }
 
-/* line 52, assets/scss/base/_global.scss */
+/* line 33, assets/scss/base/_global.scss */
 a:hover {
   color: #008d94;
   text-decoration: none;
 }
 
-/* line 56, assets/scss/base/_global.scss */
+/* line 37, assets/scss/base/_global.scss */
 a:focus {
   text-decoration: none;
 }
 
-/* line 60, assets/scss/base/_global.scss */
+/* line 41, assets/scss/base/_global.scss */
 .content-wrapper {
   min-height: calc(100vh - 420px);
+}
+
+/* line 44, assets/scss/base/_global.scss */
+.dn {
+  display: none !important;
+}
+
+/* line 48, assets/scss/base/_global.scss */
+.fl {
+  float: left !important;
+}
+
+/* line 52, assets/scss/base/_global.scss */
+.fr {
+  float: right;
+}
+
+/* line 56, assets/scss/base/_global.scss */
+.fn {
+  float: none;
+}
+
+/* line 60, assets/scss/base/_global.scss */
+.cb {
+  clear: both;
 }
 
 /* line 2, assets/scss/layout/_contact.scss */
@@ -224,7 +225,7 @@ a:focus {
   margin: 0;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 5, assets/scss/layout/_nav.scss */
   .navbar {
     margin-bottom: 20px;
@@ -352,7 +353,7 @@ a:focus {
   min-width: 14.1%;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1280px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   /* line 90, assets/scss/layout/_nav.scss */
   .nav.navbar-nav .menu__item {
     min-width: 12.7%;
@@ -379,7 +380,7 @@ a:focus {
   background: none;
 }
 
-@media handheld, only screen and (max-width: 768px) {
+@media handheld, only screen and (max-width: 767px) {
   /* line 117, assets/scss/layout/_nav.scss */
   .has-children ul {
     display: block !important;
@@ -391,7 +392,7 @@ a:focus {
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 767px) {
   /* line 129, assets/scss/layout/_nav.scss */
   .navbar-nav .open ul {
     display: none;
@@ -503,14 +504,14 @@ a:focus {
   padding: 0 80px 0 80px;
 }
 
-@media handheld, only screen and (max-width: 768px) {
+@media handheld, only screen and (max-width: 767px) {
   /* line 13, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam {
     padding: 0 10px 0 10px;
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1280px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   /* line 13, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam {
     padding: 0 20px 0 20px;
@@ -577,7 +578,7 @@ a:focus {
   color: #e22980;
 }
 
-@media handheld, only screen and (max-width: 768px) {
+@media handheld, only screen and (max-width: 767px) {
   /* line 48, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam .woocommerce-breadcrumb,
   .woocommerce .woocommerce-breadcrumb {
@@ -601,7 +602,7 @@ a:focus {
   top: -35px;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1280px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   /* line 67, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam .wapl-flash,
   .woocommerce .wapl-flash {
@@ -628,7 +629,7 @@ a:focus {
   font-size: 12px;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1280px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   /* line 75, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam .wapl-flash .woocommerce-advanced-product-label.product-label,
   .woocommerce .wapl-flash .woocommerce-advanced-product-label.product-label {
@@ -662,7 +663,7 @@ a:focus {
   vertical-align: top;
 }
 
-@media handheld, only screen and (max-width: 768px) {
+@media handheld, only screen and (max-width: 767px) {
   /* line 96, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product,
   .woocommerce ul.products li.product {
@@ -670,7 +671,7 @@ a:focus {
   }
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1280px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   /* line 96, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product,
   .woocommerce ul.products li.product {
@@ -749,7 +750,7 @@ a:focus {
   opacity: 1;
 }
 
-@media handheld, only screen and (max-width: 768px) {
+@media handheld, only screen and (max-width: 767px) {
   /* line 133, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2,
@@ -777,7 +778,7 @@ a:focus {
   padding: 20px;
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1280px) {
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
   /* line 160, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
@@ -799,7 +800,7 @@ a:focus {
   margin: 40px 0 30px 0;
 }
 
-@media handheld, only screen and (max-width: 768px) {
+@media handheld, only screen and (max-width: 767px) {
   /* line 176, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam nav.woocommerce-pagination ul.page-numbers li span,
   .woocommerce-content-cam nav.woocommerce-pagination ul.page-numbers li a,
@@ -879,7 +880,7 @@ div.pp_woocommerce .pp_close {
   }
 }
 
-@media handheld, only screen and (min-width: 481px) and (max-width: 768px) {
+@media handheld, only screen and (min-width: 481px) and (max-width: 767px) {
   /* line 30, assets/scss/layout/woocommerce/_woo-gallery.scss */
   .single.single-product .woocommerce-content-cam div.imagenes a.woocommerce-main-image {
     padding-top: 240px;
@@ -893,7 +894,7 @@ div.pp_woocommerce .pp_close {
   top: 0;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
   /* line 42, assets/scss/layout/woocommerce/_woo-gallery.scss */
   .single.single-product .woocommerce-content-cam div.imagenes div.thumb {
     position: absolute;
@@ -909,7 +910,7 @@ div.pp_woocommerce .pp_close {
   float: none;
 }
 
-@media handheld, only screen and (max-width: 768px) {
+@media handheld, only screen and (max-width: 767px) {
   /* line 51, assets/scss/layout/woocommerce/_woo-gallery.scss */
   .single.single-product .woocommerce-content-cam div.imagenes div.thumb a {
     width: 33%;
@@ -1021,7 +1022,7 @@ div.pp_woocommerce .pp_close {
   padding: 0;
 }
 
-@media handheld, only screen and (max-width: 768px) {
+@media handheld, only screen and (max-width: 767px) {
   /* line 20, assets/scss/layout/woocommerce/_woo-single-product.scss */
   .single.single-product .woocommerce-content-cam div.product div.sumario {
     text-align: center;
@@ -1062,7 +1063,7 @@ div.pp_woocommerce .pp_close {
   width: 200px;
 }
 
-@media handheld, only screen and (max-width: 768px) {
+@media handheld, only screen and (max-width: 767px) {
   /* line 45, assets/scss/layout/woocommerce/_woo-single-product.scss */
   .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario form {
     margin: 0 auto;
@@ -1290,7 +1291,7 @@ div.instacontainer .copy {
   color: #008d94;
 }
 
-/* line 1, assets/scss/pages/404.scss */
+/* line 1, assets/scss/pages/_404.scss */
 .nofound {
   color: #666666;
   min-height: 60vh;
@@ -1299,13 +1300,13 @@ div.instacontainer .copy {
 }
 
 @media handheld, only screen and (max-width: 480px) {
-  /* line 1, assets/scss/pages/404.scss */
+  /* line 1, assets/scss/pages/_404.scss */
   .nofound {
     background: url("../img/404-movil.jpg") no-repeat;
   }
 }
 
-/* line 12, assets/scss/pages/404.scss */
+/* line 12, assets/scss/pages/_404.scss */
 .nofound-container {
   min-height: 60vh;
   display: -webkit-box;
@@ -1321,30 +1322,30 @@ div.instacontainer .copy {
   text-align: center;
 }
 
-/* line 19, assets/scss/pages/404.scss */
+/* line 19, assets/scss/pages/_404.scss */
 .nofound-content {
   min-height: 30%;
 }
 
-/* line 22, assets/scss/pages/404.scss */
+/* line 22, assets/scss/pages/_404.scss */
 .nofound-text {
   margin-bottom: 20px;
 }
 
-/* line 25, assets/scss/pages/404.scss */
+/* line 25, assets/scss/pages/_404.scss */
 .nofound-img {
   height: 250px;
   background: url("../img/globos.png") no-repeat;
 }
 
-@media handheld, only screen and (max-width: 768px) {
-  /* line 25, assets/scss/pages/404.scss */
+@media handheld, only screen and (max-width: 767px) {
+  /* line 25, assets/scss/pages/_404.scss */
   .nofound-img {
     display: none;
   }
 }
 
-/* line 31, assets/scss/pages/404.scss */
+/* line 31, assets/scss/pages/_404.scss */
 .nofound-img::after {
   content: '';
   position: relative;
@@ -1355,13 +1356,13 @@ div.instacontainer .copy {
   background: url("../img/un-globo.png") no-repeat;
 }
 
-/* line 1, assets/scss/pages/home.scss */
+/* line 1, assets/scss/pages/_home.scss */
 .welcome {
   margin-bottom: 2em;
 }
 
-@media only screen and (min-width: 769px) {
-  /* line 3, assets/scss/pages/home.scss */
+@media only screen and (min-width: 768px) {
+  /* line 3, assets/scss/pages/_home.scss */
   .welcome-txt {
     position: absolute;
     color: rgba(255, 255, 255, 0.9);
@@ -1369,17 +1370,17 @@ div.instacontainer .copy {
   }
 }
 
-/* line 10, assets/scss/pages/home.scss */
+/* line 10, assets/scss/pages/_home.scss */
 .welcome-img {
   margin: 0 auto;
 }
 
-/* line 13, assets/scss/pages/home.scss */
+/* line 13, assets/scss/pages/_home.scss */
 .welcome-subtitle {
   margin-top: 0;
 }
 
-/* line 17, assets/scss/pages/home.scss */
+/* line 17, assets/scss/pages/_home.scss */
 .adv-subibaja {
   color: white;
   background: #cea271;
@@ -1387,31 +1388,227 @@ div.instacontainer .copy {
 }
 
 @media only screen and (min-width: 1281px) {
-  /* line 17, assets/scss/pages/home.scss */
+  /* line 17, assets/scss/pages/_home.scss */
   .adv-subibaja {
     width: 1280px;
     margin: 0 auto;
   }
 }
 
-/* line 25, assets/scss/pages/home.scss */
+/* line 25, assets/scss/pages/_home.scss */
 .adv-subibaja-title {
   font-weight: 300;
 }
 
-/* line 28, assets/scss/pages/home.scss */
+/* line 28, assets/scss/pages/_home.scss */
 .adv-subibaja-img {
   padding-top: 10%;
 }
 
-/* line 30, assets/scss/pages/home.scss */
+/* line 30, assets/scss/pages/_home.scss */
 .adv-subibaja-img img {
   margin: 0 auto;
 }
 
-/* line 34, assets/scss/pages/home.scss */
+/* line 34, assets/scss/pages/_home.scss */
 .adv-subibaja .cam-button {
   margin: 25px 0 10px 0;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1280px) {
+  /* line 1, assets/scss/pages/_about.scss */
+  .ab-since,
+  .ab-shoes,
+  .ab-lines,
+  .ab-subibaja,
+  .ab-subibaja-girls,
+  .ab-subibaja-boys {
+    background-size: contain !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 1, assets/scss/pages/_about.scss */
+  .ab-since,
+  .ab-shoes,
+  .ab-lines,
+  .ab-subibaja,
+  .ab-subibaja-girls,
+  .ab-subibaja-boys {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
+}
+
+/* line 16, assets/scss/pages/_about.scss */
+.ab-since__mobile--img,
+.ab-shoes__mobile--img,
+.ab-lines__mobile--img,
+.ab-subibaja__mobile--img,
+.ab-subibaja-girls__mobile--img,
+.ab-subibaja-boys__mobile--img {
+  background-size: contain !important;
+}
+
+@media handheld, only screen and (max-width: 480px) {
+  /* line 16, assets/scss/pages/_about.scss */
+  .ab-since__mobile--img,
+  .ab-shoes__mobile--img,
+  .ab-lines__mobile--img,
+  .ab-subibaja__mobile--img,
+  .ab-subibaja-girls__mobile--img,
+  .ab-subibaja-boys__mobile--img {
+    height: 200px;
+  }
+}
+
+@media handheld, only screen and (min-width: 481px) and (max-width: 767px) {
+  /* line 16, assets/scss/pages/_about.scss */
+  .ab-since__mobile--img,
+  .ab-shoes__mobile--img,
+  .ab-lines__mobile--img,
+  .ab-subibaja__mobile--img,
+  .ab-subibaja-girls__mobile--img,
+  .ab-subibaja-boys__mobile--img {
+    height: 320px;
+  }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  /* line 28, assets/scss/pages/_about.scss */
+  .ab-since__mobile--img {
+    background: url("../img/ab-bg-mobile-since.jpg") no-repeat center;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 27, assets/scss/pages/_about.scss */
+  .ab-since {
+    background: url("../img/ab-bg-since.jpg") no-repeat center;
+  }
+  /* line 35, assets/scss/pages/_about.scss */
+  .ab-since--txt {
+    color: white;
+  }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  /* line 42, assets/scss/pages/_about.scss */
+  .ab-shoes__mobile--img {
+    background: url("../img/ab-bg-mobile-shoes.jpg") no-repeat center;
+  }
+}
+
+/* line 47, assets/scss/pages/_about.scss */
+.ab-shoes--img {
+  height: 400px;
+  background: url("../img/ab-img-shoes.jpg") no-repeat;
+  background-size: contain;
+  margin: 0 25px;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  /* line 47, assets/scss/pages/_about.scss */
+  .ab-shoes--img {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* line 56, assets/scss/pages/_about.scss */
+  .ab-shoes--txt {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 450px;
+  }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  /* line 68, assets/scss/pages/_about.scss */
+  .ab-lines__mobile--img {
+    background: url("../img/ab-bg-mobile-lines.jpg") no-repeat center;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  /* line 67, assets/scss/pages/_about.scss */
+  .ab-lines {
+    color: white;
+    background: url("../img/ab-bg-lines.jpg") no-repeat center;
+  }
+}
+
+/* line 79, assets/scss/pages/_about.scss */
+.ab-subibaja {
+  background: url("../img/ab-bg-subibaja.jpg") no-repeat center;
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  /* line 80, assets/scss/pages/_about.scss */
+  .ab-subibaja__mobile--img {
+    background: url("../img/ab-bg-mobile-subibaja.jpg") no-repeat center;
+  }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  /* line 79, assets/scss/pages/_about.scss */
+  .ab-subibaja {
+    background: white;
+  }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  /* line 89, assets/scss/pages/_about.scss */
+  .ab-subibaja--img {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  /* line 98, assets/scss/pages/_about.scss */
+  .ab-subibaja-girls__mobile--img {
+    background: url("../img/ab-bg-mobile-subibaja-girls.jpg") no-repeat center;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  /* line 97, assets/scss/pages/_about.scss */
+  .ab-subibaja-girls {
+    color: white;
+    background: url("../img/ab-bg-subibaja-girls.jpg") no-repeat center;
+  }
+}
+
+@media handheld, only screen and (max-width: 767px) {
+  /* line 110, assets/scss/pages/_about.scss */
+  .ab-subibaja-boys__mobile--img {
+    background: url("../img/ab-bg-mobile-subibaja-boys.jpg") no-repeat center;
+  }
+}
+
+@media only screen and (min-width: 767px) {
+  /* line 109, assets/scss/pages/_about.scss */
+  .ab-subibaja-boys {
+    background: url("../img/ab-bg-subibaja-boys.jpg") no-repeat center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

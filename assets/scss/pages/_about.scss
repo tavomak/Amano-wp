@@ -1,0 +1,118 @@
+.ab-since,
+.ab-shoes,
+.ab-lines,
+.ab-subibaja,
+.ab-subibaja-girls,
+.ab-subibaja-boys {
+    @include MQ(L){
+        background-size: contain !important;
+    }
+    @include MQ(LXL){
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        min-height: 450px;
+    }
+    &__mobile--img{
+        @include MQ(S) {
+            height: 200px;
+        }
+        @include MQ(M) {
+            height: 320px;
+        }
+        background-size: contain !important;
+    }
+}
+
+.ab-since {
+    &__mobile--img{
+        @include MQ(SM){
+            background: fn-url('ab-bg-mobile-since.jpg') no-repeat center;
+        }
+    }
+    @include MQ(LXL){
+        background: fn-url('ab-bg-since.jpg') no-repeat center;
+        &--txt {
+            color: $white;
+        }
+    }
+}
+
+.ab-shoes {
+    &__mobile--img{
+        @include MQ(SM){
+            background: fn-url('ab-bg-mobile-shoes.jpg') no-repeat center;
+        }
+    }
+    &--img {
+        height: 400px;
+        background: fn-url('ab-img-shoes.jpg') no-repeat;
+        background-size: contain;
+        margin: 0 25px;
+        @include MQ(SM){
+            display: none;
+        }
+    }
+    &--txt {
+        @include MQ(LXL){
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            min-height: 450px;
+        }
+        //min-height: 300px;
+    }
+}
+
+.ab-lines {
+    &__mobile--img{
+        @include MQ(SM){
+            background: fn-url('ab-bg-mobile-lines.jpg') no-repeat center;
+        }
+    }
+    @include MQ(MXL) {
+        color: $white;
+        background: fn-url('ab-bg-lines.jpg') no-repeat center;
+    }
+}
+
+.ab-subibaja {
+    &__mobile--img{
+        @include MQ(SM){
+            background: fn-url('ab-bg-mobile-subibaja.jpg') no-repeat center;
+        }
+    }
+    background: fn-url('ab-bg-subibaja.jpg') no-repeat center;
+    @include MQ(SM){
+        background: $white;
+    }
+    &--img {
+        @include MQ(SM){
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.ab-subibaja-girls {
+    &__mobile--img{
+        @include MQ(SM){
+            background: fn-url('ab-bg-mobile-subibaja-girls.jpg') no-repeat center;
+        }
+    }
+    @include MQ(MXL) {
+        color: $white;
+        background: fn-url('ab-bg-subibaja-girls.jpg') no-repeat center;
+    }
+}
+
+.ab-subibaja-boys {
+    &__mobile--img{
+        @include MQ(SM){
+            background: fn-url('ab-bg-mobile-subibaja-boys.jpg') no-repeat center;
+        }
+    }
+    @include MQ(MXL) {
+        background: fn-url('ab-bg-subibaja-boys.jpg') no-repeat center;
+    }
+}
