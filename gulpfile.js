@@ -60,7 +60,7 @@ gulp.task('minify-js', function () {
 
 gulp.task('watch', function () {
   browserSync.init({
-    files: ['./*.php', './*.css', './*.js', './*.scss', './*.css']
+    files: ['./*.php', './*.css', './*.js', './*.scss', './*.jpg', './*.png']
     , proxy: "http://localhost/amano/"
     , notify: true
   });
