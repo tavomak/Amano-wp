@@ -1273,7 +1273,8 @@ div.instacontainer .copy {
 }
 
 /* line 1, assets/scss/components/_buttons.scss */
-.cam-button {
+.cam-button,
+.woocommerce a.button {
   display: inline-block;
   color: white;
   background: #008d94;
@@ -1282,14 +1283,16 @@ div.instacontainer .copy {
   padding: 8px 10px 8px 10px;
 }
 
-/* line 8, assets/scss/components/_buttons.scss */
-.cam-button:hover {
+/* line 9, assets/scss/components/_buttons.scss */
+.cam-button:hover,
+.woocommerce a.button:hover {
   background: #e22980;
   color: white;
 }
 
-/* line 12, assets/scss/components/_buttons.scss */
-.cam-button:focus {
+/* line 13, assets/scss/components/_buttons.scss */
+.cam-button:focus,
+.woocommerce a.button:focus {
   background: rgba(255, 255, 255, 0.5);
   color: #008d94;
 }

@@ -40,15 +40,7 @@ function add_texture($parent_cat_ID) {
                         if( !empty($image) ):
 
                             echo '<a href="'.get_the_permalink().'" class="cam-product-texture__link"><img src="'. $image['url'].'" alt="'.$image['alt'].'" class="cam-product-texture__img"/></a>';
-                            /*echo '<p>'.$term->term_id.'</p>';
-                            echo '<p>'.$term->name.'</p>';
-                            echo '<p>'.$term->slug.'</p>';
-                            echo '<p>'.$term->trem_group.'</p>';
-                            echo '<p>'.$term->term_taxonomy_id.'</p>';
-                            echo '<p>'.$term->taxonomy.'</p>';
-                            echo '<p>'.$term->parent.'</p>';
-                            echo '<p>'.$term->count.'</p>';*/
-
+                            
                         endif;
 
 
