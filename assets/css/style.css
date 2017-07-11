@@ -1158,9 +1158,12 @@ div.instacontainer .copy {
 .cam-product-texture__link {
   padding: 10px 3px 0 3px;
   position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
 }
 
-/* line 12, assets/scss/layout/woocommerce/_product-texture.scss */
+/* line 15, assets/scss/layout/woocommerce/_product-texture.scss */
 .cam-product-texture__link:hover .cam-product-texture__img {
   -webkit-transform: scale(1.1) rotate(-180deg);
           transform: scale(1.1) rotate(-180deg);
