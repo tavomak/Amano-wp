@@ -836,6 +836,24 @@ a.button {
   margin: 0;
 }
 
+/* line 206, assets/scss/layout/woocommerce/_woo-global.scss */
+.woocommerce .create-account {
+  clear: both;
+}
+
+/* line 211, assets/scss/layout/woocommerce/_woo-global.scss */
+.woocommerce-shipping-fields label.checkbox {
+  float: right;
+}
+
+/* line 214, assets/scss/layout/woocommerce/_woo-global.scss */
+.woocommerce-shipping-fields input.input-checkbox {
+  float: left;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
 /* line 2, assets/scss/layout/woocommerce/_woo-gallery.scss */
 .pp_pic_holder.pp_woocommerce {
   overflow-x: visible;
@@ -1273,8 +1291,7 @@ div.instacontainer .copy {
 }
 
 /* line 1, assets/scss/components/_buttons.scss */
-.cam-button,
-.woocommerce a.button {
+.cam-button {
   display: inline-block;
   color: white;
   background: #008d94;
@@ -1283,16 +1300,14 @@ div.instacontainer .copy {
   padding: 8px 10px 8px 10px;
 }
 
-/* line 9, assets/scss/components/_buttons.scss */
-.cam-button:hover,
-.woocommerce a.button:hover {
+/* line 8, assets/scss/components/_buttons.scss */
+.cam-button:hover {
   background: #e22980;
   color: white;
 }
 
-/* line 13, assets/scss/components/_buttons.scss */
-.cam-button:focus,
-.woocommerce a.button:focus {
+/* line 12, assets/scss/components/_buttons.scss */
+.cam-button:focus {
   background: rgba(255, 255, 255, 0.5);
   color: #008d94;
 }
