@@ -48,7 +48,7 @@ Un-comment the next two lines of code if you want to use WordPress's onboard jQu
 	wp_enqueue_script('bootstrap-js');
 	wp_enqueue_script('modernizr');
 
-	wp_register_script('cam-wp-js', get_template_directory_uri() . '/assets/js/main-dist.js', false, null, true);
+	wp_register_script('cam-wp-js', get_template_directory_uri() . '/assets/js/main.js', false, null, true);
 	$script_data = array(
         'template_directory_uri' => get_template_directory_uri()
     );

@@ -31,7 +31,7 @@ $(document).ready(function () {
     $('ul.navbar-nav > li').addClass('hovernav');
   } else {
     $('ul.navbar-nav > li').removeClass('hovernav');
-    
+
   };
 
   // The addClass/removeClass also needs to be triggered on page resize <=> 768px
@@ -77,4 +77,12 @@ $(document).ready(function () {
   $('#menu-principal .dropdown-menu .menu-item-has-children').wrapInner('<div class="item-wrapper" />');
   $('#menu-principal .dropdown-menu .menu-item a[title="Damas"').html('<p>Damas</p><div class="img-damas" ><img src="' + my_data.template_directory_uri + '/assets/img/damas.jpg" alt="Zapatos de dama"/></div>');
   $('#menu-principal .dropdown-menu .menu-item a[title="Plantillas"').html('<p>Plantillas</p> <img src="' + my_data.template_directory_uri + '/assets/img/plantillas.jpg" alt="Conoce nuestra linea de Plantillas" class="img-damas" />');
+
+
+  $('#shipping_city').on('change', function () {
+      $.get(ajaxurl, data, function (result) {
+      $( '.woocommerce-shipping-fields' ).html( result );
+    });
+  });
+
 });
