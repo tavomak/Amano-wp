@@ -28,9 +28,7 @@
 
 
     <?php // Insercion de menu de usuario
-    if (is_woocommerce()){
       echo get_template_part('includes/user-nav');
-    }
     ?>
 
     <!--Logotipo-->
