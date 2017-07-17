@@ -199,7 +199,7 @@ function pickupLocation_enqueue() {
                 )
             );
             $datos['Lara'] = array(
-                'BARQUSIMETO' => array(
+                'Barquisimeto' => array(
                     'Zoom Barquisimeto' => 'Carrera 24, entre calles 23 y 24, n°. 23-69. P.ref. Frente a la plaza Mora, diagonal al Iuturla.',
                     'Zoom Aeropuerto Jacinto Lara' => 'Av. Vicente Landaeta Gil con av. La Salle, Aeropuerto General Jacinto Lara p.b.',
                     'Aliado Zoom Exicom 101 C.A.' => 'Av. Lara cruce con calle 3, urbanizacion Nueva Segovia, edificio Yurubi, pb., local 2.',
