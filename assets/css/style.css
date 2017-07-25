@@ -1466,6 +1466,11 @@ div.instacontainer .copy {
   margin: 25px 0 10px 0;
 }
 
+/* line 39, assets/scss/pages/_home.scss */
+.sb_instagram_header {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
   /* line 1, assets/scss/pages/_about.scss */
   .ab-since,
