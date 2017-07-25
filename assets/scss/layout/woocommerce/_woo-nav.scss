@@ -1,24 +1,38 @@
-.woo_user_nav{
-  background: $gris-superclaro;
-  height: 20px;
+.woo_user_nav {
+  background: $azul-cam;
+  height: 26px;
   margin-bottom: 10px;
   line-height: 160%;
-  &-search{
+  &-search {
     margin: 0;
     padding: 0;
   }
+  &__item {
+    color: $white;
+    //Bootstrap haciendo de las suyas con el padding
+    padding-right: 20px !important;
+    font-weight: $font-regular;
+  }
+  &__link {
+    color: $white;
+    &:hover {
+      color: $gris-oscuro;
+    }
+  }
 }
-.cart-amount{
+
+.cart-amount {
   position: relative;
   left: -20px;
 }
-.bag-count{
+
+.bag-count {
   z-index: $zindex-5;
   color: $white;
   position: relative;
   top: 18px;
-  left:23px;
-  &__icon{
+  left: 23px;
+  &__icon {
     display: inline-block;
     position: absolute;
     margin-left: -25px;
@@ -26,7 +40,7 @@
     height: 50px;
     background: url('../img/bag-icon.png') no-repeat;
   }
-  &__disabled{
+  &__disabled {
     display: inline-block;
     position: absolute;
     margin-left: -25px;
@@ -35,25 +49,31 @@
     background: url('../img/bag-icon-disabled.png') no-repeat;
   }
 }
-.cam-search-form{
+
+.cam-search-form {
   position: absolute;
   top: 0;
-  &:hover > button{
-    background: $azul-cam;
+  height: 26px;
+  &:hover>button {
+    background: $rosa-cam;
     color: $white;
   }
-  & input, & button{
-    color: $gris-claro;
-    background: rgba($white,.4);
+  & input,
+  & button {
+    color: $white;
+    background: rgba($white, .6);
     padding: 0 5px 0 5px;
-    height: 20px;
+    height: 26px;
     border: none;
   }
-  & button{
-    border-left: 3px solid $gris-superclaro;
+  & input::placeholder{
+    color: $white;
+  }
+  & button {
+    border-left: 3px solid $white;
     transition: .2s ease-in-out all;
-    &:hover{
-      background: $azul-cam;
+    &:hover {
+      background: $rosa-cam;
       color: $white;
     }
   }

@@ -35,6 +35,7 @@
       border-radius: 0;
       color: $white;
       font-weight: 400;
+      padding: 6px;
       &:hover {
         background: $rosa-cam;
         color: $white;
@@ -141,21 +142,21 @@
           padding: 0;
           margin: 0;
           opacity: 0;
+          @include MQ(SM) {
+            font-size: 1.2em;
+            opacity: 1;
+          }
+          @include MQ(XL) {
+            font-size: 1.1em;
+            top: -35px;
+          }
+          font-size: 1.06em;
           @media handheld {
             opacity: 1;
           }
           .touch {
             opacity: 1;
           }
-          @include MQ(SM) {
-            font-size: 1.2em;
-            opacity: 1;
-          }
-          @include MQ(XL) {
-            font-size: 1.4em;
-            top: -25px;
-          }
-          font-size: 1.06em;
         } //imagen del producto
         img.attachment-shop_catalog {
           padding: 20px;
@@ -217,4 +218,7 @@ a.button {
     width: 20px;
     height: 20px;
   }
+}
+#calc_shipping_country_field, #calc_shipping_postcode_field{
+  display:none;
 }

@@ -5,16 +5,17 @@
   <section class="welcome">
 
     <div class="welcome-content container">
-      <div class="welcome-txt col-sm-4 col-lg-2 col-lg-offset-1">
-        <h2>Bienvenidos</h2>
+      <div class="welcome-txt col-sm-4 col-lg-4 col-lg-offset-1">
+        <h2>Bienvenidos a<br>Calzados A' Mano</h2>
         <p>Somos una marca venezolana que produce de la mano de los mejores artesanos productos de la mejor calidad.</p>
+        <p>Nos especializamos en la confección de zapatos para niñas y dama en modelos clásicos tipo bailarina en Venezuela desde 1994.</p>
       </div>
     </div>
 
     <?php if ( wp_is_mobile() ) :?>
-    <img src="<?php bloginfo('template_directory'); ?>/assets/img/welcome-mobile.jpg" alt="Calzados a mano" class="img-responsive welcome-img">
+    <img src="<?php bloginfo('template_directory'); ?>/assets/img/welcome-mobile.jpg" alt="Bienvenidos a Calzados A' Mano" class="img-responsive welcome-img">
     <?php else: ?>
-    <img src="<?php bloginfo('template_directory'); ?>/assets/img/welcome.jpg" alt="Calzados a mano" class="img-responsive welcome-img">
+    <img src="<?php bloginfo('template_directory'); ?>/assets/img/welcome.jpg" alt="Bienvenidos a Calzados A' Mano" class="img-responsive welcome-img">
     <?php endif; ?>
 
   </section>
@@ -50,7 +51,7 @@
       </div>
 
       <div class="col-sm-7 col-sm-offset-1 text-center adv-subibaja-img">
-        <img src="<?php bloginfo('template_directory'); ?>/assets/img/welcome-subibaja.jpg" alt=" zapatilla Subibaja" class="img-responsive">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/img/welcome-subibaja.jpg" alt="Bailarina Subibaja" class="img-responsive">
       </div>
     
     </div>

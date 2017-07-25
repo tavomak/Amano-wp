@@ -3,18 +3,18 @@
 }
 
 .navbar {
-  font-size: 1.3rem;
+  font-size: 1.45rem;
   font-weight: $font-regular;
   border: 0;
   margin: 0;
-  @include MQ(LXL) {
-    margin-bottom: 20px;
-  }
+  min-height: 10px;
   &-default {
     background: none;
+    margin: 20px 0;
     & .navbar-nav>li>a {
       color: $gris-claro;
       font-weight: $font-regular !important;
+      padding: 5px;
       &:hover {
         color: $azul-cam;
       }
@@ -48,7 +48,7 @@
   }
   .dropdown-menu {
     background: none;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     transition: 1s ease-in-out all;
     border: 1px solid $gris-superclaro;
     border-right: 0;
@@ -88,10 +88,7 @@
 .nav.navbar-nav {
   width: 100%;
   .menu__item {
-    min-width: 14.1%;
-    @include MQ(L) {
-      min-width: 12.7%;
-    }
+    min-width: 14%;
   }
 }
 

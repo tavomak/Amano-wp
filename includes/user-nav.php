@@ -12,7 +12,7 @@
         if (is_user_logged_in()){
           echo '
             <div class="dropdown">
-              <a href="" class="dropdown-toggle" id="loginMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <a href=""class="dropdown-toggle woo_user_nav__link" id="loginMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 Hola ' . $current_user->display_name . '
                 <span class="caret"></span>
               </a>
@@ -26,7 +26,7 @@
         else{
           echo '
             <div class="dropdown">
-              <a href="" class="dropdown-toggle" id="loginMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <a href="" class="dropdown-toggle woo_user_nav__link" id="loginMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                 Mi cuenta
                 <span class="caret"></span>
               </a>
@@ -42,14 +42,14 @@
       </div>
     </li>
 
-    <li>
-      <a href="" data-toggle="modal" data-target="#modal_reg_pago">Registra tu pago</a>
+    <li class="woo_user_nav__item">
+      <a href="" class="woo_user_nav__link" data-toggle="modal" data-target="#modal_reg_pago">Registra tu pago</a>
     </li>
-    <li class="woo_user_nav-search hidden-xs">
+    <li class="hidden-xs woo_user_nav-search woo_user_nav__item">
       <?php get_template_part('includes/navbar-search'); ?>
     </li>
 
-    <li class="pull-right">
+    <li class="pull-right woo_user_nav__item">
       <?php
       global $woocommerce;
       $cart_url = $woocommerce->cart->get_cart_url();
@@ -64,7 +64,7 @@
           ';
         }else{
           echo '
-            <a href="'.$cartUrl.'" class="cart-amount">'.$cartTotal.'<span class="bag-count">'.$cartCount.'</span><span class="bag-count__icon"></span></a>
+            <a href="'.$cartUrl.'" class="cart-amount woo_user_nav__link">'.$cartTotal.'<span class="bag-count">'.$cartCount.'</span><span class="bag-count__icon"></span></a>
           ';
         }
       }
