@@ -35,7 +35,7 @@
             <p><span class="icon-card"></span> Pago seguro con el respaldo de Instapago</p>
           </div>
           <div class="col-xs-4 site-footer-shop-icons">
-            <p><span class="icon-truck"></span> Entrega en 7 días laborables con ZOOM</p>
+            <p><span class="icon-truck"></span> Entrega ZOOM en 2-3 Días hábiles</p>
             </div>
           <div class="col-xs-4 site-footer-shop-icons">
             <p><span class="icon-happy-smiley"></span> Felicidad garantizada, te entregaremos calidad.</p>
@@ -47,7 +47,7 @@
         <div class="row">
 
           <div class="col-xs-4 col-sm-4">
-            <h3>SHOP</h3>
+            <h3>TIENDA</h3>
               <?php
               wp_nav_menu( array(
                 'theme_location'  => 'a-mano-navbar',
@@ -65,8 +65,8 @@
               <br>El Cafetal. Caracas.
               <br>(Local 26, al lado de Tequeños Las Tías)</p>
             <p><b>Teléfono: </b>+58 212 986 09 50</p>
-            <p><strong>Lunes a Viernes: </strong>10:00 am-07:00 pm</p>
-            <p><strong>Sábados: </strong>11:00 am-05:00 pm</p>
+            <p><strong>Lunes a Viernes: </strong>10:00 am a 5:00 pm</p>
+            <p><strong>Sábados: </strong>11:00 am a 4:00 pm</p>
           </div>
 
           <div class="col-sm-4">

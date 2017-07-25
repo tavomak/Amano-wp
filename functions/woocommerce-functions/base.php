@@ -50,6 +50,13 @@ add_action( 'init', 'remove_product_editor' );
 
 // Remueve WooCommerce Updater notificacion
 remove_action('admin_notices', 'woothemes_updater_notice');
-
+//Change the symbol of an existing currency
+add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2);
+function change_existing_currency_symbol( $currency_symbol, $currency ) {
+     switch( $currency ) {
+          case 'VEF': $currency_symbol = 'Bs.'; break;
+     }
+     return $currency_symbol;
+}
 
 ?>

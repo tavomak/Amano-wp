@@ -1135,6 +1135,11 @@ div.pp_woocommerce .pp_close {
   background: #e22980;
 }
 
+/* line 71, assets/scss/layout/woocommerce/_woo-single-product.scss */
+.variations .label {
+  font-size: 1em;
+}
+
 /* line 1, assets/scss/layout/woocommerce/_woo-cart.scss */
 .woocommerce button.button,
 a.button {
