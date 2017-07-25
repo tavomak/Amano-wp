@@ -1388,20 +1388,27 @@ div.instacontainer .copy {
   margin-bottom: 20px;
 }
 
-/* line 25, assets/scss/pages/_404.scss */
+/* line 24, assets/scss/pages/_404.scss */
+.nofound-text__title {
+  display: block;
+  font-size: 2.5em;
+  font-weight: 400;
+}
+
+/* line 30, assets/scss/pages/_404.scss */
 .nofound-img {
   height: 250px;
   background: url("../img/globos.png") no-repeat;
 }
 
 @media handheld, only screen and (max-width: 767px) {
-  /* line 25, assets/scss/pages/_404.scss */
+  /* line 30, assets/scss/pages/_404.scss */
   .nofound-img {
     display: none;
   }
 }
 
-/* line 31, assets/scss/pages/_404.scss */
+/* line 36, assets/scss/pages/_404.scss */
 .nofound-img::after {
   content: '';
   position: relative;
