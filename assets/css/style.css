@@ -342,11 +342,9 @@ a:focus {
 /* line 88, assets/scss/layout/_nav.scss */
 .nav.navbar-nav {
   width: 100%;
-}
-
-/* line 90, assets/scss/layout/_nav.scss */
-.nav.navbar-nav .menu__item {
-  min-width: 14%;
+  /*   .menu__item {
+    min-width: 14%;
+  } */
 }
 
 /* line 95, assets/scss/layout/_nav.scss */

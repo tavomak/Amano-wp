@@ -47,7 +47,12 @@ gulp.task('minify-css', function () {
 
 gulp.task('minify-js', function () {
   return gulp.src('./assets/js/main.js')
-    .pipe(uglify()).pipe(rename({
+    .pipe(uglify()
+    .on("error", notify.onError({
+      sound: true,
+      title: 'Error en JS'
+    })))
+    .pipe(rename({
       suffix: '-dist'
     }))
     .pipe(gulp.dest('./assets/js/'))

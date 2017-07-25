@@ -26,7 +26,6 @@ $(document).ready(function () {
   // HOVERNAV - navbar dropdown on hover.
   // Uses jQuery Media Query - see http://www.sitepoint.com/javascript-media-queries/
   var mq = window.matchMedia('(min-width: 768px)');
-
   if (mq.matches) {
     $('ul.navbar-nav > li').addClass('hovernav');
   } else {
@@ -78,4 +77,10 @@ $(document).ready(function () {
   $('#menu-principal .dropdown-menu .menu-item a[title="Damas"').html('<p>Damas</p><div class="img-damas" ><img src="' + my_data.template_directory_uri + '/assets/img/damas.jpg" alt="Zapatos de dama"/></div>');
   $('#menu-principal .dropdown-menu .menu-item a[title="Plantillas"').html('<p>Plantillas</p> <img src="' + my_data.template_directory_uri + '/assets/img/plantillas.jpg" alt="Conoce nuestra linea de Plantillas" class="img-damas" />');
   
+
+  var menuItems = $('ul#menu-principal').children().length;
+  var menuPercentage = 100 / menuItems;
+  var menuWdCalc = menuPercentage.toFixed(0) + '%';
+  $('#menu-principal .menu__item ').css('min-width', menuWdCalc);
+  console.log('Propiedad Width de .menu__item generada por js main.js:84, Actualmente: ' +menuWdCalc);
 });
