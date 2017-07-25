@@ -9,8 +9,13 @@
         background: $rosa-cam;
         color: $white;
     }
-    &:focus{
+    &:focus {
         background: rgba($white, .5);
         color: $azul-cam;
     }
+}
+
+.woocommerce-Button {
+    @extend .cam-button;
+    border: none;
 }

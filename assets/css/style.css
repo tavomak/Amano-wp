@@ -1324,7 +1324,7 @@ div.instacontainer .copy {
 }
 
 /* line 1, assets/scss/components/_buttons.scss */
-.cam-button {
+.cam-button, .woocommerce-Button {
   display: inline-block;
   color: white;
   background: #008d94;
@@ -1334,15 +1334,20 @@ div.instacontainer .copy {
 }
 
 /* line 8, assets/scss/components/_buttons.scss */
-.cam-button:hover {
+.cam-button:hover, .woocommerce-Button:hover {
   background: #e22980;
   color: white;
 }
 
 /* line 12, assets/scss/components/_buttons.scss */
-.cam-button:focus {
+.cam-button:focus, .woocommerce-Button:focus {
   background: rgba(255, 255, 255, 0.5);
   color: #008d94;
+}
+
+/* line 18, assets/scss/components/_buttons.scss */
+.woocommerce-Button {
+  border: none;
 }
 
 /* line 1, assets/scss/pages/_404.scss */
@@ -1472,13 +1477,19 @@ div.instacontainer .copy {
 }
 
 /* line 34, assets/scss/pages/_home.scss */
-.adv-subibaja .cam-button {
+.adv-subibaja .cam-button, .adv-subibaja .woocommerce-Button {
   margin: 25px 0 10px 0;
 }
 
 /* line 39, assets/scss/pages/_home.scss */
 .sb_instagram_header {
   display: none;
+}
+
+/* line 42, assets/scss/pages/_home.scss */
+.folow-ins {
+  float: right;
+  margin-right: 25px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
