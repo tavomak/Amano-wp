@@ -42,7 +42,7 @@ $(document).ready(function () {
             $(this).remove();
         });
         $('#shipping_city').append($('<option>', {
-            value: 'Seleccionar Ciudad',
+            value: '',
             title: 'Seleccionar Ciudad'
         }).text('Seleccionar Ciudad'));
 
@@ -63,7 +63,7 @@ $(document).ready(function () {
             $(this).remove();
         });
         $('#shipping_agency').append($('<option>', {
-            value: 'Seleccionar Agencia',
+            value: '',
             title: 'Seleccionar Agencia'
         }).text('Seleccionar Agencia'));
 

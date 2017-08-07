@@ -15,8 +15,7 @@
     }
 }
 .adv-subibaja{
-    color: $white;
-    background: #cea271;
+    background: #cacaca;
     padding: 25px 0 45px 0;
     @include MQ(XL){
         width: 1280px;
@@ -39,6 +38,7 @@
 .sb_instagram_header{
     display: none;
 }
+//logo de instagram en la entrada
 .folow-ins{
     float: right;
     margin-right: 25px;

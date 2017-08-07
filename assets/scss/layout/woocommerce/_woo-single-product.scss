@@ -1,5 +1,8 @@
 //Pagina single de productos
-.upsells.products{display: none;}
+.upsells.products {
+  display: none;
+}
+
 .single.single-product {
   //Conetenedor de woocommerce
   .woocommerce-content-cam {
@@ -17,7 +20,7 @@
       ul.products {
         padding: 0;
       }
-    }//Datos del producto
+    } //Datos del producto
     div.product div.sumario {
       @include MQ(SM) {
         text-align: center;
@@ -31,12 +34,19 @@
         .price {
           span {
             color: $azul-cam;
-            font-size: 24px;
             .woocommerce-Price-currencySymbol {
               margin-right: 10px;
               color: $gris-claro;
               font-size: 18px;
             }
+          }
+          .price-title {
+            display: block;
+            font-size: 12px;
+            opacity: .7;
+          }
+          span.woocommerce-Price-amount.amount {
+            font-size: 22px;
           }
         }
         div.description {}
@@ -67,8 +77,20 @@
     }
   }
 }
-.variations{
-  .label{
+
+.variations {
+  .label {
     font-size: 1em;
   }
 }
+
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+  font-size: 1.25em;
+  padding-top: 20px;
+  color: goldenrod;
+}
+
+.cd-price {
+  padding-right: 25px;
+} 

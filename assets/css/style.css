@@ -1046,53 +1046,52 @@ div.pp_woocommerce .pp_close {
   display: none;
 }
 
-/* line 7, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 10, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam .product_meta {
   display: none;
 }
 
-/* line 10, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 13, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.related {
   color: #666666;
   padding: 32px 0 0 0;
 }
 
-/* line 13, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 16, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.related h2 {
   border-top: 1px solid #e3e3e3;
   border-bottom: 1px solid #e3e3e3;
 }
 
-/* line 17, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 20, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.related ul.products {
   padding: 0;
 }
 
 @media handheld, only screen and (max-width: 767px) {
-  /* line 21, assets/scss/layout/woocommerce/_woo-single-product.scss */
+  /* line 24, assets/scss/layout/woocommerce/_woo-single-product.scss */
   .single.single-product .woocommerce-content-cam div.product div.sumario {
     text-align: center;
     clear: both;
   }
 }
 
-/* line 26, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 29, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario {
   margin: 40px 0 0 0;
 }
 
-/* line 28, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 31, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario h1.product_title {
   font-size: 26px;
 }
 
-/* line 32, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 35, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario .price span {
   color: #008d94;
-  font-size: 24px;
 }
 
-/* line 35, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 37, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario .price span .woocommerce-Price-currencySymbol {
   margin-right: 10px;
   color: #666666;
@@ -1100,42 +1099,67 @@ div.pp_woocommerce .pp_close {
 }
 
 /* line 43, assets/scss/layout/woocommerce/_woo-single-product.scss */
+.single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario .price .price-title {
+  display: block;
+  font-size: 12px;
+  opacity: .7;
+}
+
+/* line 48, assets/scss/layout/woocommerce/_woo-single-product.scss */
+.single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario .price span.woocommerce-Price-amount.amount {
+  font-size: 22px;
+}
+
+/* line 53, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario p.stock {
   color: #008d94;
 }
 
-/* line 46, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 56, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario form {
   width: 200px;
 }
 
 @media handheld, only screen and (max-width: 767px) {
-  /* line 46, assets/scss/layout/woocommerce/_woo-single-product.scss */
+  /* line 56, assets/scss/layout/woocommerce/_woo-single-product.scss */
   .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario form {
     margin: 0 auto;
   }
 }
 
-/* line 53, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 63, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario form .quantity .qty {
   height: 30px;
 }
 
-/* line 57, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 67, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario form .button {
   background: #008d94;
   transition: ease-in-out 0.3s all;
   border-radius: 0;
 }
 
-/* line 61, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 71, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .single.single-product .woocommerce-content-cam div.product div.sumario .wrap-sumario form .button:hover {
   background: #e22980;
 }
 
-/* line 71, assets/scss/layout/woocommerce/_woo-single-product.scss */
+/* line 82, assets/scss/layout/woocommerce/_woo-single-product.scss */
 .variations .label {
   font-size: 1em;
+}
+
+/* line 87, assets/scss/layout/woocommerce/_woo-single-product.scss */
+.woocommerce div.product p.price,
+.woocommerce div.product span.price {
+  font-size: 1.25em;
+  padding-top: 20px;
+  color: goldenrod;
+}
+
+/* line 94, assets/scss/layout/woocommerce/_woo-single-product.scss */
+.cd-price {
+  padding-right: 25px;
 }
 
 /* line 1, assets/scss/layout/woocommerce/_woo-cart.scss */
@@ -1197,7 +1221,7 @@ div.instacontainer .copy {
 
 /* line 3, assets/scss/layout/woocommerce/_product-texture.scss */
 .cam-product-texture__title {
-  color: #e3e3e3;
+  color: #2f3238;
 }
 
 /* line 6, assets/scss/layout/woocommerce/_product-texture.scss */
@@ -1448,8 +1472,7 @@ div.instacontainer .copy {
 
 /* line 17, assets/scss/pages/_home.scss */
 .adv-subibaja {
-  color: white;
-  background: #cea271;
+  background: #cacaca;
   padding: 25px 0 45px 0;
 }
 
@@ -1461,27 +1484,27 @@ div.instacontainer .copy {
   }
 }
 
-/* line 25, assets/scss/pages/_home.scss */
+/* line 24, assets/scss/pages/_home.scss */
 .adv-subibaja-title {
   font-weight: 300;
 }
 
-/* line 28, assets/scss/pages/_home.scss */
+/* line 27, assets/scss/pages/_home.scss */
 .adv-subibaja-img {
   padding-top: 10%;
 }
 
-/* line 30, assets/scss/pages/_home.scss */
+/* line 29, assets/scss/pages/_home.scss */
 .adv-subibaja-img img {
   margin: 0 auto;
 }
 
-/* line 34, assets/scss/pages/_home.scss */
+/* line 33, assets/scss/pages/_home.scss */
 .adv-subibaja .cam-button, .adv-subibaja .woocommerce-Button {
   margin: 25px 0 10px 0;
 }
 
-/* line 39, assets/scss/pages/_home.scss */
+/* line 38, assets/scss/pages/_home.scss */
 .sb_instagram_header {
   display: none;
 }

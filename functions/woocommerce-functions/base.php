@@ -10,9 +10,8 @@ if (wp_is_mobile()){
 }else{
   add_filter( 'loop_shop_per_page', create_function( '$cols', 'return 24;' ), 20 );
 }
-/*
-Remover tablas
-*/
+
+//Remover tablas
 add_filter( 'woocommerce_product_tabs', 'woo_remove_product_tabs', 98 );
 
 function woo_remove_product_tabs( $tabs ) {
@@ -50,6 +49,7 @@ add_action( 'init', 'remove_product_editor' );
 
 // Remueve WooCommerce Updater notificacion
 remove_action('admin_notices', 'woothemes_updater_notice');
+
 //Change the symbol of an existing currency
 add_filter('woocommerce_currency_symbol', 'change_existing_currency_symbol', 10, 2);
 function change_existing_currency_symbol( $currency_symbol, $currency ) {
@@ -59,4 +59,20 @@ function change_existing_currency_symbol( $currency_symbol, $currency ) {
      return $currency_symbol;
 }
 
-?>
+// Use WC 2.0 variable price format, now include sale price strikeout
+add_filter( 'woocommerce_variable_sale_price_html', 'wc_wc20_variation_price_format', 10, 2 );
+add_filter( 'woocommerce_variable_price_html', 'wc_wc20_variation_price_format', 10, 2 );
+function wc_wc20_variation_price_format( $price, $product ) {
+	// Main Price
+	$prices = array( $product->get_variation_price( 'min', true ), $product->get_variation_price( 'max', true ) );
+	$price = $prices[0] !== $prices[1] ? sprintf( __( '%1$s', 'woocommerce' ), wc_price( $prices[0] ) ) : wc_price( $prices[0] );
+	// Sale Price
+	$prices = array( $product->get_variation_regular_price( 'min', true ), $product->get_variation_regular_price( 'max', true ) );
+	sort( $prices );
+	$saleprice = $prices[0] !== $prices[1] ? sprintf( __( '%1$s', 'woocommerce' ), wc_price( $prices[0] ) ) : wc_price( $prices[0] );
+ 
+	if ( $price !== $saleprice ) {
+		$price = '<del><span class="price-title">Precio Regular</span> ' . $saleprice . '</del> <ins><span class="price-title">Oferta</span>' . $price . '</ins>';
+	}
+	return $price;
+}
