@@ -847,6 +847,11 @@ a.button {
   display: none;
 }
 
+/* line 225, assets/scss/layout/woocommerce/_woo-global.scss */
+#ship-to-different-address {
+  padding-bottom: 40px;
+}
+
 /* line 2, assets/scss/layout/woocommerce/_woo-gallery.scss */
 .pp_pic_holder.pp_woocommerce {
   overflow-x: visible;
