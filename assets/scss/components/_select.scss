@@ -1,6 +1,9 @@
 .woo-filter-item{
   padding: 0;
   padding-right: 15px;
+  @include MQ(SM){
+    margin: 0 0 5px;
+  }
 }
 .widget_layered_nav select {
   color: lightgrey;

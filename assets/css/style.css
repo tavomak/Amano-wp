@@ -1316,7 +1316,14 @@ div.instacontainer .copy {
   padding-right: 15px;
 }
 
-/* line 5, assets/scss/components/_select.scss */
+@media handheld, only screen and (max-width: 767px) {
+  /* line 1, assets/scss/components/_select.scss */
+  .woo-filter-item {
+    margin: 0 0 5px;
+  }
+}
+
+/* line 8, assets/scss/components/_select.scss */
 .widget_layered_nav select {
   color: lightgrey;
   width: 100%;
@@ -1328,19 +1335,19 @@ div.instacontainer .copy {
           appearance: none;
 }
 
-/* line 12, assets/scss/components/_select.scss */
+/* line 15, assets/scss/components/_select.scss */
 .widget_layered_nav select:focus {
   color: #666666;
 }
 
-/* line 16, assets/scss/components/_select.scss */
+/* line 19, assets/scss/components/_select.scss */
 .span-wrapper {
   width: 100%;
   display: inline-block;
   position: relative;
 }
 
-/* line 20, assets/scss/components/_select.scss */
+/* line 23, assets/scss/components/_select.scss */
 .span-wrapper::after {
   content: "";
   display: inline-block;

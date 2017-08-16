@@ -42,7 +42,7 @@
       </div>
     </li>
 
-    <li class="woo_user_nav__item">
+    <li class="hidden-xs woo_user_nav__item">
       <a href="" class="woo_user_nav__link" data-toggle="modal" data-target="#modal_reg_pago">Registra tu pago</a>
     </li>
     <li class="hidden-xs woo_user_nav-search woo_user_nav__item">

@@ -19,9 +19,9 @@ $(document).ready(function () {
   $('.woocommerce-content-cam div.sumario').wrapInner('<div class="wrap-sumario"></div>');
   //select
   $('.widget_layered_nav select').wrap('<span class="span-wrapper" />');
-  $('.dropdown_layered_nav_talla option:first-child').text('Filtrar Talla');
-  $('.dropdown_layered_nav_acabado option:first-child').text('Filtrar Acabado');
-  $('.dropdown_layered_nav_color option:first-child').text('Filtrar Color');
+  $('.dropdown_layered_nav_talla option:first-child').text('Talla');
+  $('.dropdown_layered_nav_acabado option:first-child').text('Acabado');
+  $('.dropdown_layered_nav_color option:first-child').text('Color'); 
 
   // HOVERNAV - navbar dropdown on hover.
   // Uses jQuery Media Query - see http://www.sitepoint.com/javascript-media-queries/

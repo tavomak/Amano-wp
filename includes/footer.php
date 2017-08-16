@@ -46,7 +46,7 @@
         <!--Contenido del footer-->
         <div class="row">
 
-          <div class="col-xs-4 col-sm-4">
+          <div class="hidden-xs col-sm-4">
             <h3>TIENDA</h3>
               <?php
               wp_nav_menu( array(
