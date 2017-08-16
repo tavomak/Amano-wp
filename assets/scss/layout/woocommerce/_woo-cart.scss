@@ -36,3 +36,8 @@ div.instacontainer {
   margin: 0 auto;
   padding: 0;
 }
+.woocommerce form .form-row label{
+  @include MQ(S){
+    font-size: 12px;
+  }
+}

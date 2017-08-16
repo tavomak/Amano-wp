@@ -24,13 +24,18 @@
 .cart-amount {
   position: relative;
   left: -20px;
+  @include MQ(S){
+    font-size: 12px;
+  }
 }
 
 .bag-count {
+  font-size: 14px;
+  font-weight: $font-bold;
   z-index: $zindex-5;
   color: $white;
   position: relative;
-  top: 18px;
+  top: 15px;
   left: 23px;
   &__icon {
     display: inline-block;

@@ -532,10 +532,24 @@ a:focus {
   border-radius: 0;
   color: white;
   font-weight: 400;
-  padding: 6px;
+  padding: 4px;
+  margin: 5px 0;
+  font-size: 10px;
 }
 
-/* line 39, assets/scss/layout/woocommerce/_woo-global.scss */
+@media handheld, only screen and (max-width: 480px) {
+  /* line 32, assets/scss/layout/woocommerce/_woo-global.scss */
+  .woocommerce-content-cam .woocommerce-message a,
+  .woocommerce-content-cam .woocommerce-error a,
+  .woocommerce-content-cam .woocommerce-info a,
+  .woocommerce .woocommerce-message a,
+  .woocommerce .woocommerce-error a,
+  .woocommerce .woocommerce-info a {
+    display: block;
+  }
+}
+
+/* line 44, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam .woocommerce-message a:hover,
 .woocommerce-content-cam .woocommerce-error a:hover,
 .woocommerce-content-cam .woocommerce-info a:hover,
@@ -546,35 +560,35 @@ a:focus {
   color: white;
 }
 
-/* line 45, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 50, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam label,
 .woocommerce label {
   color: #2f3238;
   font-weight: 300 !important;
 }
 
-/* line 49, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 54, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam .woocommerce-breadcrumb,
 .woocommerce .woocommerce-breadcrumb {
   margin: 0;
   font-size: 1.1em;
 }
 
-/* line 53, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 58, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam .woocommerce-breadcrumb a:hover,
 .woocommerce .woocommerce-breadcrumb a:hover {
   color: #e22980;
 }
 
 @media handheld, only screen and (max-width: 767px) {
-  /* line 49, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 54, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam .woocommerce-breadcrumb,
   .woocommerce .woocommerce-breadcrumb {
     text-align: center;
   }
 }
 
-/* line 61, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 66, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam .woocommerce-result-count,
 .woocommerce .woocommerce-result-count {
   color: #a7a7a7;
@@ -584,14 +598,14 @@ a:focus {
   padding: 25px 0 0px 0;
 }
 
-/* line 68, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 73, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam .wapl-flash,
 .woocommerce .wapl-flash {
   top: -35px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
-  /* line 68, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 73, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam .wapl-flash,
   .woocommerce .wapl-flash {
     top: -20px;
@@ -599,14 +613,14 @@ a:focus {
 }
 
 @media only screen and (min-width: 1281px) {
-  /* line 68, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 73, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam .wapl-flash,
   .woocommerce .wapl-flash {
     top: -15px;
   }
 }
 
-/* line 76, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 81, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam .wapl-flash .woocommerce-advanced-product-label.product-label,
 .woocommerce .wapl-flash .woocommerce-advanced-product-label.product-label {
   border-color: #e3e3e3;
@@ -618,7 +632,7 @@ a:focus {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
-  /* line 76, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 81, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam .wapl-flash .woocommerce-advanced-product-label.product-label,
   .woocommerce .wapl-flash .woocommerce-advanced-product-label.product-label {
     width: 38px;
@@ -628,7 +642,7 @@ a:focus {
   }
 }
 
-/* line 91, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 96, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam .page-title,
 .woocommerce-content-cam .woocommerce-ordering,
 .woocommerce .page-title,
@@ -636,13 +650,13 @@ a:focus {
   display: none;
 }
 
-/* line 95, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 100, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products,
 .woocommerce ul.products {
   padding: 40px 0 0 0;
 }
 
-/* line 97, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 102, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product,
 .woocommerce ul.products li.product {
   margin-bottom: 20px;
@@ -652,7 +666,7 @@ a:focus {
 }
 
 @media handheld, only screen and (max-width: 767px) {
-  /* line 97, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 102, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product,
   .woocommerce ul.products li.product {
     width: 45%;
@@ -660,7 +674,7 @@ a:focus {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
-  /* line 97, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 102, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product,
   .woocommerce ul.products li.product {
     margin-bottom: 25px;
@@ -668,20 +682,20 @@ a:focus {
 }
 
 @media only screen and (min-width: 1281px) {
-  /* line 97, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 102, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product,
   .woocommerce ul.products li.product {
     margin-bottom: 0;
   }
 }
 
-/* line 111, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 116, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.button,
 .woocommerce ul.products li.product a.button {
   display: none;
 }
 
-/* line 117, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 122, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link:hover h3,
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link:hover h2,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link:hover h3,
@@ -690,20 +704,20 @@ a:focus {
   color: #666666;
 }
 
-/* line 124, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 129, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link span.price,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link span.price {
   display: none;
   text-align: center;
 }
 
-/* line 129, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 134, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link span.price span.woocommerce-Price-amount span.woocommerce-Price-currencySymbol {
   margin-right: 8px;
 }
 
-/* line 134, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 139, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
@@ -721,7 +735,7 @@ a:focus {
 }
 
 @media handheld, only screen and (max-width: 767px) {
-  /* line 134, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 139, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
@@ -732,7 +746,7 @@ a:focus {
 }
 
 @media only screen and (min-width: 1281px) {
-  /* line 134, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 139, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
@@ -743,7 +757,7 @@ a:focus {
 }
 
 @media handheld {
-  /* line 134, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 139, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3,
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3,
@@ -752,7 +766,7 @@ a:focus {
   }
 }
 
-/* line 157, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 162, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h3 .touch,
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link h2 .touch,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link h3 .touch,
@@ -760,14 +774,14 @@ a:focus {
   opacity: 1;
 }
 
-/* line 161, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 166, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog,
 .woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
   padding: 20px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1280px) {
-  /* line 161, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 166, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
     padding: 10px;
@@ -775,21 +789,21 @@ a:focus {
 }
 
 @media only screen and (min-width: 1281px) {
-  /* line 161, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 166, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog,
   .woocommerce ul.products li.product a.woocommerce-LoopProduct-link img.attachment-shop_catalog {
     padding: 30px;
   }
 }
 
-/* line 173, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 178, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-content-cam nav.woocommerce-pagination,
 .woocommerce nav.woocommerce-pagination {
   margin: 40px 0 30px 0;
 }
 
 @media handheld, only screen and (max-width: 767px) {
-  /* line 177, assets/scss/layout/woocommerce/_woo-global.scss */
+  /* line 182, assets/scss/layout/woocommerce/_woo-global.scss */
   .woocommerce-content-cam nav.woocommerce-pagination ul.page-numbers li span,
   .woocommerce-content-cam nav.woocommerce-pagination ul.page-numbers li a,
   .woocommerce nav.woocommerce-pagination ul.page-numbers li span,
@@ -798,43 +812,43 @@ a:focus {
   }
 }
 
-/* line 189, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 194, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce button.button,
 a.button {
   font-weight: 300 !important;
 }
 
-/* line 194, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 199, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-Price-currencySymbol {
   margin-right: 6px;
 }
 
-/* line 198, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 203, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce table.shop_table, .woocommerce-checkout #payment {
   border-radius: 0;
 }
 
-/* line 201, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 206, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-cart table.cart img {
   width: 64px;
 }
 
-/* line 204, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 209, assets/scss/layout/woocommerce/_woo-global.scss */
 .checkbox {
   margin: 0;
 }
 
-/* line 207, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 212, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce .create-account {
   clear: both;
 }
 
-/* line 212, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 217, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-shipping-fields label.checkbox {
   float: right;
 }
 
-/* line 215, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 220, assets/scss/layout/woocommerce/_woo-global.scss */
 .woocommerce-shipping-fields input.input-checkbox {
   float: left;
   margin-right: 10px;
@@ -842,12 +856,12 @@ a.button {
   height: 20px;
 }
 
-/* line 222, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 227, assets/scss/layout/woocommerce/_woo-global.scss */
 #calc_shipping_country_field, #calc_shipping_postcode_field {
   display: none;
 }
 
-/* line 225, assets/scss/layout/woocommerce/_woo-global.scss */
+/* line 230, assets/scss/layout/woocommerce/_woo-global.scss */
 #ship-to-different-address {
   padding-bottom: 40px;
 }
@@ -971,16 +985,25 @@ div.pp_woocommerce .pp_close {
   left: -20px;
 }
 
-/* line 29, assets/scss/layout/woocommerce/_woo-nav.scss */
+@media handheld, only screen and (max-width: 480px) {
+  /* line 24, assets/scss/layout/woocommerce/_woo-nav.scss */
+  .cart-amount {
+    font-size: 12px;
+  }
+}
+
+/* line 32, assets/scss/layout/woocommerce/_woo-nav.scss */
 .bag-count {
+  font-size: 14px;
+  font-weight: 400;
   z-index: 5;
   color: white;
   position: relative;
-  top: 18px;
+  top: 15px;
   left: 23px;
 }
 
-/* line 35, assets/scss/layout/woocommerce/_woo-nav.scss */
+/* line 40, assets/scss/layout/woocommerce/_woo-nav.scss */
 .bag-count__icon {
   display: inline-block;
   position: absolute;
@@ -990,7 +1013,7 @@ div.pp_woocommerce .pp_close {
   background: url("../img/bag-icon.png") no-repeat;
 }
 
-/* line 43, assets/scss/layout/woocommerce/_woo-nav.scss */
+/* line 48, assets/scss/layout/woocommerce/_woo-nav.scss */
 .bag-count__disabled {
   display: inline-block;
   position: absolute;
@@ -1000,20 +1023,20 @@ div.pp_woocommerce .pp_close {
   background: url("../img/bag-icon-disabled.png") no-repeat;
 }
 
-/* line 53, assets/scss/layout/woocommerce/_woo-nav.scss */
+/* line 58, assets/scss/layout/woocommerce/_woo-nav.scss */
 .cam-search-form {
   position: absolute;
   top: 0;
   height: 26px;
 }
 
-/* line 57, assets/scss/layout/woocommerce/_woo-nav.scss */
+/* line 62, assets/scss/layout/woocommerce/_woo-nav.scss */
 .cam-search-form:hover > button {
   background: #e22980;
   color: white;
 }
 
-/* line 61, assets/scss/layout/woocommerce/_woo-nav.scss */
+/* line 66, assets/scss/layout/woocommerce/_woo-nav.scss */
 .cam-search-form input,
 .cam-search-form button {
   color: white;
@@ -1023,7 +1046,7 @@ div.pp_woocommerce .pp_close {
   border: none;
 }
 
-/* line 69, assets/scss/layout/woocommerce/_woo-nav.scss */
+/* line 74, assets/scss/layout/woocommerce/_woo-nav.scss */
 .cam-search-form input::-webkit-input-placeholder {
   color: white;
 }
@@ -1034,13 +1057,13 @@ div.pp_woocommerce .pp_close {
   color: white;
 }
 
-/* line 72, assets/scss/layout/woocommerce/_woo-nav.scss */
+/* line 77, assets/scss/layout/woocommerce/_woo-nav.scss */
 .cam-search-form button {
   border-left: 3px solid white;
   transition: .2s ease-in-out all;
 }
 
-/* line 75, assets/scss/layout/woocommerce/_woo-nav.scss */
+/* line 80, assets/scss/layout/woocommerce/_woo-nav.scss */
 .cam-search-form button:hover {
   background: #e22980;
   color: white;
@@ -1217,6 +1240,13 @@ div.instacontainer .copy {
   position: inherit;
   margin: 0 auto;
   padding: 0;
+}
+
+@media handheld, only screen and (max-width: 480px) {
+  /* line 39, assets/scss/layout/woocommerce/_woo-cart.scss */
+  .woocommerce form .form-row label {
+    font-size: 12px;
+  }
 }
 
 /* line 1, assets/scss/layout/woocommerce/_product-texture.scss */

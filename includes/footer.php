@@ -59,7 +59,7 @@
 
           </div>
 
-          <div class="col-xs-8 col-sm-4">
+          <div class="col-sm-4">
             <h3>CONTACTO</h3>
             <p><b>Tienda San Luis Urb. San Luis.</b>
               <br>El Cafetal. Caracas.
@@ -68,7 +68,8 @@
             <p><strong>Lunes a Viernes: </strong>10:00 am a 5:00 pm</p>
             <p><strong>Sábados: </strong>11:00 am a 4:00 pm</p>
           </div>
-
+          
+          <hr class="visible-xs">
           <div class="col-sm-4">
             <h3>SOCIAL
               <a href="https://www.instagram.com/calzadosamano/" target="_blank" class="site-footer-social-icons"><span class="icon-social-instagram-outline"></span></a>
