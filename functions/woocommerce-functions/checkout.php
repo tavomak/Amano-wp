@@ -14,7 +14,8 @@ function wc_billing_field_strings( $translated_text, $text, $domain ) {
     switch ( $translated_text ) {
         case 'Detalles de facturación' :
             echo "<h3>Facturación y envio.</h3>";
-            $translated_text = __( 'Tus productos seran enviados a la dirección ingresada, si lo prefieres puedes probar el envio a taquilla Zoom.', 'woocommerce' );
+            echo "<p>Tus productos seran enviados a la dirección ingresada, si lo prefieres puedes probar el envio a taquilla Zoom.</p>";
+            $translated_text = __( '', 'woocommerce' );
         break;
     }
     return $translated_text;
