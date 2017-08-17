@@ -1,5 +1,8 @@
 .cam-product-texture {
     clear: both;
+    @include MQ(S){
+        text-align: center;
+    }
     &__title {
         color: $gris-oscuro;
     }

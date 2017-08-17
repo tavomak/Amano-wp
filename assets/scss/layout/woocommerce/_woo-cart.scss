@@ -41,3 +41,8 @@ div.instacontainer {
     font-size: 12px;
   }
 }
+.woocommerce-checkout .woocommerce-error{
+  @include MQ(S){
+    font-size: 10px;
+  }
+}

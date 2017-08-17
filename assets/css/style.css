@@ -866,6 +866,11 @@ a.button {
   padding-bottom: 40px;
 }
 
+/* line 234, assets/scss/layout/woocommerce/_woo-global.scss */
+ins {
+  text-decoration: none;
+}
+
 /* line 2, assets/scss/layout/woocommerce/_woo-gallery.scss */
 .pp_pic_holder.pp_woocommerce {
   overflow-x: visible;
@@ -943,7 +948,7 @@ div.pp_woocommerce .pp_close {
 @media handheld, only screen and (max-width: 767px) {
   /* line 51, assets/scss/layout/woocommerce/_woo-gallery.scss */
   .single.single-product .woocommerce-content-cam div.imagenes div.thumb a {
-    width: 33%;
+    width: 50%;
     float: left;
   }
 }
@@ -1182,7 +1187,6 @@ div.pp_woocommerce .pp_close {
 .woocommerce div.product span.price {
   font-size: 1.25em;
   padding-top: 20px;
-  color: goldenrod;
 }
 
 /* line 94, assets/scss/layout/woocommerce/_woo-single-product.scss */
@@ -1249,22 +1253,36 @@ div.instacontainer .copy {
   }
 }
 
+@media handheld, only screen and (max-width: 480px) {
+  /* line 44, assets/scss/layout/woocommerce/_woo-cart.scss */
+  .woocommerce-checkout .woocommerce-error {
+    font-size: 10px;
+  }
+}
+
 /* line 1, assets/scss/layout/woocommerce/_product-texture.scss */
 .cam-product-texture {
   clear: both;
 }
 
-/* line 3, assets/scss/layout/woocommerce/_product-texture.scss */
+@media handheld, only screen and (max-width: 480px) {
+  /* line 1, assets/scss/layout/woocommerce/_product-texture.scss */
+  .cam-product-texture {
+    text-align: center;
+  }
+}
+
+/* line 6, assets/scss/layout/woocommerce/_product-texture.scss */
 .cam-product-texture__title {
   color: #2f3238;
 }
 
-/* line 6, assets/scss/layout/woocommerce/_product-texture.scss */
+/* line 9, assets/scss/layout/woocommerce/_product-texture.scss */
 .cam-product-texture__img {
   transition: all .4s ease-in-out;
 }
 
-/* line 9, assets/scss/layout/woocommerce/_product-texture.scss */
+/* line 12, assets/scss/layout/woocommerce/_product-texture.scss */
 .cam-product-texture__link {
   padding: 10px 3px 0 3px;
   position: relative;
@@ -1273,7 +1291,7 @@ div.instacontainer .copy {
   height: 50px;
 }
 
-/* line 15, assets/scss/layout/woocommerce/_product-texture.scss */
+/* line 18, assets/scss/layout/woocommerce/_product-texture.scss */
 .cam-product-texture__link:hover .cam-product-texture__img {
   -webkit-transform: scale(1.1) rotate(-180deg);
           transform: scale(1.1) rotate(-180deg);

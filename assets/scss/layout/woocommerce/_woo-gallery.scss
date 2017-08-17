@@ -53,7 +53,7 @@ div.pp_woocommerce .pp_close {
           margin: 0;
           float: none;
           @include MQ(SM) {
-            width: 33%;
+            width: 50%;
             float: left;
           }
         }
