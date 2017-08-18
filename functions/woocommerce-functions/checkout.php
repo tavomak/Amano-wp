@@ -126,23 +126,6 @@ function my_custom_checkout_field_update_order_meta( $order_id ) {
     }
 }
 
-// Validar
-add_action('woocommerce_checkout_process', 'check_if_selected');
-function check_if_selected() {
-	if ( empty( $_POST['shipping_city'] ) ) {
-        wc_add_notice( 'Por favor selecciona una ciudad.', 'error' );
-    }
-    if ( empty( $_POST['shipping_agency'] ) ) {
-        wc_add_notice( 'Por favor selecciona una agencia.', 'error' );
-    }
-    if ( empty( $_POST['shipping_cedula'] ) ) {
-        wc_add_notice( 'Por favor Introduce tu cedula.', 'error' );
-    }
-    if ( empty( $_POST['billing_cedula'] ) ) {
-        wc_add_notice( 'Por favor Introduce tu cedula', 'error' );
-    }
-}
-
 // Agregar ordenes al email
 add_filter('woocommerce_email_order_meta_keys', 'my_woocommerce_email_order_meta_keys');
 function my_woocommerce_email_order_meta_keys( $keys ) {
