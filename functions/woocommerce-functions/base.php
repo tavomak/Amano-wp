@@ -76,3 +76,18 @@ function wc_wc20_variation_price_format( $price, $product ) {
 	}
 	return $price;
 }
+
+/* function sr_change_variable_price($price, $product) 
+{
+    if ( $product->is_type( 'variable' ) && !is_product() ) 
+    {
+        return 'From: '.$product->get_variation_price( 'min' ); // if variable product and non-product page
+    } else if ( $product->is_type( 'variable' ) && is_product() )
+    {
+        return '';  // if variable product and product page
+    } else
+    {
+        return $price;  // other cases
+    }
+}
+add_filter( 'woocommerce_get_price_html', 'sr_change_variable_price', 10, 2 ); */

@@ -1194,6 +1194,11 @@ div.pp_woocommerce .pp_close {
   padding-right: 25px;
 }
 
+/* line 97, assets/scss/layout/woocommerce/_woo-single-product.scss */
+div.ppt {
+  display: none !important;
+}
+
 /* line 1, assets/scss/layout/woocommerce/_woo-cart.scss */
 .woocommerce button.button,
 a.button {

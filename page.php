@@ -28,7 +28,7 @@
   <section class="container">
     <h3>
       <img src="<?php bloginfo('template_directory'); ?>/assets/img/001-instagram-1.png" alt="Instagram"/>
-      <span> Síguenos en redes.</span>
+      <span>Síguenos.</span>
     </h3>
     <?php if ( wp_is_mobile() ) :?>
     <?php echo do_shortcode( '[instagram-feed num=4]' ); ?>
