@@ -26,7 +26,7 @@
           <div id="modalbox" class="modal-content">
             <div class="modal-header">
               <button type="button" data-dismiss="modal" aria-label="Cerrar" class="close"><span aria-hidden="true">&times;</span></button>
-              <h3 class="modal-tittle text-center">Tabla de medida</h3> </div>
+              <h3 class="modal-tittle text-center">Tabla de medidas</h3> </div>
             <div class="modal-body">
               <div>
                 <img class"img-responsive" src="<?php bloginfo('template_directory'); ?>/assets/img/tallas-copia.jpg" alt="">

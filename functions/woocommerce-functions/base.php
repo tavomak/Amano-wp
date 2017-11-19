@@ -78,6 +78,6 @@ function wc_wc20_variation_price_format( $price, $product ) {
 }
 
 function action_woocommerce_before_variations_form(  ) { 
-    echo '<a href="" data-toggle="modal" data-target="#tablaMedida"><b>Tabla de medida</b></a>';
+    echo '<a href="" data-toggle="modal" data-target="#tablaMedida"><b>Tabla de medidas</b></a>';
 };
 add_action( 'woocommerce_before_variations_form', 'action_woocommerce_before_variations_form', 10, 0 );
