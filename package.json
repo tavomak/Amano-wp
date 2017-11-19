@@ -1,18 +1,14 @@
 {
-  "name": "Calzados A mano",
+  "name": "CAM",
   "version": "1.0.0",
-  "description": "Theme calzados a mano wordpress",
-  "main": "",
+  "description": "*Version 1.0*",
+  "main": "gulpfile.js",
   "scripts": {
-    "test": ""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/tavomak/Amano-wp"
-  },
-  "author": "Gustavo Rivero / Lorena Marquéz",
-  "license": "GNU",
   "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.18.12",
     "gulp": "^3.9.1",
@@ -24,5 +20,8 @@
     "gulp-sourcemaps": "^2.6.0",
     "gulp-uglify": "^2.1.2",
     "node-bourbon": "^4.2.8"
+  },
+  "dependencies": {
+    "gulp-rename": "^1.2.2"
   }
 }

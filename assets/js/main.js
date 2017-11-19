@@ -80,8 +80,11 @@ $(document).ready(function () {
 
   var menuItems = $('ul#menu-principal').children().length;
   var menuPercentage = 100 / menuItems;
-  var menuWdCalc = menuPercentage.toFixed(0) + '%';
+  var menuWdCalc = menuPercentage + '%';
   $('#menu-principal .menu__item ').css('min-width', menuWdCalc);
+  console.log(menuItems);
+  console.log(menuPercentage);
+  console.log(menuWdCalc);
   //console.log('Propiedad Width de .menu__item generada por js main.js:84, Actualmente: ' + menuWdCalc);
 
 });

@@ -224,7 +224,7 @@ if ( ! class_exists( 'WP_Bootstrap_Navwalker' ) ) {
 
 //contacto modal agrega un item de menu al final de la navegacion bootstrap
 function add_last_nav_item($items) {
-  return $items .= '<li class="contacto-visible menu__item"><a href="" data-toggle="modal" data-target="#say-hellow">Contáctanos</a></li>';
+  return $items .= '<li class="contacto-visible menu__item"><a href="" data-toggle="modal" data-target="#say-hellow">Contáctanos</a></li><li class="contacto-visible menu__item"><a href="" data-toggle="modal" data-target="#tablaMedida">Tabla de medida</a></li>';
 }
 add_filter('wp_nav_menu_items','add_last_nav_item');
 
